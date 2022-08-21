@@ -2,13 +2,63 @@
 #include <math.h>
 #include <stdlib.h>
 
-
 using namespace std;
 
-int main(){
+double funcion(double);
 
+// funcion a estudiar
+double funcion(double x)
+{
+    return 2*x-4;
+}
 
+int main()
+{
 
-    
+    // intervalo que abarca la raiz
+    double a = 1;
+    double b = 3;
+
+    double cn, cv;
+    double eAproximado, ePorcentual = 0;
+    double tolerancia = pow(10, -5);
+    int iteraciones = 0;
+
+    if (funcion(a) * funcion(b) < 0)
+    {
+        do
+        {
+            if (iteraciones == 0)
+            {
+                cv = a;
+                cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                eAproximado = fabs(cn - cv);
+            }
+            else
+            {
+                if (funcion(a) * funcion(cn) < 0)
+                {
+                    b = cn;
+                    cv = cn;
+                    cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                    eAproximado = fabs(cn - cv);
+                }
+                else
+                {
+                    a = cn;
+                    cv = cn;
+                    cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                    eAproximado = fabs(cn - cv);
+                }
+            }
+            iteraciones++;
+        } while (eAproximado > tolerancia);
+        cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual << "\nIteraciones: " << iteraciones << endl;
+    }
+    else
+    {
+        cout << "La funcion no tiene raices o  la misma no se encuentra en el intervalo elegido" << endl;
+    }
+
     return 0;
 }
