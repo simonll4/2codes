@@ -37,7 +37,7 @@ int main()
             }
             else
             {
-                if (cn < pow(10, -10))
+                if (cn < pow(10, -4))
                 {
                     cout << "Warning: cn es demasiado cercano a cero" << endl;
                     break;
