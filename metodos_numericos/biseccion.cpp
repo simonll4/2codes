@@ -33,6 +33,7 @@ int main()
                 cv = a;
                 cn = (a + b) / 2;
                 eAproximado = fabs(cn - cv);
+                ePorcentual = (eAproximado / cn) * 100;
             }
             else
             {
@@ -42,6 +43,7 @@ int main()
                     cv = cn;
                     cn = (a + b) / 2;
                     eAproximado = fabs(cn - cv);
+                    ePorcentual = (eAproximado / cn) * 100;
                 }
                 else
                 {
@@ -49,6 +51,7 @@ int main()
                     cv = cn;
                     cn = (a + b) / 2;
                     eAproximado = fabs(cn - cv);
+                    ePorcentual = (eAproximado / cn) * 100;
                 }
             }
             iteraciones++;
@@ -59,7 +62,7 @@ int main()
         cout << "La funcion no tiene raices o  la misma no se encuentra en el intervalo elegido" << endl;
     }
 
-    cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nIteraciones: " << iteraciones << endl;
+    cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual << "\nIteraciones: " << iteraciones << endl;
 
     return 0;
 }
