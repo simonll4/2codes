@@ -9,7 +9,7 @@ double funcion(double);
 // funcion a estudiar
 double funcion(double x)
 {
-    return 2*x-4;
+    return 2 * x - 4;
 }
 
 int main()
@@ -31,24 +31,32 @@ int main()
             if (iteraciones == 0)
             {
                 cv = a;
-                cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
                 eAproximado = fabs(cn - cv);
+                ePorcentual = fabs(eAproximado / cn) * 100;
             }
             else
             {
+                if (cn < pow(10, -10))
+                {
+                    cout << "Warning: cn es demasiado cercano a cero" << endl;
+                    break;
+                }
                 if (funcion(a) * funcion(cn) < 0)
                 {
                     b = cn;
                     cv = cn;
-                    cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
                     eAproximado = fabs(cn - cv);
+                    ePorcentual = fabs(eAproximado / cn) * 100;
                 }
                 else
                 {
                     a = cn;
                     cv = cn;
-                    cn = (funcion(b)*a-funcion(a)*b)/(funcion(b)-funcion(a));
+                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
                     eAproximado = fabs(cn - cv);
+                    ePorcentual = fabs(eAproximado / cn) * 100;
                 }
             }
             iteraciones++;

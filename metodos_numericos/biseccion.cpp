@@ -33,10 +33,15 @@ int main()
                 cv = a;
                 cn = (a + b) / 2;
                 eAproximado = fabs(cn - cv);
-                ePorcentual = (eAproximado / cn) * 100;
+                ePorcentual = fabs(eAproximado / cn) * 100;
             }
             else
             {
+                if (cn < pow(10, -10))
+                {
+                    cout << "Warning: cn es demasiado cercano a cero" << endl;
+                    break;
+                }
                 if (funcion(a) * funcion(cn) < 0)
                 {
                     b = cn;
