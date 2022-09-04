@@ -9,14 +9,14 @@ double funcion(double);
 // funcion a estudiar
 double funcion(double x)
 {
-    return 2 * x - 4;
+    return x - log(x * 4);
 }
 
 int main()
 {
 
     // intervalo que abarca la raiz
-    double a = 1;
+    double a = 2;
     double b = 3;
 
     double cn, cv;
@@ -31,32 +31,27 @@ int main()
             if (iteraciones == 0)
             {
                 cv = a;
-                cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
+                cn = (a + b) / 2;
                 eAproximado = fabs(cn - cv);
                 ePorcentual = fabs(eAproximado / cn) * 100;
             }
             else
             {
-                if (cn < pow(10, -4))
-                {
-                    cout << "Warning: cn es demasiado cercano a cero" << endl;
-                    break;
-                }
                 if (funcion(a) * funcion(cn) < 0)
                 {
                     b = cn;
                     cv = cn;
-                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
+                    cn = (a + b) / 2;
                     eAproximado = fabs(cn - cv);
-                    ePorcentual = fabs(eAproximado / cn) * 100;
+                    ePorcentual = (eAproximado / cn) * 100;
                 }
                 else
                 {
                     a = cn;
                     cv = cn;
-                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
+                    cn = (a + b) / 2;
                     eAproximado = fabs(cn - cv);
-                    ePorcentual = fabs(eAproximado / cn) * 100;
+                    ePorcentual = (eAproximado / cn) * 100;
                 }
             }
             iteraciones++;
