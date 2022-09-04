@@ -102,3 +102,4 @@ void retrosustitucion (double m[MAXROW][MAXCOL], double b[MAXROW], double x[MAXR
         printf("x%d = %lf\n",i,x[i]);
     }
 }
+
