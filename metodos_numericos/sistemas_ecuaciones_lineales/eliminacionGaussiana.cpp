@@ -62,10 +62,10 @@ int main() {
     //imprime matrix triangular
     cout << endl << "La Matriz triangular superior quedo: " << endl;
     for (int indexA = 0; indexA < rows; indexA++) {
-        for (int indexB = 0; indexB < columns-1; indexB++) {
+        for (int indexB = 0; indexB < columns - 1; indexB++) {
             cout << matrix[indexA][indexB] << " ";
         }
-        cout << b[indexA]<<endl;
+        cout << b[indexA] << endl;
     }
 
     //sustitucion regresiva

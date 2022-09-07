@@ -27,3 +27,9 @@
 312	390	1662589111258586157	EliminacionGaussiana	3b505e19cc4a4db2
 1	305	1662589133894432543	CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o	fd7afe54dd03744b
 305	423	1662589134010431765	EliminacionGaussiana	3b505e19cc4a4db2
+1	235	1662589618991845522	CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o	fd7afe54dd03744b
+235	287	1662589619043845297	EliminacionGaussiana	3b505e19cc4a4db2
+0	73	1662589622835828881	CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o	ea1c7df4b38d3b50
+73	100	1662589622863828760	Jacobi	dc9aa3392930e371
+0	313	1662589784227165213	CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o	ea1c7df4b38d3b50
+313	368	1662589784279165009	Jacobi	dc9aa3392930e371

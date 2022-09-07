@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 #include <math.h>
 
 using namespace std;
@@ -67,22 +68,49 @@ int main()
 }
 
 void readTxt(double matrix[MAXROW][MAXCOL], double b[MAXROW], int *rows, int *columns) {
-    FILE *readPtr;
-    int j, i, n;
-    float k;
-    readPtr = fopen("matrix.txt", "r");
-    fscanf(readPtr, "%d", &n);
-    *rows = n;
-    *columns = n;
-    for (i = 0; i < *rows; i++) {
-        for (j = 0; j < *columns; j++) {
-            fscanf(readPtr, "%f", &k);
-            matrix[i][j] = k;
-        }
-        fscanf(readPtr, "%f", &k);
-        b[i] = k;
+    FILE *file;
+    char c;
+
+    file = fopen("matrix.txt", "r");
+    if (file == NULL) {
+        puts("No se puede abrir el archivo");
     }
-    fclose(readPtr);
+
+    while ((c = fgetc(file)) != EOF) {
+        if (c == '\n') {
+            *rows += 1;
+        }
+    }
+
+    cout << "Filas:" << *rows << endl;
+
+    //reseteamos el puntero del archivo
+    rewind(file);
+
+    //Cargo los datos leidos en el array
+    int indexB;
+    for (int indexA = 0; indexA < *rows; indexA++) {
+        indexB = 0;
+        do {
+            fscanf(file, "%lf", &(matrix[indexA][indexB]));
+            indexB++;
+        } while ((c = fgetc(file)) != '\n');
+    }
+
+    *columns = indexB;
+    cout << "Columnas: " << *columns << endl;
+
+    //guardo los terminos independientes
+    for (int indexA = 0; indexA < *rows; ++indexA) {
+        b[indexA] = matrix[indexA][*columns - 1];
+    }
+
+    cout << "LOS TERMINOS INDEPENDIENTES DE LA MATRIZ SON:" << endl;
+    for (int i = 0; i < *rows; i++) {
+        printf("%lf ", b[i]);
+        printf("\n");
+    }
+
 
 }
 
