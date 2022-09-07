@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2codes",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Biseccion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Biseccion-Debug-649cf75b4ee5d800ad71.json",
+					"name" : "Biseccion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EliminacionGaussiana::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EliminacionGaussiana-Debug-28552217a130e8bc5d8d.json",
+					"name" : "EliminacionGaussiana",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FalsaPosicion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FalsaPosicion-Debug-68c7c73564832e108023.json",
+					"name" : "FalsaPosicion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IterativoDePuntoFijo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IterativoDePuntoFijo-Debug-dbf855d045be3e7884d8.json",
+					"name" : "IterativoDePuntoFijo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Jacobi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Jacobi-Debug-15b87682f31bc2f15893.json",
+					"name" : "Jacobi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NewtonRapshon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NewtonRapshon-Debug-3e4c176c2d04b61e4e60.json",
+					"name" : "NewtonRapshon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Secante::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Secante-Debug-1404c410442e7e2d8eed.json",
+					"name" : "Secante",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/simonll4/2codes/cmake-build-debug",
+		"source" : "/home/simonll4/2codes"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

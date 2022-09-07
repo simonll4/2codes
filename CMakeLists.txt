@@ -4,4 +4,10 @@ project(2codes)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_executable(2codes metodos_numericos/localizacion_raices/biseccion.cpp)
+add_executable(Biseccion metodos_numericos/localizacion_raices/biseccion.cpp )
+add_executable(FalsaPosicion metodos_numericos/localizacion_raices/falsaPosicion.cpp)
+add_executable(IterativoDePuntoFijo metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp)
+add_executable(NewtonRapshon metodos_numericos/localizacion_raices/newtonRaphson.cpp)
+add_executable(Secante metodos_numericos/localizacion_raices/secante.cpp)
+add_executable(EliminacionGaussiana metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp)
+add_executable(Jacobi metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp)

@@ -26,7 +26,7 @@ void readTxt(double m[MAXROW][MAXCOL], double b[MAXROW], int * rows, int * colum
     FILE *readPtr;
     int j,i,n;
     float k;
-    readPtr = fopen("data.txt", "r");
+    readPtr = fopen("matrix.txt", "r");
     fscanf(readPtr,"%d",&n);
     *rows = n;
     *columns = n;
