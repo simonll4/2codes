@@ -24,6 +24,8 @@ int main()
     double tolerancia = pow(10, -5);
     int iteraciones = 0;
 
+    cout<<"FALSA POSICION"<<endl;
+
     if (funcion(a) * funcion(b) < 0)
     {
         do

@@ -1,3 +1,14 @@
 # ninja log v5
-0	301	1662506877602851760	CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o	12b11382478320c
-302	373	1662506877674852086	2codes	cf3d4d48eb94783c
+1	235	1662589618991845522	CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o	fd7afe54dd03744b
+0	234	1662508508777767899	CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o	12b11382478320c
+0	29	1662509096064529987	CMakeFiles/Jacobi.dir/metodos_numericos/jacobi.c.o	12393b5c63ec1502
+1	22	1662592633104895790	build.ninja	84801bc4661d6e07
+0	34	1662508799483412358	CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.c.o	59640fc0884055b3
+0	382	1662592516739651438	CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o	ea1c7df4b38d3b50
+382	470	1662592516827651198	Jacobi	dc9aa3392930e371
+0	35	1662510066423466766	CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.c.o	9ffcb232207ad104
+1	218	1662587325584003503	CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana1.cpp.o	5c935d453027a316
+235	287	1662589619043845297	EliminacionGaussiana	3b505e19cc4a4db2
+234	286	1662508508829767537	2codes	cf3d4d48eb94783c
+0	209	1662592640884976214	CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o	6ee84294a21ea9df
+209	271	1662592640944976830	GaussSeidel	2fb96883f8911568

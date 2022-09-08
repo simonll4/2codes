@@ -257,6 +257,37 @@ build Jacobi: CXX_EXECUTABLE_LINKER__Jacobi_Debug CMakeFiles/Jacobi.dir/metodos_
   TARGET_FILE = Jacobi
   TARGET_PDB = Jacobi.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target GaussSeidel
+
+
+#############################################
+# Order-only phony target for GaussSeidel
+
+build cmake_object_order_depends_target_GaussSeidel: phony || CMakeFiles/GaussSeidel.dir
+
+build CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o: CXX_COMPILER__GaussSeidel_Debug /home/simonll4/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp || cmake_object_order_depends_target_GaussSeidel
+  DEP_FILE = CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/GaussSeidel.dir
+  OBJECT_FILE_DIR = CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target GaussSeidel
+
+
+#############################################
+# Link the executable GaussSeidel
+
+build GaussSeidel: CXX_EXECUTABLE_LINKER__GaussSeidel_Debug CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/GaussSeidel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = GaussSeidel
+  TARGET_PDB = GaussSeidel.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -292,7 +323,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/simonll4/2codes/cmake-build-debug
 
-build all: phony Biseccion FalsaPosicion IterativoDePuntoFijo NewtonRapshon Secante EliminacionGaussiana Jacobi
+build all: phony Biseccion FalsaPosicion IterativoDePuntoFijo NewtonRapshon Secante EliminacionGaussiana Jacobi GaussSeidel
 
 # =============================================================================
 # Built-in targets

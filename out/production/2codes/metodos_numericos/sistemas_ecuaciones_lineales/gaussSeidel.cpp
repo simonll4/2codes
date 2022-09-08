@@ -1,12 +1,11 @@
-#include <stdio.h>
 #include <iostream>
 #include <math.h>
-
-using namespace std;
 
 #define MAXCOL 10
 #define MAXROW 10
 #define MAXITERATIONS pow(10,5)
+
+using namespace std;
 
 void readFile(double[MAXROW][MAXCOL], double[MAXROW], int *, int *);
 
@@ -24,40 +23,30 @@ int main() {
     readFile(matrix, b, &rows, &columns);
     printMatrix(matrix, b, rows, columns);
 
-    // metodo jacobi
+    //gaussSeidel
     double newX[MAXCOL] = {0};
     double oldX[MAXCOL] = {0};
     double tolerance = pow(10, -5) + 1;
     double e;
     int iterations = 0;
 
-    diagonallyDominant(matrix, rows, columns);
-
     do {
         iterations++;
-        e = 0;
         for (int indexA = 0; indexA < rows; ++indexA) {
-            double sum = 0;
-            for (int indexB = 0; indexB < columns; ++indexB) {
-                if (indexA != indexB)
-                    sum = (sum + matrix[indexA][indexB] * oldX[indexB]);
+            if (indexA == 1) {
+                double sum = 0;
+                for (int indexB = 0; indexB < rows ; ++indexB) {
+                    sum = sum + matrix[indexA][indexB]*oldX[indexB];
+                }
+
             }
-            newX[indexA] = (b[indexA] - sum) / (matrix[indexA][indexA]);
-            e = e + pow(newX[indexA] - oldX[indexA], 2);
-            oldX[indexA] = newX[indexA];
         }
-        e = sqrt(e);
 
         if (iterations == pow(10, MAXITERATIONS))
-            cout<<"Numero de iteraciones maximas alcanzadas"<<endl;
+            cout << "Numero de iteraciones maximas alcanzadas" << endl;
 
-    } while (e > tolerance || iterations > MAXITERATIONS);
+    } while (e < tolerance || iterations > pow(10, MAXITERATIONS));
 
-    printf("Conjunto solucion: \n");
-    for (int indexA = 0; indexA < rows; ++indexA) {
-        printf("x%d = %lf\n", indexA + 1, newX[indexA]);
-    }
-    printf("Error: %lf\nIteraciones: %d", e, iterations);
 
     return 0;
 }

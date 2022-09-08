@@ -1,3 +1,10 @@
-/home/simonll4/2codes/cmake-build-debug/CMakeFiles/2codes.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/Biseccion.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/FalsaPosicion.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/IterativoDePuntoFijo.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/NewtonRapshon.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/Secante.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/EliminacionGaussiana.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/Jacobi.dir
+/home/simonll4/2codes/cmake-build-debug/CMakeFiles/GaussSeidel.dir
 /home/simonll4/2codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/simonll4/2codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

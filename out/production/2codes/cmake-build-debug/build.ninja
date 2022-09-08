@@ -41,35 +41,252 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/simonll4/2codes/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target 2codes
+# Object build statements for EXECUTABLE target Biseccion
 
 
 #############################################
-# Order-only phony target for 2codes
+# Order-only phony target for Biseccion
 
-build cmake_object_order_depends_target_2codes: phony || CMakeFiles/2codes.dir
+build cmake_object_order_depends_target_Biseccion: phony || CMakeFiles/Biseccion.dir
 
-build CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o: CXX_COMPILER__2codes_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/biseccion.cpp || cmake_object_order_depends_target_2codes
-  DEP_FILE = CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o.d
+build CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o: CXX_COMPILER__Biseccion_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/biseccion.cpp || cmake_object_order_depends_target_Biseccion
+  DEP_FILE = CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles/2codes.dir
-  OBJECT_FILE_DIR = CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices
+  OBJECT_DIR = CMakeFiles/Biseccion.dir
+  OBJECT_FILE_DIR = CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 2codes
+# Link build statements for EXECUTABLE target Biseccion
 
 
 #############################################
-# Link the executable 2codes
+# Link the executable Biseccion
 
-build 2codes: CXX_EXECUTABLE_LINKER__2codes_Debug CMakeFiles/2codes.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o
+build Biseccion: CXX_EXECUTABLE_LINKER__Biseccion_Debug CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/2codes.dir
+  OBJECT_DIR = CMakeFiles/Biseccion.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = 2codes
-  TARGET_PDB = 2codes.dbg
+  TARGET_FILE = Biseccion
+  TARGET_PDB = Biseccion.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FalsaPosicion
+
+
+#############################################
+# Order-only phony target for FalsaPosicion
+
+build cmake_object_order_depends_target_FalsaPosicion: phony || CMakeFiles/FalsaPosicion.dir
+
+build CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.o: CXX_COMPILER__FalsaPosicion_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/falsaPosicion.cpp || cmake_object_order_depends_target_FalsaPosicion
+  DEP_FILE = CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/FalsaPosicion.dir
+  OBJECT_FILE_DIR = CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FalsaPosicion
+
+
+#############################################
+# Link the executable FalsaPosicion
+
+build FalsaPosicion: CXX_EXECUTABLE_LINKER__FalsaPosicion_Debug CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/FalsaPosicion.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FalsaPosicion
+  TARGET_PDB = FalsaPosicion.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target IterativoDePuntoFijo
+
+
+#############################################
+# Order-only phony target for IterativoDePuntoFijo
+
+build cmake_object_order_depends_target_IterativoDePuntoFijo: phony || CMakeFiles/IterativoDePuntoFijo.dir
+
+build CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o: CXX_COMPILER__IterativoDePuntoFijo_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp || cmake_object_order_depends_target_IterativoDePuntoFijo
+  DEP_FILE = CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/IterativoDePuntoFijo.dir
+  OBJECT_FILE_DIR = CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target IterativoDePuntoFijo
+
+
+#############################################
+# Link the executable IterativoDePuntoFijo
+
+build IterativoDePuntoFijo: CXX_EXECUTABLE_LINKER__IterativoDePuntoFijo_Debug CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/IterativoDePuntoFijo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = IterativoDePuntoFijo
+  TARGET_PDB = IterativoDePuntoFijo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target NewtonRapshon
+
+
+#############################################
+# Order-only phony target for NewtonRapshon
+
+build cmake_object_order_depends_target_NewtonRapshon: phony || CMakeFiles/NewtonRapshon.dir
+
+build CMakeFiles/NewtonRapshon.dir/metodos_numericos/localizacion_raices/newtonRaphson.cpp.o: CXX_COMPILER__NewtonRapshon_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/newtonRaphson.cpp || cmake_object_order_depends_target_NewtonRapshon
+  DEP_FILE = CMakeFiles/NewtonRapshon.dir/metodos_numericos/localizacion_raices/newtonRaphson.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/NewtonRapshon.dir
+  OBJECT_FILE_DIR = CMakeFiles/NewtonRapshon.dir/metodos_numericos/localizacion_raices
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target NewtonRapshon
+
+
+#############################################
+# Link the executable NewtonRapshon
+
+build NewtonRapshon: CXX_EXECUTABLE_LINKER__NewtonRapshon_Debug CMakeFiles/NewtonRapshon.dir/metodos_numericos/localizacion_raices/newtonRaphson.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/NewtonRapshon.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = NewtonRapshon
+  TARGET_PDB = NewtonRapshon.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Secante
+
+
+#############################################
+# Order-only phony target for Secante
+
+build cmake_object_order_depends_target_Secante: phony || CMakeFiles/Secante.dir
+
+build CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.o: CXX_COMPILER__Secante_Debug /home/simonll4/2codes/metodos_numericos/localizacion_raices/secante.cpp || cmake_object_order_depends_target_Secante
+  DEP_FILE = CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Secante.dir
+  OBJECT_FILE_DIR = CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Secante
+
+
+#############################################
+# Link the executable Secante
+
+build Secante: CXX_EXECUTABLE_LINKER__Secante_Debug CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Secante.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Secante
+  TARGET_PDB = Secante.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target EliminacionGaussiana
+
+
+#############################################
+# Order-only phony target for EliminacionGaussiana
+
+build cmake_object_order_depends_target_EliminacionGaussiana: phony || CMakeFiles/EliminacionGaussiana.dir
+
+build CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o: CXX_COMPILER__EliminacionGaussiana_Debug /home/simonll4/2codes/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp || cmake_object_order_depends_target_EliminacionGaussiana
+  DEP_FILE = CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/EliminacionGaussiana.dir
+  OBJECT_FILE_DIR = CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target EliminacionGaussiana
+
+
+#############################################
+# Link the executable EliminacionGaussiana
+
+build EliminacionGaussiana: CXX_EXECUTABLE_LINKER__EliminacionGaussiana_Debug CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/EliminacionGaussiana.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = EliminacionGaussiana
+  TARGET_PDB = EliminacionGaussiana.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Jacobi
+
+
+#############################################
+# Order-only phony target for Jacobi
+
+build cmake_object_order_depends_target_Jacobi: phony || CMakeFiles/Jacobi.dir
+
+build CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o: CXX_COMPILER__Jacobi_Debug /home/simonll4/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp || cmake_object_order_depends_target_Jacobi
+  DEP_FILE = CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Jacobi.dir
+  OBJECT_FILE_DIR = CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Jacobi
+
+
+#############################################
+# Link the executable Jacobi
+
+build Jacobi: CXX_EXECUTABLE_LINKER__Jacobi_Debug CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Jacobi.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Jacobi
+  TARGET_PDB = Jacobi.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target GaussSeidel
+
+
+#############################################
+# Order-only phony target for GaussSeidel
+
+build cmake_object_order_depends_target_GaussSeidel: phony || CMakeFiles/GaussSeidel.dir
+
+build CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o: CXX_COMPILER__GaussSeidel_Debug /home/simonll4/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp || cmake_object_order_depends_target_GaussSeidel
+  DEP_FILE = CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/GaussSeidel.dir
+  OBJECT_FILE_DIR = CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target GaussSeidel
+
+
+#############################################
+# Link the executable GaussSeidel
+
+build GaussSeidel: CXX_EXECUTABLE_LINKER__GaussSeidel_Debug CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/GaussSeidel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = GaussSeidel
+  TARGET_PDB = GaussSeidel.dbg
 
 
 #############################################
@@ -106,7 +323,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/simonll4/2codes/cmake-build-debug
 
-build all: phony 2codes
+build all: phony Biseccion FalsaPosicion IterativoDePuntoFijo NewtonRapshon Secante EliminacionGaussiana Jacobi GaussSeidel
 
 # =============================================================================
 # Built-in targets
