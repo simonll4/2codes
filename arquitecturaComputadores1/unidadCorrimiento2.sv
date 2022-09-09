@@ -1,4 +1,4 @@
-module unidadCorrimiento2 (
+module shifterUnit2 (
     input logic [1:0]h, input logic[3:0]f, input logic ir, il,
     output logic [3:0]s
 );
