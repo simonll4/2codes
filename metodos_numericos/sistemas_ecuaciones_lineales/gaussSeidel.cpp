@@ -27,19 +27,26 @@ int main() {
     double newX[MAXCOL] = {0};
     double oldX[MAXCOL] = {0};
     double tolerance = pow(10, -5) + 1;
-    double e;
+    double e = 0;
     int iterations = 0;
 
+    cout<<"********GAUSS-SEIDEL********"<<endl;
+    diagonallyDominant(matrix, rows, columns);
+
     do {
+        e = 0;
         iterations++;
         for (int indexA = 0; indexA < rows; ++indexA) {
-            if (indexA == 1) {
-                double sum = 0;
+            double sum = 0;
                 for (int indexB = 0; indexB < rows ; ++indexB) {
-                    sum = sum + matrix[indexA][indexB]*oldX[indexB];
+                    if (indexA != indexB){
+                        sum = sum + matrix[indexA][indexB] * oldX[indexB];
+                    }
                 }
+                newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
+                e = e + pow((newX[indexA] - oldX[indexA]), 2);
+                oldX[indexA] = newX[indexA];
 
-            }
         }
 
         if (iterations == pow(10, MAXITERATIONS))
@@ -47,6 +54,11 @@ int main() {
 
     } while (e < tolerance || iterations > pow(10, MAXITERATIONS));
 
+    cout<<"Conjunto solucion:"<<endl;
+    for (int indexA = 0; indexA < rows; ++indexA) {
+        printf("x%d = %lf\n", indexA + 1, newX[indexA]);
+    }
+    cout<<"Error:"<<e<<"\n"<<"Iteraciones:"<<iterations<<endl;
 
     return 0;
 }

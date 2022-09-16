@@ -28,7 +28,7 @@ int main() {
     double newX[MAXCOL] = {0};
     double oldX[MAXCOL] = {0};
     double tolerance = pow(10, -5) + 1;
-    double e;
+    double e = 0;
     int iterations = 0;
 
     diagonallyDominant(matrix, rows, columns);

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o -o EliminacionGaussiana 

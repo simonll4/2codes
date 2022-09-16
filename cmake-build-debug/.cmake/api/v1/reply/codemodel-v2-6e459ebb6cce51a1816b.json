@@ -112,8 +112,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/simonll4/2codes/cmake-build-debug",
-		"source" : "/home/simonll4/2codes"
+		"build" : "/home/simonll4/CLionProjects/2codes/cmake-build-debug",
+		"source" : "/home/simonll4/CLionProjects/2codes"
 	},
 	"version" : 
 	{
