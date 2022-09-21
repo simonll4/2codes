@@ -220,6 +220,46 @@ GaussSeidel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSeidel.dir/build.make CMakeFiles/GaussSeidel.dir/build
 .PHONY : GaussSeidel/fast
 
+#=============================================================================
+# Target rules for targets named Lagrange
+
+# Build rule for target.
+Lagrange: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lagrange
+.PHONY : Lagrange
+
+# fast build rule for target.
+Lagrange/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/build
+.PHONY : Lagrange/fast
+
+metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
+.PHONY : metodos_numericos/interpolacion/lagrange.o
+
+# target to build an object file
+metodos_numericos/interpolacion/lagrange.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.o
+.PHONY : metodos_numericos/interpolacion/lagrange.cpp.o
+
+metodos_numericos/interpolacion/lagrange.i: metodos_numericos/interpolacion/lagrange.cpp.i
+.PHONY : metodos_numericos/interpolacion/lagrange.i
+
+# target to preprocess a source file
+metodos_numericos/interpolacion/lagrange.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.i
+.PHONY : metodos_numericos/interpolacion/lagrange.cpp.i
+
+metodos_numericos/interpolacion/lagrange.s: metodos_numericos/interpolacion/lagrange.cpp.s
+.PHONY : metodos_numericos/interpolacion/lagrange.s
+
+# target to generate assembly for a file
+metodos_numericos/interpolacion/lagrange.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.s
+.PHONY : metodos_numericos/interpolacion/lagrange.cpp.s
+
 metodos_numericos/localizacion_raices/biseccion.o: metodos_numericos/localizacion_raices/biseccion.cpp.o
 .PHONY : metodos_numericos/localizacion_raices/biseccion.o
 
@@ -426,8 +466,12 @@ help:
 	@echo "... GaussSeidel"
 	@echo "... IterativoDePuntoFijo"
 	@echo "... Jacobi"
+	@echo "... Lagrange"
 	@echo "... NewtonRapshon"
 	@echo "... Secante"
+	@echo "... metodos_numericos/interpolacion/lagrange.o"
+	@echo "... metodos_numericos/interpolacion/lagrange.i"
+	@echo "... metodos_numericos/interpolacion/lagrange.s"
 	@echo "... metodos_numericos/localizacion_raices/biseccion.o"
 	@echo "... metodos_numericos/localizacion_raices/biseccion.i"
 	@echo "... metodos_numericos/localizacion_raices/biseccion.s"

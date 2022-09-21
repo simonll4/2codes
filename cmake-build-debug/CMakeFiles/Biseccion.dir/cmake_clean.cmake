@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "Biseccion"
   "Biseccion.pdb"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o.d"
   "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o"
   "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o.d"
 )
