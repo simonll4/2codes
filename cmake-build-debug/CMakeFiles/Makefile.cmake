@@ -55,4 +55,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Jacobi.dir/DependInfo.cmake"
   "CMakeFiles/GaussSeidel.dir/DependInfo.cmake"
   "CMakeFiles/Lagrange.dir/DependInfo.cmake"
+  "CMakeFiles/RegresionPolinomica.dir/DependInfo.cmake"
   )

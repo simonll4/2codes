@@ -3,7 +3,8 @@
 #include <math.h>
 
 #define MAXCOLUMNS 2
-#define MAXROWS 10
+#define MAXCOLUMNS2 20
+#define MAXROWS 20
 
 using namespace std;
 
@@ -17,12 +18,12 @@ int polynomial(double [MAXROWS][MAXCOLUMNS],int);
 
 int main() {
 
-    double array[MAXROWS][MAXCOLUMNS];
+    double nodes[MAXROWS][MAXCOLUMNS];
     int rows = 0;
 
-    readFile(array, &rows);
+    readFile(nodes, &rows);
     cout << "**********" << endl;
-    printMatrix(array, rows);
+    printMatrix(nodes, rows);
 
 
     //lagrange
@@ -37,15 +38,15 @@ int main() {
         double product = 1;
         for (int indexB = 0; indexB < rows; indexB++) {
             if (indexB != indexA) {
-                product = product * ((x - array[indexA][0]) / (array[indexB][0] - array[indexA][0]));
+                product = product * ((x - nodes[indexA][0]) / (nodes[indexB][0] - nodes[indexA][0]));
             }
         }
-        sum = sum + array[indexA][1] * product;
+        sum = sum + nodes[indexA][1] * product;
     }
     e = fabs(f(x) - sum);
     cout << "El valor interpolado para " << x << " es:" << sum << " con error: " << e << endl;
 
-    polynomial(array,rows);
+    polynomial(nodes, rows);
 
     return 0;
 }
@@ -96,7 +97,7 @@ double f(double x) {
     return x + 2 / x;
 }
 
-int polynomial(double array[MAXROWS][MAXCOLUMNS] ,int rows){
+int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
     //polynomial
     double matrix[rows][rows];
     double b[rows];
@@ -106,9 +107,9 @@ int polynomial(double array[MAXROWS][MAXCOLUMNS] ,int rows){
     cout<<"***********************************************"<<endl;
     for(int i = 0; i<rows; i++){
         for(int j = 0; j<rows;j++){
-            matrix[i][j] = pow(array[i][0], j);
+            matrix[i][j] = pow(nodes[i][0], j);
         }
-        b[i] = array[i][1];
+        b[i] = nodes[i][1];
     }
     cout<<"***********************************************"<<endl;
 
@@ -178,6 +179,25 @@ int polynomial(double array[MAXROWS][MAXCOLUMNS] ,int rows){
     for (int i = 0; i <= rows - 1; i++)
         cout << endl << "x" << i + 1 << "=" << x[i];
     cout << endl;
+
+    //imprimo el polinomio
+    cout << "POLINOMIO" << endl;
+    int exponente=0;
+    for(int i=0; i<=rows-1; i++)
+    {
+        if(exponente==0)
+            cout << x[i];
+        else{
+            if(x[i]>=0)
+                cout << " + " << x[i] << " " << "X^" << exponente << " ";
+            else
+                cout << x[i] << " " << "X^" << exponente << " ";
+        }
+        exponente++;
+    }
+
+    cout << endl << endl;
+
 
     return 1;
 }

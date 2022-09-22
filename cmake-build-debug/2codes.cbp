@@ -413,6 +413,50 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="RegresionPolinomica">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RegresionPolinomica/fast">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
 				<Option type="4"/>
@@ -452,6 +496,10 @@
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/secante.cpp">
 			<Option target="Secante"/>
+		</Unit>
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp">
+			<Option target="Biseccion"/>
+			<Option target="RegresionPolinomica"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp">
 			<Option target="EliminacionGaussiana"/>

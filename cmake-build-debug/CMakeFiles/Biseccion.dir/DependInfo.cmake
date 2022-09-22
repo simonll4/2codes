@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/lagrange.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o.d"
   "/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/biseccion.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o.d"
+  "/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o.d"
   )
 
 # Targets to which this target links.

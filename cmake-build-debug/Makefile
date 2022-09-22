@@ -233,6 +233,19 @@ Lagrange/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/build
 .PHONY : Lagrange/fast
 
+#=============================================================================
+# Target rules for targets named RegresionPolinomica
+
+# Build rule for target.
+RegresionPolinomica: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RegresionPolinomica
+.PHONY : RegresionPolinomica
+
+# fast build rule for target.
+RegresionPolinomica/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/build
+.PHONY : RegresionPolinomica/fast
+
 metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
 .PHONY : metodos_numericos/interpolacion/lagrange.o
 
@@ -380,6 +393,33 @@ metodos_numericos/localizacion_raices/secante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.s
 .PHONY : metodos_numericos/localizacion_raices/secante.cpp.s
 
+metodos_numericos/regresion/regresionPolinomica.o: metodos_numericos/regresion/regresionPolinomica.cpp.o
+.PHONY : metodos_numericos/regresion/regresionPolinomica.o
+
+# target to build an object file
+metodos_numericos/regresion/regresionPolinomica.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o
+.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.o
+
+metodos_numericos/regresion/regresionPolinomica.i: metodos_numericos/regresion/regresionPolinomica.cpp.i
+.PHONY : metodos_numericos/regresion/regresionPolinomica.i
+
+# target to preprocess a source file
+metodos_numericos/regresion/regresionPolinomica.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i
+.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.i
+
+metodos_numericos/regresion/regresionPolinomica.s: metodos_numericos/regresion/regresionPolinomica.cpp.s
+.PHONY : metodos_numericos/regresion/regresionPolinomica.s
+
+# target to generate assembly for a file
+metodos_numericos/regresion/regresionPolinomica.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s
+.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.s
+
 metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o: metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o
 
@@ -468,6 +508,7 @@ help:
 	@echo "... Jacobi"
 	@echo "... Lagrange"
 	@echo "... NewtonRapshon"
+	@echo "... RegresionPolinomica"
 	@echo "... Secante"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
@@ -487,6 +528,9 @@ help:
 	@echo "... metodos_numericos/localizacion_raices/secante.o"
 	@echo "... metodos_numericos/localizacion_raices/secante.i"
 	@echo "... metodos_numericos/localizacion_raices/secante.s"
+	@echo "... metodos_numericos/regresion/regresionPolinomica.o"
+	@echo "... metodos_numericos/regresion/regresionPolinomica.i"
+	@echo "... metodos_numericos/regresion/regresionPolinomica.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.s"

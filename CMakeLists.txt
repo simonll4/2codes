@@ -4,7 +4,7 @@ project(2codes)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_executable(Biseccion metodos_numericos/localizacion_raices/biseccion.cpp metodos_numericos/interpolacion/lagrange.cpp)
+add_executable(Biseccion metodos_numericos/localizacion_raices/biseccion.cpp metodos_numericos/interpolacion/lagrange.cpp metodos_numericos/regresion/regresionPolinomica.cpp)
 add_executable(FalsaPosicion metodos_numericos/localizacion_raices/falsaPosicion.cpp)
 add_executable(IterativoDePuntoFijo metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp)
 add_executable(NewtonRapshon metodos_numericos/localizacion_raices/newtonRaphson.cpp)
@@ -13,3 +13,4 @@ add_executable(EliminacionGaussiana metodos_numericos/sistemas_ecuaciones_lineal
 add_executable(Jacobi metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp)
 add_executable(GaussSeidel metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp)
 add_executable(Lagrange metodos_numericos/interpolacion/lagrange.cpp)
+add_executable(RegresionPolinomica metodos_numericos/regresion/regresionPolinomica.cpp)

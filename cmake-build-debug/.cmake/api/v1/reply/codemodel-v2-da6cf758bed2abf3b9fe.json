@@ -23,7 +23,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					]
 				}
 			],
@@ -46,7 +47,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					]
 				}
 			],
@@ -55,7 +57,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Biseccion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Biseccion-Debug-5932855ca43458552cf5.json",
+					"jsonFile" : "target-Biseccion-Debug-66ac0b5b3b9da6a87af6.json",
 					"name" : "Biseccion",
 					"projectIndex" : 0
 				},
@@ -106,6 +108,13 @@
 					"id" : "NewtonRapshon::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-NewtonRapshon-Debug-3e4c176c2d04b61e4e60.json",
 					"name" : "NewtonRapshon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RegresionPolinomica::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RegresionPolinomica-Debug-fdeb2f44ba3699bf1a18.json",
+					"name" : "RegresionPolinomica",
 					"projectIndex" : 0
 				},
 				{
