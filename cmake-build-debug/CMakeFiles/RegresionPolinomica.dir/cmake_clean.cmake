@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o"
-  "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o.d"
+  "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o"
+  "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o.d"
   "RegresionPolinomica"
   "RegresionPolinomica.pdb"
 )

@@ -273,53 +273,53 @@ metodos_numericos/interpolacion/lagrange.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.s
 .PHONY : metodos_numericos/interpolacion/lagrange.cpp.s
 
-metodos_numericos/localizacion_raices/biseccion.o: metodos_numericos/localizacion_raices/biseccion.cpp.o
-.PHONY : metodos_numericos/localizacion_raices/biseccion.o
+metodos_numericos/localizacion_raices/bisection.o: metodos_numericos/localizacion_raices/bisection.cpp.o
+.PHONY : metodos_numericos/localizacion_raices/bisection.o
 
 # target to build an object file
-metodos_numericos/localizacion_raices/biseccion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o
-.PHONY : metodos_numericos/localizacion_raices/biseccion.cpp.o
+metodos_numericos/localizacion_raices/bisection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o
+.PHONY : metodos_numericos/localizacion_raices/bisection.cpp.o
 
-metodos_numericos/localizacion_raices/biseccion.i: metodos_numericos/localizacion_raices/biseccion.cpp.i
-.PHONY : metodos_numericos/localizacion_raices/biseccion.i
+metodos_numericos/localizacion_raices/bisection.i: metodos_numericos/localizacion_raices/bisection.cpp.i
+.PHONY : metodos_numericos/localizacion_raices/bisection.i
 
 # target to preprocess a source file
-metodos_numericos/localizacion_raices/biseccion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.i
-.PHONY : metodos_numericos/localizacion_raices/biseccion.cpp.i
+metodos_numericos/localizacion_raices/bisection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i
+.PHONY : metodos_numericos/localizacion_raices/bisection.cpp.i
 
-metodos_numericos/localizacion_raices/biseccion.s: metodos_numericos/localizacion_raices/biseccion.cpp.s
-.PHONY : metodos_numericos/localizacion_raices/biseccion.s
+metodos_numericos/localizacion_raices/bisection.s: metodos_numericos/localizacion_raices/bisection.cpp.s
+.PHONY : metodos_numericos/localizacion_raices/bisection.s
 
 # target to generate assembly for a file
-metodos_numericos/localizacion_raices/biseccion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.s
-.PHONY : metodos_numericos/localizacion_raices/biseccion.cpp.s
+metodos_numericos/localizacion_raices/bisection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s
+.PHONY : metodos_numericos/localizacion_raices/bisection.cpp.s
 
-metodos_numericos/localizacion_raices/falsaPosicion.o: metodos_numericos/localizacion_raices/falsaPosicion.cpp.o
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.o
+metodos_numericos/localizacion_raices/falsePosition.o: metodos_numericos/localizacion_raices/falsePosition.cpp.o
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.o
 
 # target to build an object file
-metodos_numericos/localizacion_raices/falsaPosicion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.o
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.cpp.o
+metodos_numericos/localizacion_raices/falsePosition.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsePosition.cpp.o
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.cpp.o
 
-metodos_numericos/localizacion_raices/falsaPosicion.i: metodos_numericos/localizacion_raices/falsaPosicion.cpp.i
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.i
+metodos_numericos/localizacion_raices/falsePosition.i: metodos_numericos/localizacion_raices/falsePosition.cpp.i
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.i
 
 # target to preprocess a source file
-metodos_numericos/localizacion_raices/falsaPosicion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.i
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.cpp.i
+metodos_numericos/localizacion_raices/falsePosition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsePosition.cpp.i
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.cpp.i
 
-metodos_numericos/localizacion_raices/falsaPosicion.s: metodos_numericos/localizacion_raices/falsaPosicion.cpp.s
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.s
+metodos_numericos/localizacion_raices/falsePosition.s: metodos_numericos/localizacion_raices/falsePosition.cpp.s
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.s
 
 # target to generate assembly for a file
-metodos_numericos/localizacion_raices/falsaPosicion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsaPosicion.cpp.s
-.PHONY : metodos_numericos/localizacion_raices/falsaPosicion.cpp.s
+metodos_numericos/localizacion_raices/falsePosition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsePosition.cpp.s
+.PHONY : metodos_numericos/localizacion_raices/falsePosition.cpp.s
 
 metodos_numericos/localizacion_raices/iterativoDePuntoFijo.o: metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o
 .PHONY : metodos_numericos/localizacion_raices/iterativoDePuntoFijo.o
@@ -393,56 +393,32 @@ metodos_numericos/localizacion_raices/secante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.s
 .PHONY : metodos_numericos/localizacion_raices/secante.cpp.s
 
-metodos_numericos/regresion/regresionPolinomica.o: metodos_numericos/regresion/regresionPolinomica.cpp.o
-.PHONY : metodos_numericos/regresion/regresionPolinomica.o
+metodos_numericos/regresion/polynomialRegression.o: metodos_numericos/regresion/polynomialRegression.cpp.o
+.PHONY : metodos_numericos/regresion/polynomialRegression.o
 
 # target to build an object file
-metodos_numericos/regresion/regresionPolinomica.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o
-.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.o
+metodos_numericos/regresion/polynomialRegression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o
+.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.o
 
-metodos_numericos/regresion/regresionPolinomica.i: metodos_numericos/regresion/regresionPolinomica.cpp.i
-.PHONY : metodos_numericos/regresion/regresionPolinomica.i
-
-# target to preprocess a source file
-metodos_numericos/regresion/regresionPolinomica.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i
-.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.i
-
-metodos_numericos/regresion/regresionPolinomica.s: metodos_numericos/regresion/regresionPolinomica.cpp.s
-.PHONY : metodos_numericos/regresion/regresionPolinomica.s
-
-# target to generate assembly for a file
-metodos_numericos/regresion/regresionPolinomica.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s
-.PHONY : metodos_numericos/regresion/regresionPolinomica.cpp.s
-
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o: metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o
-
-# target to build an object file
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.o
-
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.i: metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.i
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.i
+metodos_numericos/regresion/polynomialRegression.i: metodos_numericos/regresion/polynomialRegression.cpp.i
+.PHONY : metodos_numericos/regresion/polynomialRegression.i
 
 # target to preprocess a source file
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.i
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.i
+metodos_numericos/regresion/polynomialRegression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.i
+.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.i
 
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.s: metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.s
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.s
+metodos_numericos/regresion/polynomialRegression.s: metodos_numericos/regresion/polynomialRegression.cpp.s
+.PHONY : metodos_numericos/regresion/polynomialRegression.s
 
 # target to generate assembly for a file
-metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.s
-.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp.s
+metodos_numericos/regresion/polynomialRegression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.s
+.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.s
 
 metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o: metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o
@@ -467,6 +443,30 @@ metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.s: metodos_numericos/
 metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSeidel.dir/build.make CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o: metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o
+
+# target to build an object file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.i: metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.i
+
+# target to preprocess a source file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.s: metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.s
+
+# target to generate assembly for a file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s
 
 metodos_numericos/sistemas_ecuaciones_lineales/jacobi.o: metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/jacobi.o
@@ -513,12 +513,12 @@ help:
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"
-	@echo "... metodos_numericos/localizacion_raices/biseccion.o"
-	@echo "... metodos_numericos/localizacion_raices/biseccion.i"
-	@echo "... metodos_numericos/localizacion_raices/biseccion.s"
-	@echo "... metodos_numericos/localizacion_raices/falsaPosicion.o"
-	@echo "... metodos_numericos/localizacion_raices/falsaPosicion.i"
-	@echo "... metodos_numericos/localizacion_raices/falsaPosicion.s"
+	@echo "... metodos_numericos/localizacion_raices/bisection.o"
+	@echo "... metodos_numericos/localizacion_raices/bisection.i"
+	@echo "... metodos_numericos/localizacion_raices/bisection.s"
+	@echo "... metodos_numericos/localizacion_raices/falsePosition.o"
+	@echo "... metodos_numericos/localizacion_raices/falsePosition.i"
+	@echo "... metodos_numericos/localizacion_raices/falsePosition.s"
 	@echo "... metodos_numericos/localizacion_raices/iterativoDePuntoFijo.o"
 	@echo "... metodos_numericos/localizacion_raices/iterativoDePuntoFijo.i"
 	@echo "... metodos_numericos/localizacion_raices/iterativoDePuntoFijo.s"
@@ -528,15 +528,15 @@ help:
 	@echo "... metodos_numericos/localizacion_raices/secante.o"
 	@echo "... metodos_numericos/localizacion_raices/secante.i"
 	@echo "... metodos_numericos/localizacion_raices/secante.s"
-	@echo "... metodos_numericos/regresion/regresionPolinomica.o"
-	@echo "... metodos_numericos/regresion/regresionPolinomica.i"
-	@echo "... metodos_numericos/regresion/regresionPolinomica.s"
-	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.o"
-	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.i"
-	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.s"
+	@echo "... metodos_numericos/regresion/polynomialRegression.o"
+	@echo "... metodos_numericos/regresion/polynomialRegression.i"
+	@echo "... metodos_numericos/regresion/polynomialRegression.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.s"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.i"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.s"

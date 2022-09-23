@@ -69,19 +69,19 @@ include CMakeFiles/Biseccion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Biseccion.dir/flags.make
 
-CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o: CMakeFiles/Biseccion.dir/flags.make
-CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o: ../metodos_numericos/localizacion_raices/biseccion.cpp
-CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/biseccion.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: ../metodos_numericos/localizacion_raices/bisection.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp
 
-CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/biseccion.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.i
+CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i
 
-CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/biseccion.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.s
+CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s
 
 CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o: ../metodos_numericos/interpolacion/lagrange.cpp
@@ -97,32 +97,32 @@ CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/lagrange.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.s
 
-CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o: CMakeFiles/Biseccion.dir/flags.make
-CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o: ../metodos_numericos/regresion/regresionPolinomica.cpp
-CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o: ../metodos_numericos/regresion/polynomialRegression.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp
 
-CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.i
+CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.i
 
-CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.s
+CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.s
 
 # Object files for target Biseccion
 Biseccion_OBJECTS = \
-"CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o" \
 "CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o" \
-"CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o"
+"CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o"
 
 # External object files for target Biseccion
 Biseccion_EXTERNAL_OBJECTS =
 
-Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/biseccion.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/interpolacion/lagrange.cpp.o
-Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/regresion/polynomialRegression.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/build.make
 Biseccion: CMakeFiles/Biseccion.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Biseccion"

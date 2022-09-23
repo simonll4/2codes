@@ -11,7 +11,7 @@ module shifterUnit2 (
                             s[0] = il;
                         end
                 2'b10:begin
-                            s = f >> 1;
+                            s = function >> 1;
                             s[3] = ir;
                         end
                 2'b11: s = 4'b0000;

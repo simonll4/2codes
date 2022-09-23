@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <iostream>
 #include <math.h>
 
@@ -19,7 +18,7 @@ int gaussianElimination(double [MAXROWS][MAXCOLUMNS2], double [MAXROWS], double 
 
 void printPolynomial(double [MAXROWS], int);
 
-void details(double [MAXROWS][MAXCOLUMNS],double [MAXROWS],int,int);
+void details(double [MAXROWS][MAXCOLUMNS], double [MAXROWS], int, int);
 
 int main(void) {
 
@@ -31,14 +30,18 @@ int main(void) {
     int flag = 1;
     int degree = 0;
 
+    cout << "---------------------------" << endl;
+    cout << "METODO REGRESION POLINOMICA" << endl;
+    cout << "---------------------------" << endl;
     readFile(nodes, &rows);
     printMatrix(nodes, rows);
 
     //ingresar el grado del polinomio correcto
     do {
         cout << endl;
-        cout << "**************************************************************" << endl;
+        cout << "----------------------------" << endl;
         cout << "Ingresar grado del polinomio: " << endl;
+        cout << "----------------------------" << endl;
         cin >> degree;
 
         if (rows < degree + 1) {
@@ -48,11 +51,10 @@ int main(void) {
             flag = 0;
     } while (flag == 1);
 
-    //armar matriz
     assembleMatrix(nodes, matrix, b, rows, degree);
     gaussianElimination(matrix, b, x, degree);
     printPolynomial(x, degree);
-    details(nodes,x,rows,degree);
+    details(nodes, x, rows, degree);
 
     return 0;
 }
@@ -101,27 +103,33 @@ void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int rows) {
 
 void assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MAXCOLUMNS2], double b[MAXROWS], int rows,
                     int degree) {
-    double s;
-    for (int i = 0; i <= degree; i++) {
-        for (int j = 0; j <= degree; j++) {
-            s = 0;
-            for (int k = 0; k < rows; k++)
-                s = s + pow(nodes[k][0], j + i);
-            matrix[i][j] = s;
+    double sum;
+    for (int indexA = 0; indexA <= degree; indexA++) {
+
+        for (int indexB = 0; indexB <= degree; indexB++) {
+            sum = 0;
+
+            for (int indexC = 0; indexC < rows; indexC++) {
+                sum = sum + pow(nodes[indexC][0], indexB + indexA);
+            }
+
+            matrix[indexA][indexB] = sum;
         }
-        s = 0;
-        for (int k = 0; k < rows; k++)
-            s = s + (pow(nodes[k][0], i) * nodes[k][1]);
-        b[i] = s;
+
+        sum = 0;
+        for (int indexB = 0; indexB < rows; indexB++) {
+            sum = sum + (pow(nodes[indexB][0], indexA) * nodes[indexB][1]);
+        }
+        b[indexA] = sum;
     }
 
     //imprimo matriz
     cout << endl << "Matriz de Vandermonde" << endl;
-    for (int i = 0; i <= degree; i++) {
-        for (int j = 0; j <= degree; j++) {
-            cout << matrix[i][j] << " ";
+    for (int indexA = 0; indexA <= degree; indexA++) {
+        for (int indexB = 0; indexB <= degree; indexB++) {
+            cout << matrix[indexA][indexB] << " ";
         }
-        cout << " ---> " << b[i];
+        cout << " ---> " << b[indexA];
         cout << endl;
     }
 }
@@ -185,23 +193,21 @@ int gaussianElimination(double matrix[MAXROWS][MAXCOLUMNS2], double b[MAXROWS], 
 
     //sustitucion regresiva
     double suma;
-    //double finalX[rows + 1];
-
     x[rows] = b[rows] / matrix[rows][rows];
 
     for (int indexA = rows - 1; indexA >= 0; indexA--) {
         suma = b[indexA];
 
-        for (int j = indexA + 1; j <= rows; j++) {
-            suma -= matrix[indexA][j] * x[j];
+        for (int indexB = indexA + 1; indexB <= rows; indexB++) {
+            suma -= matrix[indexA][indexB] * x[indexB];
         }
 
         x[indexA] = (suma) / matrix[indexA][indexA];
     }
 
     cout << endl << "********Soluciones********" << endl;
-    for (int i = 0; i <= rows; i++)
-        cout << endl << "x" << i << "=" << x[i];
+    for (int index = 0; index <= rows; index++)
+        cout << endl << "x" << index << "=" << x[index];
     cout << endl;
 
     return 0;
@@ -212,69 +218,67 @@ void printPolynomial(double x[MAXROWS], int degree) {
     cout << endl << endl;
     cout << "POLINOMIO" << endl;
     int exponente = 0;
-    for (int i = 0; i <= degree; i++) {
+    for (int index = 0; index <= degree; index++) {
         if (exponente == 0)
-            cout << x[i];
+            cout << x[index];
         else {
-            if (x[i] >= 0)
-                cout << " + " << x[i] << " " << "X^" << exponente << " ";
+            if (x[index] >= 0)
+                cout << " + " << x[index] << " " << "X^" << exponente << " ";
             else
-                cout << x[i] << " " << "X^" << exponente << " ";
+                cout << x[index] << " " << "X^" << exponente << " ";
         }
         exponente++;
     }
-
 }
 
-void details(double nodes[MAXROWS][MAXCOLUMNS],double x[MAXROWS],int rows,int degree){
-    cout << endl << endl;
+void details(double nodes[MAXROWS][MAXCOLUMNS], double x[MAXROWS], int rows, int degree) {
 
-    //Validaciones!! =)
-    double syx;	//desviacion estandar-(error estandar estimado)
-    double sr;	//error, residuo - (suma de los cuadrados de los residuos)
-    double st;	//error medio- (suma total de los cuadrados)
-    double r2;	//coeficiente de determinacion
-    double r;	//coeficiente de correlacion
-    double ymedia;	//media de y
-    double s;
+    cout << endl << endl << "--------" << endl;
+    cout << "DETALLES" << endl;
+    cout << "--------" << endl;
+    double syx;    //desviacion estandar-(error estandar estimado)
+    double sr;    //error, residuo - (suma de los cuadrados de los residuos)
+    double st;    //error medio- (suma total de los cuadrados)
+    double r2;    //coeficiente de determinacion
+    double r;    //coeficiente de correlacion
+    double ymedia;    //media de y
+    double sum;
 
     //calculo de media de y
-    ymedia=0;
-    for(int i=0; i<rows; i++)
-        ymedia = ymedia + nodes[i][1];
+    ymedia = 0;
+    for (int index = 0; index < rows; index++)
+        ymedia = ymedia + nodes[index][1];
     ymedia = ymedia / rows;
 
     //calculo del error medio
-    st=0;
-    for(int i=0; i<rows; i++)
-        st=st + pow( nodes[i][0]-ymedia ,2);
+    st = 0;
+    for (int index = 0; index < rows; index++)
+        st = st + pow(nodes[index][0] - ymedia, 2);
 
     //calculo del error-residuo
-    sr=0;
-    for(int i=0; i<rows; i++){
-        s=0;
-        for(int j=0; j<=degree; j++){
-            s = s + ( x[j] * pow( nodes[i][0] ,j) );
+    sr = 0;
+    for (int indexA = 0; indexA < rows; indexA++) {
+        sum = 0;
+        for (int indexB = 0; indexB <= degree; indexB++) {
+            sum = sum + (x[indexB] * pow(nodes[indexA][0], indexB));
         }
-        sr=sr + pow((nodes[i][1]-s),2);
+        sr = sr + pow((nodes[indexA][1] - sum), 2);
     }
 
     //calculo del error estandar estimado (desviacion estandar)
-    syx = sqrt( sr / ( (double)rows-(degree+1) ) );
-
+    syx = sqrt(sr / ((double) rows - (degree + 1)));
 
     //calculo del coeficiente de determinacion
-    r2=(st-sr)/st;
+    r2 = (st - sr) / st;
 
     //calculo del coeficiente de correlacion
-    r=sqrt(r2);
+    r = sqrt(r2);
 
     //Impresion de los resultados!!!
-    cout << endl << "Error/Residuo (suma de cuadrados de los residuos): " << sr ;
-    cout << endl << "Desviacion estandar (Error estandar estimado): " << syx;
-    cout << endl << "Error medio (suma total de cuadrados): " << st;
-    cout << endl << "Coeficiente de determinacion: " << r2;
-    cout << endl << "Coeficiente de correlacion: " << r;
+    cout << "Error/Residuo (suma de cuadrados de los residuos): " << sr << endl;
+    cout << "Desviacion estandar (Error estandar estimado): " << syx << endl;
+    cout << "Error medio (suma total de cuadrados): " << st << endl;
+    cout << "Coeficiente de determinacion: " << r2 << endl;
+    cout << "Coeficiente de correlacion: " << r << endl;
 
-    cout << endl << endl;
 }

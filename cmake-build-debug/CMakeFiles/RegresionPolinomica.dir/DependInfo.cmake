@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp" "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o" "gcc" "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/regresionPolinomica.cpp.o.d"
+  "/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp" "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o" "gcc" "CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o.d"
   )
 
 # Targets to which this target links.

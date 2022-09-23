@@ -482,10 +482,10 @@
 			<Option target="Biseccion"/>
 			<Option target="Lagrange"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/biseccion.cpp">
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp">
 			<Option target="Biseccion"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/falsaPosicion.cpp">
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/falsePosition.cpp">
 			<Option target="FalsaPosicion"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp">
@@ -497,15 +497,15 @@
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/secante.cpp">
 			<Option target="Secante"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/regresionPolinomica.cpp">
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp">
 			<Option target="Biseccion"/>
 			<Option target="RegresionPolinomica"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/eliminacionGaussiana.cpp">
-			<Option target="EliminacionGaussiana"/>
-		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp">
 			<Option target="GaussSeidel"/>
+		</Unit>
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp">
+			<Option target="EliminacionGaussiana"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp">
 			<Option target="Jacobi"/>

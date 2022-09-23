@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp" "CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o" "gcc" "CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o.d"
+  "/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/Gaus-Seidel.cpp" "CMakeFiles/Gacela.dir/metodos_numericos/sistemas_ecuaciones_lineales/Gaus-Seidel.cpp.o" "gcc" "CMakeFiles/Gacela.dir/metodos_numericos/sistemas_ecuaciones_lineales/Gaus-Seidel.cpp.o.d"
   )
 
 # Targets to which this target links.

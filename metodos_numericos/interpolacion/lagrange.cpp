@@ -3,52 +3,66 @@
 #include <math.h>
 
 #define MAXCOLUMNS 2
-#define MAXCOLUMNS2 20
 #define MAXROWS 20
 
 using namespace std;
+
+double function(double);
 
 void readFile(double [MAXROWS][MAXCOLUMNS], int *);
 
 void printMatrix(double [MAXROWS][MAXCOLUMNS], int);
 
-double f(double);
+void polynomialMatrix(double [MAXROWS][MAXCOLUMNS], double [MAXROWS][MAXROWS], double [MAXROWS], int);
 
-int polynomial(double [MAXROWS][MAXCOLUMNS],int);
+int gaussianElimination(double [MAXROWS][MAXROWS], double [MAXROWS], double [MAXROWS], int);
+
+void printPolynomial(double [MAXROWS], int);
 
 int main() {
 
     double nodes[MAXROWS][MAXCOLUMNS];
     int rows = 0;
-
-    readFile(nodes, &rows);
-    cout << "**********" << endl;
-    printMatrix(nodes, rows);
-
-
-    //lagrange
-    double x;
+    double matrix[MAXROWS][MAXROWS];
+    double b[MAXROWS];
+    double x[MAXROWS];
+    double value;
     double e;
 
-    cout << "Ingrese el valor a interpolar" << endl;
-    cin >> x;
 
+    cout<<"--------------------------------"<<endl;
+    cout<<"METODO DE INTERPOLACION LAGRANGE"<<endl;
+    cout<<"--------------------------------"<<endl;
+    readFile(nodes, &rows);
+    printMatrix(nodes, rows);
+    cout << "Ingrese el valor a interpolar" << endl;
+    cin >> value;
+
+
+    //calculo del Cnk
     double sum = 0;
     for (int indexA = 0; indexA < rows; indexA++) {
         double product = 1;
         for (int indexB = 0; indexB < rows; indexB++) {
             if (indexB != indexA) {
-                product = product * ((x - nodes[indexA][0]) / (nodes[indexB][0] - nodes[indexA][0]));
+                product = product * ((value - nodes[indexA][0]) / (nodes[indexB][0] - nodes[indexA][0]));
             }
         }
         sum = sum + nodes[indexA][1] * product;
     }
-    e = fabs(f(x) - sum);
+    e = fabs(function(value) - sum);
     cout << "El valor interpolado para " << x << " es:" << sum << " con error: " << e << endl;
 
-    polynomial(nodes, rows);
+    polynomialMatrix(nodes, matrix, b, rows);
+    gaussianElimination(matrix, b, x, rows);
+    printPolynomial(x, rows);
+
 
     return 0;
+}
+
+double function(double x) {
+    return x + 2 / x;
 }
 
 void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
@@ -65,7 +79,6 @@ void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
             *rows += 1;
         }
     }
-
     cout << "Filas:" << *rows << endl;
 
     //reseteamos el puntero del archivo
@@ -84,7 +97,7 @@ void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
 }
 
 void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int rows) {
-    cout << "LOS ELEMENTOS DE LA MATRIZ SON:" << endl;
+    cout << "LOS NODOS SON:" << endl;
     for (int indexA = 0; indexA < rows; indexA++) {
         for (int indexB = 0; indexB < MAXCOLUMNS; indexB++) {
             cout << matrix[indexA][indexB] << "\t";
@@ -93,27 +106,22 @@ void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int rows) {
     }
 }
 
-double f(double x) {
-    return x + 2 / x;
+void polynomialMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int rows) {
+
+    //genero matriz con el sistema de ecuaciones
+    cout << endl;
+    cout << "***********************************************" << endl;
+    for (int index = 0; index < rows; index++) {
+        for (int j = 0; j < rows; j++) {
+            matrix[index][j] = pow(nodes[index][0], j);
+        }
+        b[index] = nodes[index][1];
+    }
+    cout << "***********************************************" << endl;
+
 }
 
-int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
-    //polynomial
-    double matrix[rows][rows];
-    double b[rows];
-    double x[rows];
-
-    cout<<endl;
-    cout<<"***********************************************"<<endl;
-    for(int i = 0; i<rows; i++){
-        for(int j = 0; j<rows;j++){
-            matrix[i][j] = pow(nodes[i][0], j);
-        }
-        b[i] = nodes[i][1];
-    }
-    cout<<"***********************************************"<<endl;
-
-    //eliminacion gaussiana
+int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], double x[MAXROWS], int rows) {
 
     int aux;
     double factor;
@@ -121,12 +129,13 @@ int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
 
     //triangulacion superior
     for (int indexA = 0; indexA < rows - 1; indexA++) {
-
         //pivoteo
         int swap = 0;
         if (fabs(matrix[indexA][indexA]) < e) {
+
             for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
                 if (fabs(matrix[indexB][indexA]) > e) {
+
                     for (int indexC = indexA; indexC <= rows - 1; indexC++) {
                         aux = matrix[indexA][indexC];
                         matrix[indexA][indexC] = matrix[indexB][indexC];
@@ -140,7 +149,7 @@ int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
                 }
             }
             if (swap == 0) {
-                cout << "Warning: sistema singular, no se puede resolver" << endl;
+                cout << "Warning: no se puede resolver, es un sistema singular" << endl;
                 return 0;
             } else
                 cout << "Pivoteo concretado " << endl;
@@ -148,6 +157,7 @@ int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
 
         for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
             factor = (-matrix[indexB][indexA]) / (matrix[indexA][indexA]);
+
             for (int indexC = indexA; indexC <= rows - 1; indexC++)
                 matrix[indexB][indexC] = matrix[indexB][indexC] + factor * matrix[indexA][indexC];
             b[indexB] = b[indexB] + factor * b[indexA];
@@ -157,6 +167,7 @@ int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
     //imprime matrix triangular
     cout << endl << "La Matriz triangular superior quedo: " << endl;
     for (int indexA = 0; indexA < rows; indexA++) {
+
         for (int indexB = 0; indexB < rows - 1; indexB++) {
             cout << matrix[indexA][indexB] << " ";
         }
@@ -165,39 +176,40 @@ int polynomial(double nodes[MAXROWS][MAXCOLUMNS] ,int rows){
 
     //sustitucion regresiva
     double suma;
-
     x[rows - 1] = b[rows - 1] / matrix[rows - 1][rows - 1];
+
     for (int indexA = rows - 2; indexA >= 0; indexA--) {
         suma = b[indexA];
-        for (int j = indexA + 1; j <= rows - 1; j++) {
-            suma -= matrix[indexA][j] * x[j];
+
+        for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
+            suma -= matrix[indexA][indexB] * x[indexB];
         }
         x[indexA] = (suma) / matrix[indexA][indexA];
     }
 
     cout << endl << "********Soluciones********" << endl;
-    for (int i = 0; i <= rows - 1; i++)
-        cout << endl << "x" << i + 1 << "=" << x[i];
+    for (int index = 0; index <= rows - 1; index++)
+        cout << endl << "x" << index + 1 << "=" << x[index];
     cout << endl;
 
-    //imprimo el polinomio
+}
+
+void printPolynomial(double x[MAXROWS], int rows) {
+
+    //impresion del polinomio de resultados
     cout << "POLINOMIO" << endl;
-    int exponente=0;
-    for(int i=0; i<=rows-1; i++)
-    {
-        if(exponente==0)
-            cout << x[i];
-        else{
-            if(x[i]>=0)
-                cout << " + " << x[i] << " " << "X^" << exponente << " ";
+    int exponente = 0;
+    for (int index = 0; index <= rows - 1; index++) {
+        if (exponente == 0)
+            cout << x[index];
+        else {
+            if (x[index] >= 0)
+                cout << " + " << x[index] << " " << "X^" << exponente << " ";
             else
-                cout << x[i] << " " << "X^" << exponente << " ";
+                cout << x[index] << " " << "X^" << exponente << " ";
         }
         exponente++;
     }
 
     cout << endl << endl;
-
-
-    return 1;
 }

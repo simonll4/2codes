@@ -57,70 +57,70 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Biseccion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Biseccion-Debug-66ac0b5b3b9da6a87af6.json",
+					"jsonFile" : "target-Biseccion-Debug-e0f2283d17f7a9dee4e6.json",
 					"name" : "Biseccion",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "EliminacionGaussiana::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-EliminacionGaussiana-Debug-28552217a130e8bc5d8d.json",
+					"jsonFile" : "target-EliminacionGaussiana-Debug-99bd4958c6c55ce1a7c7.json",
 					"name" : "EliminacionGaussiana",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "FalsaPosicion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FalsaPosicion-Debug-68c7c73564832e108023.json",
+					"jsonFile" : "target-FalsaPosicion-Debug-63568bee6d02678916db.json",
 					"name" : "FalsaPosicion",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "GaussSeidel::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GaussSeidel-Debug-03b54ed489853ca574f2.json",
+					"jsonFile" : "target-GaussSeidel-Debug-423f8fea9aaf3bdc6b4c.json",
 					"name" : "GaussSeidel",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "IterativoDePuntoFijo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IterativoDePuntoFijo-Debug-dbf855d045be3e7884d8.json",
+					"jsonFile" : "target-IterativoDePuntoFijo-Debug-71cb7c7f918bbeffd081.json",
 					"name" : "IterativoDePuntoFijo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Jacobi::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Jacobi-Debug-15b87682f31bc2f15893.json",
+					"jsonFile" : "target-Jacobi-Debug-e4d16405cfae65512aa3.json",
 					"name" : "Jacobi",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Lagrange::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Lagrange-Debug-9e1cb6fb4055beb51eac.json",
+					"jsonFile" : "target-Lagrange-Debug-bccdac69e52e34ee30b2.json",
 					"name" : "Lagrange",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "NewtonRapshon::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NewtonRapshon-Debug-3e4c176c2d04b61e4e60.json",
+					"jsonFile" : "target-NewtonRapshon-Debug-e7b226fa16166fe6bf1a.json",
 					"name" : "NewtonRapshon",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "RegresionPolinomica::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RegresionPolinomica-Debug-fdeb2f44ba3699bf1a18.json",
+					"jsonFile" : "target-RegresionPolinomica-Debug-0efd6691d68720a3ad5a.json",
 					"name" : "RegresionPolinomica",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Secante::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Secante-Debug-1404c410442e7e2d8eed.json",
+					"jsonFile" : "target-Secante-Debug-4abc32d40a29cb527d38.json",
 					"name" : "Secante",
 					"projectIndex" : 0
 				}

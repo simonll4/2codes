@@ -7,13 +7,11 @@ using namespace std;
 double funcion(double);
 
 // funcion a estudiar
-double funcion(double x)
-{
+double funcion(double x) {
     return 2 * x - 4;
 }
 
-int main()
-{
+int main() {
 
     // intervalo que abarca la raiz
     double a = 1;
@@ -24,31 +22,23 @@ int main()
     double tolerancia = pow(10, -5);
     int iteraciones = 0;
 
-    cout<<"FALSA POSICION"<<endl;
+    cout << "FALSA POSICION" << endl;
 
-    if (funcion(a) * funcion(b) < 0)
-    {
-        do
-        {
-            if (iteraciones == 0)
-            {
+    if (funcion(a) * funcion(b) < 0) {
+        do {
+            if (iteraciones == 0) {
                 cv = a;
                 cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
                 eAproximado = fabs(cn - cv);
                 ePorcentual = fabs(eAproximado / cn) * 100;
-            }
-            else
-            {
-                if (funcion(a) * funcion(cn) < 0)
-                {
+            } else {
+                if (funcion(a) * funcion(cn) < 0) {
                     b = cn;
                     cv = cn;
                     cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
                     eAproximado = fabs(cn - cv);
                     ePorcentual = fabs(eAproximado / cn) * 100;
-                }
-                else
-                {
+                } else {
                     a = cn;
                     cv = cn;
                     cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
@@ -58,10 +48,9 @@ int main()
             }
             iteraciones++;
         } while (eAproximado > tolerancia);
-        cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual << "\nIteraciones: " << iteraciones << endl;
-    }
-    else
-    {
+        cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual
+             << "\nIteraciones: " << iteraciones << endl;
+    } else {
         cout << "La funcion no tiene raices o  la misma no se encuentra en el intervalo elegido" << endl;
     }
 
