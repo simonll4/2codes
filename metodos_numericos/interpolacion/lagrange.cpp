@@ -123,7 +123,7 @@ void polynomialMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][
 
 int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], double x[MAXROWS], int rows) {
 
-    int aux;
+    double aux;
     double factor;
     float e = pow(10, -10);
 
@@ -134,7 +134,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
         if (fabs(matrix[indexA][indexA]) < e) {
 
             for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
-                if (fabs(matrix[indexB][indexA]) > e) {
+                if (fabs(matrix[indexB][indexA]) >  fabs(matrix[indexA][indexA])) {
 
                     for (int indexC = indexA; indexC <= rows - 1; indexC++) {
                         aux = matrix[indexA][indexC];

@@ -137,7 +137,7 @@ void assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MA
 int gaussianElimination(double matrix[MAXROWS][MAXCOLUMNS2], double b[MAXROWS], double x[MAXROWS], int rows) {
     //eliminacion gaussiana
 
-    int aux;
+    double aux;
     double factor;
     float e = pow(10, -9);
 
@@ -150,7 +150,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXCOLUMNS2], double b[MAXROWS], 
 
             for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
 
-                if (fabs(matrix[indexB][indexA]) > e) {
+                if (fabs(matrix[indexB][indexA]) > fabs(matrix[indexA][indexA])) {
 
                     for (int indexC = indexA; indexC <= rows - 1; indexC++) {
                         aux = matrix[indexA][indexC];

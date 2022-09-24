@@ -75,11 +75,13 @@ void readFile(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int *rows, int
     }
 
     //es para chequear el vector de terminos independientes
-    /*cout << "LOS TERMINOS INDEPENDIENTES DE LA MATRIZ SON:" << endl;
-    for (int i = 0; i < *rows; i++) {
-        printf("%lf ", b[i]);
-        printf("\n");
-    }*/
+    /*cout<<endl<<"---------------------------------------------"<<endl;
+    cout << "LOS TERMINOS INDEPENDIENTES DE LA MATRIZ SON:" << endl;
+    for (int index = 0; index < *rows; index++) {
+        cout<<b[index]<<"\t";
+    }
+    cout<<endl<<"---------------------------------------------"<<endl;
+    */
 
 }
 
@@ -96,20 +98,18 @@ void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int *rows, int *columns) {
 
 int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], double x[MAXROWS], int rows, int columns) {
 
-    int aux;
+    double aux;
     double factor;
     float e = pow(10, -10);
 
-   //triangulacion superior
+    //triangulacion superior
     for (int indexA = 0; indexA < rows - 1; indexA++) {
         //pivoteo
         int swap = 0;
-
         if (fabs(matrix[indexA][indexA]) < e) {
-            for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
-
-                if (fabs(matrix[indexB][indexA]) > e) {
-                    for (int indexC = indexA; indexC <= rows - 1; indexC++) {
+            for (int indexB = indexA + 1; indexB <= rows; indexB++) {
+                if (fabs(matrix[indexB][indexA]) > fabs(matrix[indexA][indexA])) {
+                    for (int indexC = indexA; indexC < columns; indexC++) {
                         aux = matrix[indexA][indexC];
                         matrix[indexA][indexC] = matrix[indexB][indexC];
                         matrix[indexB][indexC] = aux;

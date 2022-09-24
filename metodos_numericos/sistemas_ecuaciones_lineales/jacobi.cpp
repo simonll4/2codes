@@ -143,10 +143,10 @@ void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
         cout << "FINALIZED: maxima iteraciones" << endl;
     }
 
-    printf("Conjunto solucion: \n");
-    for (int index = 0; index < rows; ++index) {
-        printf("x%d = %lf\n", index + 1, newX[index]);
+    cout << "Conjunto solucion:" << endl;
+    for (int indexA = 0; indexA < rows; ++indexA) {
+        cout << "x" << indexA << "=" << newX[indexA] << endl;
     }
-    printf("Error: %lf\nIteraciones: %d", e, iterations);
+    cout << "Error:" << e << "\n" << "Iteraciones:" << iterations << endl;
 
 }
