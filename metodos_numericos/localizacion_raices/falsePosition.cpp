@@ -4,18 +4,18 @@
 
 using namespace std;
 
-double funcion(double);
+double function(double);
 
 // funcion a estudiar
-double funcion(double x) {
-    return 2 * x - 4;
+double function(double x) {
+    return -0.3+(((log(x)-(1-1/x))/(log(x)+3*(1-1/x)/2)));
 }
 
 int main() {
 
     // intervalo que abarca la raiz
-    double a = 1;
-    double b = 3;
+    double a = 5;
+    double b = 6;
 
     double cn, cv;
     double eAproximado, ePorcentual = 0;
@@ -24,32 +24,35 @@ int main() {
 
     cout << "FALSA POSICION" << endl;
 
-    if (funcion(a) * funcion(b) < 0) {
+    if (function(a) * function(b) < 0) {
         do {
             if (iteraciones == 0) {
                 cv = a;
-                cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
+                cn = (function(b) * a - function(a) * b) / (function(b) - function(a));
                 eAproximado = fabs(cn - cv);
                 ePorcentual = fabs(eAproximado / cn) * 100;
             } else {
-                if (funcion(a) * funcion(cn) < 0) {
+                if (function(a) * function(cn) < 0) {
                     b = cn;
                     cv = cn;
-                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
+                    cn = (function(b) * a - function(a) * b) / (function(b) - function(a));
+                    eAproximado = fabs(cn - cv);
+                    ePorcentual = fabs(eAproximado / cn) * 100;
+                } else if (function(b) * function(cn) < 0) {
+                    a = cn;
+                    cv = cn;
+                    cn = (function(b) * a - function(a) * b) / (function(b) - function(a));
                     eAproximado = fabs(cn - cv);
                     ePorcentual = fabs(eAproximado / cn) * 100;
                 } else {
-                    a = cn;
-                    cv = cn;
-                    cn = (funcion(b) * a - funcion(a) * b) / (funcion(b) - funcion(a));
-                    eAproximado = fabs(cn - cv);
-                    ePorcentual = fabs(eAproximado / cn) * 100;
+                    break;
                 }
             }
             iteraciones++;
         } while (eAproximado > tolerancia);
         cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual
              << "\nIteraciones: " << iteraciones << endl;
+        cout << "la funcion en dicho punto es: " << (int) function(cn) << endl;
     } else {
         cout << "La funcion no tiene raices o  la misma no se encuentra en el intervalo elegido" << endl;
     }

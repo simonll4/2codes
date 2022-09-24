@@ -3,7 +3,7 @@ project(2codes)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Biseccion metodos_numericos/localizacion_raices/bisection.cpp )
+add_executable(Biseccion metodos_numericos/localizacion_raices/bisection.cpp)
 add_executable(FalsaPosicion metodos_numericos/localizacion_raices/falsePosition.cpp)
 add_executable(IterativoDePuntoFijo metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp)
 add_executable(NewtonRapshon metodos_numericos/localizacion_raices/newtonRaphson.cpp)

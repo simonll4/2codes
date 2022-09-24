@@ -9,7 +9,7 @@ using namespace std;
 
 void readFile(double matrix[MAXROWS][MAXCOLUMNS], double b[MAXROWS], int *, int *);
 
-void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int *, int *);
+void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int , int );
 
 int gaussianElimination(double [MAXROWS][MAXROWS], double [MAXROWS], double [MAXROWS], int, int);
 
@@ -28,10 +28,10 @@ int main() {
     readFile(matrix, b, &rows, &columns);
 
     cout << "---------------MATRIZ AMPLIADA---------------" << endl;
-    printMatrix(matrix, &rows, &columns);
+    printMatrix(matrix, rows, columns);
     gaussianElimination(matrix, b, x, rows, columns);
     cout << endl << "---------------MATRIZ ESCALONADA---------------:" << endl;
-    printMatrix(matrix, &rows, &columns);
+    printMatrix(matrix, rows, columns);
 
     return 0;
 }
@@ -85,13 +85,13 @@ void readFile(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int *rows, int
 
 }
 
-void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int *rows, int *columns) {
+void printMatrix(double matrix[MAXROWS][MAXCOLUMNS], int rows, int columns) {
 
-    for (int indexA = 0; indexA < *rows; indexA++) {
-        for (int indexB = 0; indexB < *columns; indexB++) {
+    for (int indexA = 0; indexA < rows; indexA++) {
+        for (int indexB = 0; indexB < columns-1; indexB++) {
             cout << matrix[indexA][indexB] << "\t";
         }
-        printf("\n");
+        cout<<endl;
     }
 
 }

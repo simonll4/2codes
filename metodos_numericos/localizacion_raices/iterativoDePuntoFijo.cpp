@@ -9,13 +9,12 @@ double funcion(double);
 double derivada(double);
 
 // funcion a estudiar
-
-double funcion(double x) {
-    return (-pow(x, 2)) + 4;
+double function(double x) {
+    return pow(x, x - cos(x));
 }
 
 double derivada(double x) {
-    return ((funcion(x + 0.001) - funcion(x)) / 0.001);
+    return -(x * cos(-x)) * pow(x, x - cos(x) - 1) * 1 + sin(x);
 }
 
 int main() {
@@ -25,8 +24,14 @@ int main() {
     int iteraciones = 0;
 
     do {
+        /*double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01);
+        if (fabs(lim) < 1) {
+            xNuevo = function(xViejo);
+            eAproximado = fabs(xNuevo - xViejo);
+            xViejo = xNuevo;
+        }*/
         if (fabs(derivada(xViejo)) < 1) {
-            xNuevo = funcion(xViejo);
+            xNuevo = function(xViejo);
             eAproximado = fabs(xNuevo - xViejo);
             xViejo = xNuevo;
         } else {

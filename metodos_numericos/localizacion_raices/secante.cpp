@@ -8,12 +8,12 @@ double funcion(double);
 
 // funcion a estudiar
 double funcion(double x) {
-    return pow(x, 2) - 3 * x - 4;
+    return x * cosh(10 / x) - x - 6;
 }
 
 int main() {
     double xNuevo, eAproximado;
-    double xViejo = 5;
+    double xViejo = 9;
     double xViejoViejo = 7;
     double tolerancia = pow(10, -5);
     int iteraciones = 0;
