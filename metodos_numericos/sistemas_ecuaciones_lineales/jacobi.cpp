@@ -136,11 +136,12 @@ void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
 
         e = sqrt(e);
 
-        if (iterations == pow(10, 4)) {
-            cout << "FINALIZED: maxima iteraciones" << endl;
-        }
 
-    } while (e > tolerance && iterations < 10000);
+    } while (tolerance < e && iterations < pow(10, MAXITERATIONS));
+
+    if (iterations == MAXITERATIONS) {
+        cout << "FINALIZED: maxima iteraciones" << endl;
+    }
 
     printf("Conjunto solucion: \n");
     for (int index = 0; index < rows; ++index) {

@@ -13,7 +13,7 @@ void printMatrix(double[MAXROWS][MAXCOLUMS], int, int);
 
 void diagonallyDominant(double[MAXROWS][MAXCOLUMS], int, int);
 
-void gaussSeidel(double [MAXROWS][MAXCOLUMS],double [MAXROWS],int ,int);
+void gaussSeidel(double [MAXROWS][MAXCOLUMS], double [MAXROWS], int, int);
 
 int main() {
 
@@ -28,7 +28,7 @@ int main() {
 
     readFile(matrix, b, &rows, &columns);
     printMatrix(matrix, rows, columns);
-    gaussSeidel(matrix,b,rows,columns);
+    gaussSeidel(matrix, b, rows, columns);
 
     return 0;
 }
@@ -88,7 +88,7 @@ void printMatrix(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns) {
         for (int indexB = 0; indexB < columns; indexB++) {
             cout << matrix[indexA][indexB] << "\t";
         }
-        cout  << endl;
+        cout << endl;
     }
 }
 
@@ -98,55 +98,75 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
         double sum = 0;
         for (int indexB = 0; indexB < columns; indexB++) {
             if (indexA != indexB) {
-                sum =sum+ fabs(matrix[indexA][indexB]) ;
+                sum = sum + fabs(matrix[indexA][indexB]);
             }
         }
-        if (fabs(matrix[indexA][indexA]<=sum)) {
+        if (fabs(matrix[indexA][indexA] <= sum)) {
             printf("Warning: la matriz no es diagonalmente dominante\n");
             break;
         }
     }
 }
 
-void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS],double b[MAXROWS],int rows,int columns){
+void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int columns) {
     //gaussSeidel
     double newX[MAXCOLUMS] = {0};
     double oldX[MAXCOLUMS] = {0};
-    double tolerance = pow(10, -5) ;
+    double tolerance = pow(10, -5);
     double e = 0;
     int iterations = 0;
+    double sum = 0;
 
     diagonallyDominant(matrix, rows, columns);
+
 
     do {
         e = 0;
         iterations++;
+        for (int indexA = 0; indexA < rows; indexA++) {
 
-        for (int indexA = 0; indexA < rows; ++indexA) {
-
-            double sum = 0;
-            for (int indexB = 0; indexB < columns ; ++indexB) {
-                if (indexA != indexB){
+            if (indexA == 0) {
+                sum = 0;
+                for (int indexB = 1; indexB < rows; ++indexB) {
                     sum = sum + matrix[indexA][indexB] * oldX[indexB];
                 }
-            }
-            newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
-            e = e + pow((newX[indexA] - oldX[indexA]), 2);
-            oldX[indexA] = newX[indexA];
+                newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
 
+            } else {
+
+                sum = 0;
+                for (int indexB = 0; indexB < indexA; ++indexB) {
+                    sum = sum + matrix[indexA][indexB] * newX[indexB];
+                }
+
+                for (int indexB = indexA + 1; indexB < rows; ++indexB) {
+                    sum = sum + matrix[indexA][indexB] * oldX[indexB];
+                }
+
+                newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
+
+            }
+
+        }
+        for (int index = 0; index < rows; ++index) {
+            e = e + pow(newX[index]-oldX[index],2);
         }
         e = sqrt(e);
 
-    } while ( tolerance < e && iterations < pow(10, MAXITERATIONS));
+        for (int index = 0; index < rows; ++index) {
+            oldX[index] = newX[index];
+        }
+
+    } while (tolerance < e && iterations < pow(10, MAXITERATIONS));
+
 
     if (iterations == pow(10, MAXITERATIONS))
         cout << "Numero de iteraciones maximas alcanzadas" << endl;
 
-    cout<<"Conjunto solucion:"<<endl;
+    cout << "Conjunto solucion:" << endl;
     for (int indexA = 0; indexA < rows; ++indexA) {
-        cout<<"x"<<indexA<<"="<<newX[indexA]<<endl;
-        //printf("x%d = %lf\n", indexA + 1, newX[indexA]);
+        cout << "x" << indexA << "=" << newX[indexA] << endl;
     }
-    cout<<"Error:"<<e<<"\n"<<"Iteraciones:"<<iterations<<endl;
+    cout << "Error:" << e << "\n" << "Iteraciones:" << iterations << endl;
 
 }

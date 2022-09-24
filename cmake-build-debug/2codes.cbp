@@ -479,7 +479,6 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/lagrange.cpp">
-			<Option target="Biseccion"/>
 			<Option target="Lagrange"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp">
@@ -498,7 +497,6 @@
 			<Option target="Secante"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp">
-			<Option target="Biseccion"/>
 			<Option target="RegresionPolinomica"/>
 		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp">

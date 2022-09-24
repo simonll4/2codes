@@ -100,7 +100,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
     double factor;
     float e = pow(10, -10);
 
-    //triangulacion superior
+   //triangulacion superior
     for (int indexA = 0; indexA < rows - 1; indexA++) {
         //pivoteo
         int swap = 0;
