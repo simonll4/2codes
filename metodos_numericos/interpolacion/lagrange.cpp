@@ -30,12 +30,12 @@ int main() {
     double e;
 
 
-    cout<<"--------------------------------"<<endl;
-    cout<<"METODO DE INTERPOLACION LAGRANGE"<<endl;
-    cout<<"--------------------------------"<<endl;
+    cout << "--------------------------------" << endl;
+    cout << "METODO DE INTERPOLACION LAGRANGE" << endl;
+    cout << "--------------------------------" << endl;
     readFile(nodes, &rows);
     printMatrix(nodes, rows);
-    cout << "Ingrese el valor a interpolar" << endl;
+    cout << "Ingrese el valor a interpolar: " << endl;
     cin >> value;
 
 
@@ -51,7 +51,7 @@ int main() {
         sum = sum + nodes[indexA][1] * product;
     }
     e = fabs(function(value) - sum);
-    cout << "El valor interpolado para " << x << " es:" << sum << " con error: " << e << endl;
+    cout << "El valor interpolado para " << value << " es:" << sum << " con error: " << e << endl;
 
     polynomialMatrix(nodes, matrix, b, rows);
     gaussianElimination(matrix, b, x, rows);
@@ -62,14 +62,14 @@ int main() {
 }
 
 double function(double x) {
-    return x + 2 / x;
+    return exp(-pow(x,2));
 }
 
 void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
     FILE *file;
     char c;
 
-    file = fopen("matrix.txt", "r");
+    file = fopen("nodes.txt", "r");
     if (file == NULL) {
         puts("No se puede abrir el archivo");
     }
@@ -134,7 +134,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
         if (fabs(matrix[indexA][indexA]) < e) {
 
             for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
-                if (fabs(matrix[indexB][indexA]) >  fabs(matrix[indexA][indexA])) {
+                if (fabs(matrix[indexB][indexA]) > fabs(matrix[indexA][indexA])) {
 
                     for (int indexC = indexA; indexC <= rows - 1; indexC++) {
                         aux = matrix[indexA][indexC];

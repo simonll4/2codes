@@ -41,7 +41,7 @@ void readFile(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int *rows, i
     FILE *file;
     char c;
 
-    file = fopen("matrix.txt", "r");
+    file = fopen("nodes.txt", "r");
     if (file == NULL) {
         puts("No se puede abrir el archivo");
     }
@@ -117,6 +117,7 @@ void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
     double tolerance = pow(10, -11);
     double e;
     int iterations = 0;
+    double criterioCorte = 0;
 
     do {
         e = 0;
@@ -137,7 +138,19 @@ void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
         e = sqrt(e);
 
 
-    } while (tolerance < e && iterations < MAXITERATIONS);
+        //criterio de corte general AX - B = 0;
+        criterioCorte = 0;
+        for (int indexA = 0; indexA < rows; ++indexA) {
+
+            for (int indexB = 0; indexB < rows; ++indexB) {
+                criterioCorte = criterioCorte + matrix[indexA][indexB] * newX[indexB] ;
+            }
+            criterioCorte = criterioCorte - b[indexA];
+        }
+        criterioCorte = fabs(criterioCorte);
+
+
+    } while (criterioCorte != 0 && iterations < MAXITERATIONS);
 
     if (iterations == MAXITERATIONS) {
         cout << "FINALIZED: maxima iteraciones" << endl;

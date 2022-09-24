@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o -o Jacobiguia4 

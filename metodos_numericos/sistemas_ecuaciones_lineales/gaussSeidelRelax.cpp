@@ -1,12 +1,11 @@
-#include <stdio.h>
 #include <iostream>
 #include <math.h>
-
-using namespace std;
 
 #define MAXCOLUMS 10
 #define MAXROWS 10
 #define MAXITERATIONS pow(10,5)
+
+using namespace std;
 
 void readFile(double[MAXROWS][MAXCOLUMS], double[MAXROWS], int *, int *);
 
@@ -14,7 +13,7 @@ void printMatrix(double[MAXROWS][MAXCOLUMS], int, int);
 
 void diagonallyDominant(double[MAXROWS][MAXCOLUMS], int, int);
 
-void jacobi(double [MAXROWS][MAXCOLUMS], double [MAXROWS], int, int);
+void gaussSeidel(double [MAXROWS][MAXCOLUMS], double [MAXROWS], int, int);
 
 int main() {
 
@@ -23,16 +22,13 @@ int main() {
     int rows = 0;
     int columns = 0;
 
-    cout << "-------------" << endl;
-    cout << "METODO JACOBI" << endl;
-    cout << "-------------" << endl;
+    cout << "-------------------" << endl;
+    cout << "METODO GAUSS-SEIDEL" << endl;
+    cout << "-------------------" << endl;
 
     readFile(matrix, b, &rows, &columns);
-    cout << "---------------MATRIZ AMPLIADA---------------" << endl;
     printMatrix(matrix, rows, columns);
-    cout << "---------------------------------------------" << endl;
-    diagonallyDominant(matrix, rows, columns);
-    jacobi(matrix, b, rows, columns);
+    gaussSeidel(matrix, b, rows, columns);
 
     return 0;
 }
@@ -88,6 +84,7 @@ void readFile(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int *rows, i
 void printMatrix(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns) {
 
     for (int indexA = 0; indexA < rows; indexA++) {
+
         for (int indexB = 0; indexB < columns; indexB++) {
             cout << matrix[indexA][indexB] << "\t";
         }
@@ -111,42 +108,59 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
     }
 }
 
-void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int columns) {
-    double oldX[MAXROWS] = {0};
-    double newX[MAXROWS] = {0};
-    double tolerance = pow(10, -11);
-    double e;
+void gaussSeidel(double m[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int columns) {
+    double xv[MAXROWS] = {0, 0, 0, 0, 0};
+    double xn[MAXROWS] = {0, 0, 0, 0, 0};
+    double tolerance = pow(10, -3);
+    double error = 0;
     int iterations = 0;
+    double cte = 0;
+
+    printf("Ingrese el coeficiente de relajacion\n");
+    scanf("%lf", &cte);
+
+    //Diagonalmente dominante
+    for (int i = 0; i < rows; i++) {
+        double sum = 0;
+        for (int j = 0; j < columns; j++) {
+            if (i != j) {
+                sum = sum + fabs(m[i][j]);
+            }
+        }
+        if (fabs(m[i][i]) <= sum) {
+            printf("La matriz no es diagonalmente dominante\n");
+            break;
+        }
+    }
 
     do {
-        e = 0;
+        error = 0;
         iterations++;
-        for (int indexA = 0; indexA < rows; ++indexA) {
-
+        for (int i = 0; i < rows; ++i) {
             double sum = 0;
-            for (int indexB = 0; indexB < columns; ++indexB) {
-                if (indexA != indexB) {
-                    sum = sum + matrix[indexA][indexB] * oldX[indexB];
+            for (int j = 0; j < columns; ++j) {
+                if (i != j) {
+                    sum = sum + m[i][j] * xv[j];
                 }
             }
-            newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
-            e = e + pow((newX[indexA] - oldX[indexA]), 2);
-            oldX[indexA] = newX[indexA];
+            xn[i] = (b[i] - sum) / m[i][i];
+            error = error + pow((xn[i] - xv[i]), 2);
+            xn[i] = cte * xn[i] + (1 - cte) * xv[i];
+            xv[i] = xn[i];
         }
 
-        e = sqrt(e);
+        error = sqrt(error);
 
+        if (iterations == 9999) {
+            printf("Numero maximo de iteraciones alcanzado\n");
+        }
 
-    } while (tolerance < e && iterations < MAXITERATIONS);
+    } while (error > tolerance && iterations < 10000);
 
-    if (iterations == MAXITERATIONS) {
-        cout << "FINALIZED: maxima iteraciones" << endl;
+    printf("Conjunto solucion: \n");
+    for (int i = 0; i < rows; ++i) {
+        printf("x%d = %lf\n", i + 1, xn[i]);
     }
-
-    cout << "Conjunto solucion:" << endl;
-    for (int indexA = 0; indexA < rows; ++indexA) {
-        cout << "x" << indexA << "=" << newX[indexA] << endl;
-    }
-    cout << "Error:" << e << "\n" << "Iteraciones:" << iterations << endl;
+    printf("Error: %lf\nIteraciones: %d", error, iterations);
 
 }

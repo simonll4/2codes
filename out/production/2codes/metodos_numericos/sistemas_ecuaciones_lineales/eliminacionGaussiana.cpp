@@ -93,7 +93,7 @@ void readFile(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int *rows, int
     FILE *file;
     char c;
 
-    file = fopen("matrix.txt", "r");
+    file = fopen("nodes.txt", "r");
     if (file == NULL) {
         puts("No se puede abrir el archivo");
     }

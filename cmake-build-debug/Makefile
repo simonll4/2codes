@@ -246,6 +246,32 @@ RegresionPolinomica/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/build
 .PHONY : RegresionPolinomica/fast
 
+#=============================================================================
+# Target rules for targets named Jacobiguia4
+
+# Build rule for target.
+Jacobiguia4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Jacobiguia4
+.PHONY : Jacobiguia4
+
+# fast build rule for target.
+Jacobiguia4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/build
+.PHONY : Jacobiguia4/fast
+
+#=============================================================================
+# Target rules for targets named gaussSeidelRelajacion
+
+# Build rule for target.
+gaussSeidelRelajacion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gaussSeidelRelajacion
+.PHONY : gaussSeidelRelajacion
+
+# fast build rule for target.
+gaussSeidelRelajacion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
+.PHONY : gaussSeidelRelajacion/fast
+
 metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
 .PHONY : metodos_numericos/interpolacion/lagrange.o
 
@@ -390,6 +416,30 @@ metodos_numericos/localizacion_raices/secante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.s
 .PHONY : metodos_numericos/localizacion_raices/secante.cpp.s
 
+metodos_numericos/modificatedCodes/jacobiGuia4.o: metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.o
+
+# target to build an object file
+metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o
+
+metodos_numericos/modificatedCodes/jacobiGuia4.i: metodos_numericos/modificatedCodes/jacobiGuia4.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.i
+
+# target to preprocess a source file
+metodos_numericos/modificatedCodes/jacobiGuia4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.cpp.i
+
+metodos_numericos/modificatedCodes/jacobiGuia4.s: metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.s
+
+# target to generate assembly for a file
+metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
+
 metodos_numericos/regresion/polynomialRegression.o: metodos_numericos/regresion/polynomialRegression.cpp.o
 .PHONY : metodos_numericos/regresion/polynomialRegression.o
 
@@ -437,6 +487,30 @@ metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.s: metodos_numericos/
 metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSeidel.dir/build.make CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.s
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.o: metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.o
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.o
+
+# target to build an object file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.o
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.o
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.i: metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.i
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.i
+
+# target to preprocess a source file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.i
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.i
+
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.s: metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.s
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.s
+
+# target to generate assembly for a file
+metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.s
+.PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.s
 
 metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o: metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o
@@ -500,10 +574,12 @@ help:
 	@echo "... GaussSeidel"
 	@echo "... IterativoDePuntoFijo"
 	@echo "... Jacobi"
+	@echo "... Jacobiguia4"
 	@echo "... Lagrange"
 	@echo "... NewtonRapshon"
 	@echo "... RegresionPolinomica"
 	@echo "... Secante"
+	@echo "... gaussSeidelRelajacion"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"
@@ -522,12 +598,18 @@ help:
 	@echo "... metodos_numericos/localizacion_raices/secante.o"
 	@echo "... metodos_numericos/localizacion_raices/secante.i"
 	@echo "... metodos_numericos/localizacion_raices/secante.s"
+	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.o"
+	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.i"
+	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.s"
 	@echo "... metodos_numericos/regresion/polynomialRegression.o"
 	@echo "... metodos_numericos/regresion/polynomialRegression.i"
 	@echo "... metodos_numericos/regresion/polynomialRegression.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.s"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.o"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.i"
+	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.s"

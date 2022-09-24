@@ -73,6 +73,8 @@ all: CMakeFiles/Jacobi.dir/all
 all: CMakeFiles/GaussSeidel.dir/all
 all: CMakeFiles/Lagrange.dir/all
 all: CMakeFiles/RegresionPolinomica.dir/all
+all: CMakeFiles/Jacobiguia4.dir/all
+all: CMakeFiles/gaussSeidelRelajacion.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -90,6 +92,8 @@ clean: CMakeFiles/Jacobi.dir/clean
 clean: CMakeFiles/GaussSeidel.dir/clean
 clean: CMakeFiles/Lagrange.dir/clean
 clean: CMakeFiles/RegresionPolinomica.dir/clean
+clean: CMakeFiles/Jacobiguia4.dir/clean
+clean: CMakeFiles/gaussSeidelRelajacion.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -177,7 +181,7 @@ CMakeFiles/IterativoDePuntoFijo.dir/clean:
 CMakeFiles/NewtonRapshon.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewtonRapshon.dir/build.make CMakeFiles/NewtonRapshon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewtonRapshon.dir/build.make CMakeFiles/NewtonRapshon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target NewtonRapshon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target NewtonRapshon"
 .PHONY : CMakeFiles/NewtonRapshon.dir/all
 
 # Build rule for subdir invocation for target.
@@ -203,7 +207,7 @@ CMakeFiles/NewtonRapshon.dir/clean:
 CMakeFiles/Secante.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target Secante"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target Secante"
 .PHONY : CMakeFiles/Secante.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,7 +311,7 @@ CMakeFiles/GaussSeidel.dir/clean:
 CMakeFiles/Lagrange.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Lagrange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target Lagrange"
 .PHONY : CMakeFiles/Lagrange.dir/all
 
 # Build rule for subdir invocation for target.
@@ -333,7 +337,7 @@ CMakeFiles/Lagrange.dir/clean:
 CMakeFiles/RegresionPolinomica.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target RegresionPolinomica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target RegresionPolinomica"
 .PHONY : CMakeFiles/RegresionPolinomica.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,6 +355,58 @@ RegresionPolinomica: CMakeFiles/RegresionPolinomica.dir/rule
 CMakeFiles/RegresionPolinomica.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/clean
 .PHONY : CMakeFiles/RegresionPolinomica.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Jacobiguia4.dir
+
+# All Build rule for target.
+CMakeFiles/Jacobiguia4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Jacobiguia4"
+.PHONY : CMakeFiles/Jacobiguia4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Jacobiguia4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Jacobiguia4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Jacobiguia4.dir/rule
+
+# Convenience name for target.
+Jacobiguia4: CMakeFiles/Jacobiguia4.dir/rule
+.PHONY : Jacobiguia4
+
+# clean rule for target.
+CMakeFiles/Jacobiguia4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/clean
+.PHONY : CMakeFiles/Jacobiguia4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gaussSeidelRelajacion.dir
+
+# All Build rule for target.
+CMakeFiles/gaussSeidelRelajacion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target gaussSeidelRelajacion"
+.PHONY : CMakeFiles/gaussSeidelRelajacion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gaussSeidelRelajacion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gaussSeidelRelajacion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/gaussSeidelRelajacion.dir/rule
+
+# Convenience name for target.
+gaussSeidelRelajacion: CMakeFiles/gaussSeidelRelajacion.dir/rule
+.PHONY : gaussSeidelRelajacion
+
+# clean rule for target.
+CMakeFiles/gaussSeidelRelajacion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/clean
+.PHONY : CMakeFiles/gaussSeidelRelajacion.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

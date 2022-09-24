@@ -24,7 +24,9 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -48,7 +50,9 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -98,6 +102,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Jacobiguia4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Jacobiguia4-Debug-782d4a7e616567804012.json",
+					"name" : "Jacobiguia4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Lagrange::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Lagrange-Debug-bccdac69e52e34ee30b2.json",
 					"name" : "Lagrange",
@@ -122,6 +133,13 @@
 					"id" : "Secante::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Secante-Debug-4abc32d40a29cb527d38.json",
 					"name" : "Secante",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gaussSeidelRelajacion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gaussSeidelRelajacion-Debug-ff3cef43b3cc98d14eb7.json",
+					"name" : "gaussSeidelRelajacion",
 					"projectIndex" : 0
 				}
 			]

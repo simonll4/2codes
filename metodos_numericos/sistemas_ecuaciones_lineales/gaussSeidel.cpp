@@ -96,7 +96,7 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
 
     for (int indexA = 0; indexA < rows; indexA++) {
         double sum = 0;
-        for (int indexB = 0; indexB < columns; indexB++) {
+        for (int indexB = 0; indexB < rows; indexB++) {
             if (indexA != indexB) {
                 sum = sum + fabs(matrix[indexA][indexB]);
             }
@@ -112,7 +112,7 @@ void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows,
     //gaussSeidel
     double newX[MAXCOLUMS] = {0};
     double oldX[MAXCOLUMS] = {0};
-    double tolerance = pow(10, -5);
+    double tolerance = pow(10, -11);
     double e = 0;
     int iterations = 0;
     double sum = 0;
