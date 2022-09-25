@@ -1,6 +1,11 @@
 #include <iostream>
 #include <math.h>
 
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
+
 #define MAXCOLUMS 10
 #define MAXROWS 10
 #define MAXITERATIONS pow(10,5)
@@ -101,7 +106,7 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
                 sum = sum + fabs(matrix[indexA][indexB]);
             }
         }
-        if (fabs(matrix[indexA][indexA] <= sum)) {
+        if (fabs(matrix[indexA][indexA]) <= sum) {
             printf("Warning: la matriz no es diagonalmente dominante\n");
             break;
         }
@@ -112,13 +117,14 @@ void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows,
     //gaussSeidel
     double newX[MAXCOLUMS] = {0};
     double oldX[MAXCOLUMS] = {0};
-    double tolerance = pow(10, -11);
     double e = 0;
     int iterations = 0;
     double sum = 0;
 
-    diagonallyDominant(matrix, rows, columns);
 
+    double tolerance = ERROR;
+
+    diagonallyDominant(matrix, rows, columns);
 
     do {
         e = 0;
@@ -149,7 +155,7 @@ void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows,
 
         }
         for (int index = 0; index < rows; ++index) {
-            e = e + pow(newX[index]-oldX[index],2);
+            e = e + pow(newX[index] - oldX[index], 2);
         }
         e = sqrt(e);
 

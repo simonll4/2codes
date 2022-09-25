@@ -2,11 +2,16 @@
 #include <iostream>
 #include <math.h>
 
-using namespace std;
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
 
 #define MAXCOLUMS 10
 #define MAXROWS 10
 #define MAXITERATIONS pow(10,5)
+
+using namespace std;
 
 void readFile(double[MAXROWS][MAXCOLUMS], double[MAXROWS], int *, int *);
 
@@ -114,7 +119,7 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
 void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int columns) {
     double oldX[MAXROWS] = {0};
     double newX[MAXROWS] = {0};
-    double tolerance = pow(10, -11);
+    double tolerance = ERROR;
     double e;
     int iterations = 0;
 

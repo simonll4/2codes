@@ -2,6 +2,11 @@
 #include <iostream>
 #include <math.h>
 
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
+
 #define MAXCOLUMNS 10
 #define MAXROWS 10
 
@@ -98,7 +103,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
 
     double aux;
     double factor;
-    float e = pow(10, -10);
+    float e = ERROR;
 
     //triangulacion superior
     for (int indexA = 0; indexA < rows - 1; indexA++) {

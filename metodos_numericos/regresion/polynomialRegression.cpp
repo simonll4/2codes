@@ -243,6 +243,8 @@ void details(double nodes[MAXROWS][MAXCOLUMNS], double x[MAXROWS], int rows, int
     double r;    //coeficiente de correlacion
     double ymedia;    //media de y
     double sum;
+    double ecm;
+
 
     //calculo de media de y
     ymedia = 0;
@@ -265,19 +267,22 @@ void details(double nodes[MAXROWS][MAXCOLUMNS], double x[MAXROWS], int rows, int
         sr = sr + pow((nodes[indexA][1] - sum), 2);
     }
 
+    ecm = sqrt(sr/rows);
+
     //calculo del error estandar estimado (desviacion estandar)
     syx = sqrt(sr / ((double) rows - (degree + 1)));
 
     //calculo del coeficiente de determinacion
-    r2 = (st - sr) / st;
+    r2 = fabs(st - sr) / st;
 
     //calculo del coeficiente de correlacion
     r = sqrt(r2);
 
     //Impresion de los resultados!!!
     cout << "Error/Residuo (suma de cuadrados de los residuos): " << sr << endl;
-    cout << "Desviacion estandar (Error estandar estimado): " << syx << endl;
-    cout << "Error medio (suma total de cuadrados): " << st << endl;
+    cout << "Error cuadratico medio: " << ecm << endl;
+    //cout << "Desviacion estandar (Error estandar estimado): " << syx << endl;
+    //cout << "Error medio (suma total de cuadrados): " << st << endl;
     cout << "Coeficiente de determinacion: " << r2 << endl;
     cout << "Coeficiente de correlacion: " << r << endl;
 

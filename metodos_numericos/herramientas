@@ -50,3 +50,27 @@
             criterioCorte = criterioCorte - b[indexA];
         }
         criterioCorte = fabs(criterioCorte);
+
+
+  ///////////////////////////////////////////////
+  ///limite para ejercicio de guia newtonRapshon
+  ////////////////////////////////////////////////
+        double lim = (function(xViejo + (0.01)) - function(xViejo-0.01)) / (2*0.01);
+      if (fabs(lim) < 0.000001) {
+          cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
+          return 0;
+      }
+
+
+  ///////////////////////////////////////////////////////
+  ///limite para ejercicio de guia interativo punto fijo
+  //////////////////////////////////////////////////////
+         double lim = (function(xViejo + (0.01)) - function(xViejo - 0.01)) / (2 * 0.01);
+         if (fabs(lim) < 1) {
+             xNuevo = function(xViejo);
+             eAproximado = fabs(xNuevo - xViejo);
+             xViejo = xNuevo;
+         } else {
+             cout << "Warning: el metodo diverge" << endl;
+             return 0;
+         }

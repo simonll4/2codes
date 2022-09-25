@@ -1,6 +1,15 @@
 #include <iostream>
 #include <math.h>
-#include <stdlib.h>
+
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
+
+//////////////////////////////////
+///VALOR INICIAL(por defecto UNO)
+/////////////////////////////////
+#define INICIAL 1
 
 using namespace std;
 
@@ -11,7 +20,7 @@ double derivada(double);
 // funcion a estudiar
 
 double function(double x) {
-    return x * cosh(10 / x) - x - 6;
+    return 3 * x + sin(x) - exp(x);
 }
 
 double derivada(double x) {
@@ -19,30 +28,43 @@ double derivada(double x) {
 }
 
 int main() {
-    double xViejo = 5;
+
+    double xViejo = INICIAL;
     double xNuevo, eAproximado, ePorcentual = 0;
-    double tolerancia = pow(10, -4);
+    double tolerancia = ERROR;
     int iteraciones = 0;
 
     do {
-
-        /*double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01);
+        ////////////////
+        ///usando limite
+        /////////////////
+        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01);
         if (fabs(lim) < 0.000001) {
             cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
             return 0;
-        }*/
-
-        if (fabs(derivada(xViejo)) < 0.001) {
-            cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
-            return 0;
         }
-
-        xNuevo = xViejo - (function(xViejo) / derivada(xViejo));
+        xNuevo = xViejo - (function(xViejo) / lim);
         eAproximado = fabs(xNuevo - xViejo);
-        ePorcentual = ((fabs(xNuevo- xViejo)/xNuevo)*100);
+        ePorcentual = ((fabs(xNuevo - xViejo) / xNuevo) * 100);
         xViejo = xNuevo;
         iteraciones++;
         cout << iteraciones << endl;
+
+
+        //////////////////////////
+        ///usando funcion derivada
+        //////////////////////////
+        /* if (fabs(derivada(xViejo)) < 0.001) {
+             cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
+             return 0;
+         }
+
+         xNuevo = xViejo - (function(xViejo) / derivada(xViejo));
+         eAproximado = fabs(xNuevo - xViejo);
+         ePorcentual = ((fabs(xNuevo- xViejo)/xNuevo)*100);
+         xViejo = xNuevo;
+         iteraciones++;
+         cout << iteraciones << endl;*/
 
     } while (eAproximado > tolerancia && iteraciones < 10000);
 

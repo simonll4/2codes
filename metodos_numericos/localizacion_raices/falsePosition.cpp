@@ -1,25 +1,37 @@
 #include <iostream>
 #include <math.h>
-#include <stdlib.h>
+
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
+
+/////////////////////
+///DEFINIR INTERVALO
+/////////////////////
+#define A 5
+#define B 6
 
 using namespace std;
 
 double function(double);
 
-// funcion a estudiar
+///////////////////
+///DEFINIR FUNCION
+//////////////////
 double function(double x) {
-    return -0.3+(((log(x)-(1-1/x))/(log(x)+3*(1-1/x)/2)));
+    return -0.3 + (((log(x) - (1 - 1 / x)) / (log(x) + 3 * (1 - 1 / x) / 2)));
 }
 
 int main() {
 
     // intervalo que abarca la raiz
-    double a = 5;
-    double b = 6;
+    double a = A;
+    double b = B;
 
     double cn, cv;
     double eAproximado, ePorcentual = 0;
-    double tolerancia = pow(10, -5);
+    double tolerancia = ERROR;
     int iteraciones = 0;
 
     cout << "FALSA POSICION" << endl;

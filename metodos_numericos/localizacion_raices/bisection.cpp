@@ -1,27 +1,37 @@
 #include <iostream>
 #include <math.h>
-#include <stdlib.h>
+
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
+
+/////////////////////
+///DEFINIR INTERVALO
+/////////////////////
+#define A 1
+#define B 2
 
 using namespace std;
 
 double function(double);
 
-// funcion a estudiar
+///////////////////
+///DEFINIR FUNCION
+//////////////////
 double function(double x) {
-    return -0.3+(((log(x)-(1-1/x))/(log(x)+3*(1-1/x)/2)));
+    return -3 + 4.23333 * x - 1.35 * pow(x, 2) + 0.116667 * pow(x, 3);
 }
 
 int main() {
 
-    //definir funcion e intervalo para el metodo
-
     // intervalo que abarca la raiz
-    double a = 1;
-    double b = 6;
+    double a = A;
+    double b = B;
 
     double cn, cv;
     double eAproximado, ePorcentual = 0;
-    double tolerancia = pow(10, -5);
+    double tolerancia = ERROR;
     int iteraciones = 0;
 
     cout << "BISECCION" << endl;
@@ -46,8 +56,7 @@ int main() {
                     cn = (a + b) / 2;
                     eAproximado = fabs(cn - cv);
                     ePorcentual = (eAproximado / cn) * 100;
-                }
-                else{
+                } else {
                     break;
                 }
             }
@@ -55,7 +64,7 @@ int main() {
         } while (eAproximado > tolerancia);
         cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual
              << "\nIteraciones: " << iteraciones << endl;
-        cout << "la funcion en dicho punto es: " <<(int) function(cn) << endl;
+        cout << "la funcion en dicho punto es: " << (int) function(cn) << endl;
     } else {
         cout << "La funcion no tiene raices o  la misma no se encuentra en el intervalo elegido" << endl;
     }

@@ -61,8 +61,11 @@ int main() {
     return 0;
 }
 
+/////////////////
+//DEFINIR FUNCION
+/////////////////
 double function(double x) {
-    return exp(-pow(x,2));
+    return 0;
 }
 
 void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
