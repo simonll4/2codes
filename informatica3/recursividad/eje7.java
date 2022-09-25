@@ -9,6 +9,8 @@ binaria de N/2, más 1 si N es impar.
 
 public class eje7 {
     public static void main(String[] args) {
+        int num = 10; //1010
+
 
     }
 }
