@@ -4,12 +4,11 @@
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -10)
-
+#define ERROR pow(10, -6)
 //////////////////////////////////
 ///VALOR INICIAL(por defecto UNO)
 /////////////////////////////////
-#define INICIAL 1
+#define INICIAL 0.5
 
 using namespace std;
 
@@ -17,14 +16,18 @@ double function(double);
 
 double derivada(double);
 
-// funcion a estudiar
-
+///////////////////
+///DEFINIR FUNCION
+//////////////////
 double function(double x) {
-    return 3 * x + sin(x) - exp(x);
+    return (2 * x )+ log10(x) - sin(3 * x);
 }
 
+///////////////
+///derivada f(x)
+///////////////
 double derivada(double x) {
-    return cosh(10 / x) - x * sinh(10 / x) * (10 / pow(x, 2));
+    return 2+ 1/x - 3 * cos(3*x);
 }
 
 int main() {
@@ -38,11 +41,12 @@ int main() {
         ////////////////
         ///usando limite
         /////////////////
-        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01);
-        if (fabs(lim) < 0.000001) {
-            cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
-            return 0;
-        }
+        double lim =(3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
+        //double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+         if (fabs(lim) < 0.000001) {
+             cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
+             return 0;
+         }
         xNuevo = xViejo - (function(xViejo) / lim);
         eAproximado = fabs(xNuevo - xViejo);
         ePorcentual = ((fabs(xNuevo - xViejo) / xNuevo) * 100);
@@ -54,7 +58,7 @@ int main() {
         //////////////////////////
         ///usando funcion derivada
         //////////////////////////
-        /* if (fabs(derivada(xViejo)) < 0.001) {
+         /*if (fabs(derivada(xViejo)) < 0.001) {
              cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
              return 0;
          }

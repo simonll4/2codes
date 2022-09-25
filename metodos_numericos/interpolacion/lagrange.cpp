@@ -5,6 +5,13 @@
 #define MAXCOLUMNS 2
 #define MAXROWS 20
 
+/////////////////
+//DEFINIR FUNCION
+/////////////////
+double function(double x) {
+    return 1-0.01 *x  + 0.001 *pow(x,2);
+}
+
 using namespace std;
 
 double function(double);
@@ -61,12 +68,7 @@ int main() {
     return 0;
 }
 
-/////////////////
-//DEFINIR FUNCION
-/////////////////
-double function(double x) {
-    return 0;
-}
+
 
 void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
     FILE *file;

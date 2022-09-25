@@ -1,19 +1,27 @@
 #include <iostream>
 #include <math.h>
 
+/////////////////////
+///DEFINIR INTERVALO
+/////////////////////
+#define A 9
+#define B 7
+
 using namespace std;
 
 double funcion(double);
 
-// funcion a estudiar
+///////////////////
+///DEFINIR FUNCION
+//////////////////
 double funcion(double x) {
     return x * cosh(10 / x) - x - 6;
 }
 
 int main() {
     double xNuevo, eAproximado;
-    double xViejo = 9;
-    double xViejoViejo = 7;
+    double xViejoViejo = A;
+    double xViejo = B;
     double tolerancia = pow(10, -5);
     int iteraciones = 0;
 

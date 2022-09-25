@@ -272,6 +272,19 @@ gaussSeidelRelajacion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
 .PHONY : gaussSeidelRelajacion/fast
 
+#=============================================================================
+# Target rules for targets named WriteMatrix
+
+# Build rule for target.
+WriteMatrix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WriteMatrix
+.PHONY : WriteMatrix
+
+# fast build rule for target.
+WriteMatrix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
+.PHONY : WriteMatrix/fast
+
 metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
 .PHONY : metodos_numericos/interpolacion/lagrange.o
 
@@ -560,6 +573,30 @@ metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobi.dir/build.make CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.s
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.s
 
+metodos_numericos/writeMatrix.o: metodos_numericos/writeMatrix.cpp.o
+.PHONY : metodos_numericos/writeMatrix.o
+
+# target to build an object file
+metodos_numericos/writeMatrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.o
+.PHONY : metodos_numericos/writeMatrix.cpp.o
+
+metodos_numericos/writeMatrix.i: metodos_numericos/writeMatrix.cpp.i
+.PHONY : metodos_numericos/writeMatrix.i
+
+# target to preprocess a source file
+metodos_numericos/writeMatrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.i
+.PHONY : metodos_numericos/writeMatrix.cpp.i
+
+metodos_numericos/writeMatrix.s: metodos_numericos/writeMatrix.cpp.s
+.PHONY : metodos_numericos/writeMatrix.s
+
+# target to generate assembly for a file
+metodos_numericos/writeMatrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.s
+.PHONY : metodos_numericos/writeMatrix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -579,6 +616,7 @@ help:
 	@echo "... NewtonRapshon"
 	@echo "... RegresionPolinomica"
 	@echo "... Secante"
+	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
@@ -616,6 +654,9 @@ help:
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/jacobi.s"
+	@echo "... metodos_numericos/writeMatrix.o"
+	@echo "... metodos_numericos/writeMatrix.i"
+	@echo "... metodos_numericos/writeMatrix.s"
 .PHONY : help
 
 

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <math.h>
 
-#define MAXCOLUMS 10
-#define MAXROWS 10
+#define MAXCOLUMS 20
+#define MAXROWS 20
 #define MAXITERATIONS pow(10,5)
 
 using namespace std;
@@ -101,7 +101,7 @@ void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns
                 sum = sum + fabs(matrix[indexA][indexB]);
             }
         }
-        if (fabs(matrix[indexA][indexA] <= sum)) {
+        if (fabs(matrix[indexA][indexA]) <= sum) {
             printf("Warning: la matriz no es diagonalmente dominante\n");
             break;
         }
@@ -119,19 +119,7 @@ void gaussSeidel(double m[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
     printf("Ingrese el coeficiente de relajacion\n");
     scanf("%lf", &cte);
 
-    //Diagonalmente dominante
-    for (int i = 0; i < rows; i++) {
-        double sum = 0;
-        for (int j = 0; j < columns; j++) {
-            if (i != j) {
-                sum = sum + fabs(m[i][j]);
-            }
-        }
-        if (fabs(m[i][i]) <= sum) {
-            printf("La matriz no es diagonalmente dominante\n");
-            break;
-        }
-    }
+    diagonallyDominant(m,rows,columns);
 
     do {
         error = 0;

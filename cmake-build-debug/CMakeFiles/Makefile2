@@ -75,6 +75,7 @@ all: CMakeFiles/Lagrange.dir/all
 all: CMakeFiles/RegresionPolinomica.dir/all
 all: CMakeFiles/Jacobiguia4.dir/all
 all: CMakeFiles/gaussSeidelRelajacion.dir/all
+all: CMakeFiles/WriteMatrix.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -94,6 +95,7 @@ clean: CMakeFiles/Lagrange.dir/clean
 clean: CMakeFiles/RegresionPolinomica.dir/clean
 clean: CMakeFiles/Jacobiguia4.dir/clean
 clean: CMakeFiles/gaussSeidelRelajacion.dir/clean
+clean: CMakeFiles/WriteMatrix.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -389,7 +391,7 @@ CMakeFiles/Jacobiguia4.dir/clean:
 CMakeFiles/gaussSeidelRelajacion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target gaussSeidelRelajacion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target gaussSeidelRelajacion"
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -407,6 +409,32 @@ gaussSeidelRelajacion: CMakeFiles/gaussSeidelRelajacion.dir/rule
 CMakeFiles/gaussSeidelRelajacion.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/clean
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/WriteMatrix.dir
+
+# All Build rule for target.
+CMakeFiles/WriteMatrix.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target WriteMatrix"
+.PHONY : CMakeFiles/WriteMatrix.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/WriteMatrix.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WriteMatrix.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/WriteMatrix.dir/rule
+
+# Convenience name for target.
+WriteMatrix: CMakeFiles/WriteMatrix.dir/rule
+.PHONY : WriteMatrix
+
+# clean rule for target.
+CMakeFiles/WriteMatrix.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/clean
+.PHONY : CMakeFiles/WriteMatrix.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -5,10 +5,10 @@
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -10)
+#define ERROR pow(10, -3)
 
-#define MAXCOLUMNS 10
-#define MAXROWS 10
+#define MAXCOLUMNS 20
+#define MAXROWS 20
 
 using namespace std;
 
@@ -171,4 +171,5 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
     }
     cout << endl;
 
+    return 0;
 }

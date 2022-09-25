@@ -10,5 +10,6 @@
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/RegresionPolinomica.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Jacobiguia4.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/gaussSeidelRelajacion.dir
+/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/WriteMatrix.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

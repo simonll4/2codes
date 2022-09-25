@@ -139,7 +139,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXCOLUMNS2], double b[MAXROWS], 
 
     double aux;
     double factor;
-    float e = pow(10, -9);
+    float e = pow(10, -3);
 
     //triangulacion superior
     for (int indexA = 0; indexA <= rows; indexA++) {

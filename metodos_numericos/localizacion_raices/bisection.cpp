@@ -9,8 +9,8 @@
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A 1
-#define B 2
+#define A 0
+#define B 1.5
 
 using namespace std;
 
@@ -20,7 +20,7 @@ double function(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return -3 + 4.23333 * x - 1.35 * pow(x, 2) + 0.116667 * pow(x, 3);
+    return -15.3315 + 58.6036 * x -74.2202 * pow(x,2)  + 30.9504 * pow(x,3);
 }
 
 int main() {
