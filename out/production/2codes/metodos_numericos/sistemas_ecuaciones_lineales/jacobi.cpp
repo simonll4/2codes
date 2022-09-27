@@ -2,71 +2,51 @@
 #include <iostream>
 #include <math.h>
 
-using namespace std;
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -10)
 
-#define MAXCOL 10
-#define MAXROW 10
+#define MAXCOLUMS 10
+#define MAXROWS 10
 #define MAXITERATIONS pow(10,5)
 
-void readFile(double[MAXROW][MAXCOL], double[MAXROW], int *, int *);
+using namespace std;
 
-void printMatrix(double[MAXROW][MAXCOL], double[MAXROW], int, int);
+void readFile(double[MAXROWS][MAXCOLUMS], double[MAXROWS], int *, int *);
 
-void diagonallyDominant(double[MAXROW][MAXCOL], int, int);
+void printMatrix(double[MAXROWS][MAXCOLUMS], int, int);
+
+void diagonallyDominant(double[MAXROWS][MAXCOLUMS], int, int);
+
+void jacobi(double [MAXROWS][MAXCOLUMS], double [MAXROWS], int, int);
 
 int main() {
 
-    double matrix[MAXROW][MAXCOL];
-    double b[MAXROW];
+    double matrix[MAXROWS][MAXCOLUMS];
+    double b[MAXROWS];
     int rows = 0;
     int columns = 0;
 
+    cout << "-------------" << endl;
+    cout << "METODO JACOBI" << endl;
+    cout << "-------------" << endl;
+
     readFile(matrix, b, &rows, &columns);
-    printMatrix(matrix, b, rows, columns);
-
-    // metodo jacobi
-    double newX[MAXCOL] = {0};
-    double oldX[MAXCOL] = {0};
-    double tolerance = pow(10, -5) + 1;
-    double e;
-    int iterations = 0;
-
+    cout << "---------------MATRIZ AMPLIADA---------------" << endl;
+    printMatrix(matrix, rows, columns);
+    cout << "---------------------------------------------" << endl;
     diagonallyDominant(matrix, rows, columns);
-
-    do {
-        iterations++;
-        e = 0;
-        for (int indexA = 0; indexA < rows; ++indexA) {
-            double sum = 0;
-            for (int indexB = 0; indexB < columns; ++indexB) {
-                if (indexA != indexB)
-                    sum = (sum + matrix[indexA][indexB] * oldX[indexB]);
-            }
-            newX[indexA] = (b[indexA] - sum) / (matrix[indexA][indexA]);
-            e = e + pow(newX[indexA] - oldX[indexA], 2);
-            oldX[indexA] = newX[indexA];
-        }
-        e = sqrt(e);
-
-        if (iterations == pow(10, MAXITERATIONS))
-            cout<<"Numero de iteraciones maximas alcanzadas"<<endl;
-
-    } while (e > tolerance || iterations > MAXITERATIONS);
-
-    printf("Conjunto solucion: \n");
-    for (int indexA = 0; indexA < rows; ++indexA) {
-        printf("x%d = %lf\n", indexA + 1, newX[indexA]);
-    }
-    printf("Error: %lf\nIteraciones: %d", e, iterations);
+    jacobi(matrix, b, rows, columns);
 
     return 0;
 }
 
-void readFile(double matrix[MAXROW][MAXCOL], double b[MAXROW], int *rows, int *columns) {
+void readFile(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int *rows, int *columns) {
     FILE *file;
     char c;
 
-    file = fopen("nodes.txt", "r");
+    file = fopen("matrix.txt", "r");
     if (file == NULL) {
         puts("No se puede abrir el archivo");
     }
@@ -100,38 +80,78 @@ void readFile(double matrix[MAXROW][MAXCOL], double b[MAXROW], int *rows, int *c
         b[indexA] = matrix[indexA][*columns - 1];
     }
 
+    //es para chequear el vector de terminos independientes
+    /*cout<<endl<<"---------------------------------------------"<<endl;
     cout << "LOS TERMINOS INDEPENDIENTES DE LA MATRIZ SON:" << endl;
-    for (int i = 0; i < *rows; i++) {
-        printf("%lf ", b[i]);
-        printf("\n");
+    for (int index = 0; index < *rows; index++) {
+        cout<<b[index]<<"\t";
     }
-
+    cout<<endl<<"---------------------------------------------"<<endl;
+*/
 }
 
-void printMatrix(double matrix[MAXROW][MAXCOL], double b[MAXROW], int rows, int columns) {
-    printf("---------------MATRIZ AMPLIADA---------------\n");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < columns; j++) {
-            printf("%lf ", matrix[i][j]);
+void printMatrix(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns) {
+
+    for (int indexA = 0; indexA < rows; indexA++) {
+        for (int indexB = 0; indexB < columns; indexB++) {
+            cout << matrix[indexA][indexB] << "\t";
         }
-        printf("%lf", b[i]);
-        printf("\n");
+        cout << endl;
     }
-    printf("---------------------------------------------\n");
 }
 
-void diagonallyDominant(double matrix[MAXROW][MAXCOL], int rows, int columns) {
+void diagonallyDominant(double matrix[MAXROWS][MAXCOLUMS], int rows, int columns) {
 
     for (int indexA = 0; indexA < rows; indexA++) {
         double sum = 0;
-        for (int indexB = 0; indexB < columns; indexB++) {
+        for (int indexB = 0; indexB < rows; indexB++) {
             if (indexA != indexB) {
-                sum += matrix[indexA][indexB];
+                sum = sum + fabs(matrix[indexA][indexB]);
             }
         }
-        if (!(matrix[indexA][indexA] > sum)) {
+        if (fabs(matrix[indexA][indexA] <= sum)) {
             printf("Warning: la matriz no es diagonalmente dominante\n");
             break;
         }
     }
+}
+
+void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int columns) {
+    double oldX[MAXROWS] = {0};
+    double newX[MAXROWS] = {0};
+    double tolerance = ERROR;
+    double e;
+    int iterations = 0;
+
+    do {
+        e = 0;
+        iterations++;
+        for (int indexA = 0; indexA < rows; ++indexA) {
+
+            double sum = 0;
+            for (int indexB = 0; indexB < columns; ++indexB) {
+                if (indexA != indexB) {
+                    sum = sum + matrix[indexA][indexB] * oldX[indexB];
+                }
+            }
+            newX[indexA] = (b[indexA] - sum) / matrix[indexA][indexA];
+            e = e + pow((newX[indexA] - oldX[indexA]), 2);
+            oldX[indexA] = newX[indexA];
+        }
+
+        e = sqrt(e);
+
+
+    } while (tolerance < e && iterations < MAXITERATIONS);
+
+    if (iterations == MAXITERATIONS) {
+        cout << "FINALIZED: maxima iteraciones" << endl;
+    }
+
+    cout << "Conjunto solucion:" << endl;
+    for (int indexA = 0; indexA < rows; ++indexA) {
+        cout << "x" << indexA << "=" << newX[indexA] << endl;
+    }
+    cout << "Error:" << e << "\n" << "Iteraciones:" << iterations << endl;
+
 }

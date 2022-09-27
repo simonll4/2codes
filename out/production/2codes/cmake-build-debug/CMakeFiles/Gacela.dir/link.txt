@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/Gacela.dir/metodos_numericos/sistemas_ecuaciones_lineales/Gaus-Seidel.cpp.o" -o Gacela 

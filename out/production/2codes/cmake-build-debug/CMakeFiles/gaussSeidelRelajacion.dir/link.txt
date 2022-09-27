@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/gaussSeidelRelajacion.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp.o -o gaussSeidelRelajacion 

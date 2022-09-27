@@ -1,44 +1,71 @@
 #include <iostream>
 #include <math.h>
-#include <stdlib.h>
+
+/////////////////////
+///DEFINIR TOLERANCIA
+/////////////////////
+#define ERROR pow(10, -6)
+
+//////////////////////////////////
+///VALOR INICIAL(por defecto cero)
+/////////////////////////////////
+#define INICIAL 0.5
 
 using namespace std;
 
 double funcion(double);
+
 double derivada(double);
 
-// funcion a estudiar
-
-double funcion(double x)
-{
-    return (-pow(x, 2)) + 4;
+///////////////
+///funcion g(x)
+///////////////
+double function(double x) {
+    return (-log10(x) + sin(3 * x)) / 2;
 }
 
-double derivada(double x)
-{
-    return ((funcion(x + 0.001) - funcion(x)) / 0.001);
+///////////////
+///derivada g(x)
+///////////////
+double derivada(double x) {
+    return -cos(x) + exp(x) / 3;
 }
 
-int main()
-{
-    double xViejo = 0;
+int main() {
+
+    double xViejo = INICIAL;
     double xNuevo, eAproximado, ePorcentual;
-    double tolerancia = pow(10, -5);
+    double tolerancia = ERROR;
     int iteraciones = 0;
 
-    do
-    {
-        if (fabs(derivada(xViejo)) < 1)
-        {
-            xNuevo = funcion(xViejo);
+    do {
+
+        ////////////////
+        ///usando limite
+        /////////////////
+        double lim = (3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
+        //double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+        if (fabs(lim) < 1) {
+            xNuevo = function(xViejo);
             eAproximado = fabs(xNuevo - xViejo);
             xViejo = xNuevo;
-        }
-        else
-        {
+        } else {
             cout << "Warning: el metodo diverge" << endl;
             return 0;
         }
+
+        //////////////////////////
+        ///usando funcion derivada
+        //////////////////////////
+        /*if (fabs(derivada(xViejo)) < 1) {
+            xNuevo = function(xViejo);
+            eAproximado = fabs(xNuevo - xViejo);
+            xViejo = xNuevo;
+        } else {
+            cout << "Warning: el metodo diverge" << endl;
+            return 0;
+        }*/
+
         iteraciones++;
     } while (eAproximado > tolerancia);
     cout << "Raiz: " << xNuevo << "\nError: " << eAproximado << "\nIteraciones: " << iteraciones << endl;

@@ -1,0 +1,76 @@
+   /*double diagonal = 1;
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<columns;j++)
+        {
+            printf("%lf ",matrix[i][j]);
+        }
+        printf("%lf",b[i]);
+        diagonal = diagonal * matrix[i][i];
+        printf("\n");
+    }
+    printf("Diagonal: %lf\n", diagonal);*/
+
+
+///////////////////////////////////////////////
+//calculo de norma euclidiana(para matriz A)
+////////////////////////////////////////////////
+        double normaEuclidiana = 1;
+        for (int indexA = 0; indexA < rows; ++indexA) {
+            for (int indexB = 0; indexB < rows; ++indexB) {
+                normaEuclidiana = normaEuclidiana + pow(matrix[indexA][indexB], 2);
+            }
+        }
+        normaEuclidiana = sqrt(normaEuclidiana);
+        cout << "NORMA EUCLIDIANA: " << normaEuclidiana<<endl;
+
+
+
+/////////////////////////////////////////////////
+//calculo de determinante(para matriz triangular)
+/////////////////////////////////////////////////
+     double determinante = 1;
+         for (int indexA = 0; indexA < rows; indexA++) {
+             determinante = determinante * matrix[indexA][indexA];
+         }
+         cout<<"DETERMINANTE: "<<determinante<<endl;
+         cout<<endl;
+
+
+
+/////////////////////////////////////////
+ //criterio de corte general AX - B = 0;
+/////////////////////////////////////////
+        criterioCorte = 0;
+        for (int indexA = 0; indexA < rows; ++indexA) {
+
+            for (int indexB = 0; indexB < rows; ++indexB) {
+                criterioCorte = criterioCorte + matrix[indexA][indexB] * newX[indexB] ;
+            }
+            criterioCorte = criterioCorte - b[indexA];
+        }
+        criterioCorte = fabs(criterioCorte);
+
+
+  ///////////////////////////////////////////////
+  ///limite para ejercicio de guia newtonRapshon
+  ////////////////////////////////////////////////
+        double lim = (function(xViejo + (0.01)) - function(xViejo-0.01)) / (2*0.01);
+      if (fabs(lim) < 0.000001) {
+          cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
+          return 0;
+      }
+
+
+  ///////////////////////////////////////////////////////
+  ///limite para ejercicio de guia interativo punto fijo
+  //////////////////////////////////////////////////////
+         double lim = (function(xViejo + (0.01)) - function(xViejo - 0.01)) / (2 * 0.01);
+         if (fabs(lim) < 1) {
+             xNuevo = function(xViejo);
+             eAproximado = fabs(xNuevo - xViejo);
+             xViejo = xNuevo;
+         } else {
+             cout << "Warning: el metodo diverge" << endl;
+             return 0;
+         }

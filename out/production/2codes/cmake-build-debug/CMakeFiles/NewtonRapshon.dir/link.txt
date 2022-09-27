@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/NewtonRapshon.dir/metodos_numericos/localizacion_raices/newtonRaphson.cpp.o -o NewtonRapshon 
