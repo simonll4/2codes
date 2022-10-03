@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o -o Segmentaria 

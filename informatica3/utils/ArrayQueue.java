@@ -24,9 +24,9 @@ public class ArrayQueue<AnyType> {
     }
 
     public AnyType dequeue() throws Exception {
-        if(isEmpty()) throw new Exception("ArrayQueue empty");
-        currentSize--;
 
+        if (isEmpty()) throw new Exception("ArrayQueue empty");
+        currentSize--;
         AnyType returnValue = theArray[front];
         front = increment(front);
         return returnValue;
@@ -40,7 +40,7 @@ public class ArrayQueue<AnyType> {
     }
 
     public AnyType getFront() throws Exception {
-        if(isEmpty()) throw new Exception("ArrayQueue empty");
+        if (isEmpty()) throw new Exception("ArrayQueue empty");
         return theArray[front];
     }
 

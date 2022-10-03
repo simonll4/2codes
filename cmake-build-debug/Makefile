@@ -234,6 +234,19 @@ Lagrange/fast:
 .PHONY : Lagrange/fast
 
 #=============================================================================
+# Target rules for targets named Segmentaria
+
+# Build rule for target.
+Segmentaria: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Segmentaria
+.PHONY : Segmentaria
+
+# fast build rule for target.
+Segmentaria/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/build
+.PHONY : Segmentaria/fast
+
+#=============================================================================
 # Target rules for targets named RegresionPolinomica
 
 # Build rule for target.
@@ -308,6 +321,30 @@ metodos_numericos/interpolacion/lagrange.s: metodos_numericos/interpolacion/lagr
 metodos_numericos/interpolacion/lagrange.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.s
 .PHONY : metodos_numericos/interpolacion/lagrange.cpp.s
+
+metodos_numericos/interpolacion/segmentaria.o: metodos_numericos/interpolacion/segmentaria.cpp.o
+.PHONY : metodos_numericos/interpolacion/segmentaria.o
+
+# target to build an object file
+metodos_numericos/interpolacion/segmentaria.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o
+.PHONY : metodos_numericos/interpolacion/segmentaria.cpp.o
+
+metodos_numericos/interpolacion/segmentaria.i: metodos_numericos/interpolacion/segmentaria.cpp.i
+.PHONY : metodos_numericos/interpolacion/segmentaria.i
+
+# target to preprocess a source file
+metodos_numericos/interpolacion/segmentaria.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.i
+.PHONY : metodos_numericos/interpolacion/segmentaria.cpp.i
+
+metodos_numericos/interpolacion/segmentaria.s: metodos_numericos/interpolacion/segmentaria.cpp.s
+.PHONY : metodos_numericos/interpolacion/segmentaria.s
+
+# target to generate assembly for a file
+metodos_numericos/interpolacion/segmentaria.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.s
+.PHONY : metodos_numericos/interpolacion/segmentaria.cpp.s
 
 metodos_numericos/localizacion_raices/bisection.o: metodos_numericos/localizacion_raices/bisection.cpp.o
 .PHONY : metodos_numericos/localizacion_raices/bisection.o
@@ -616,11 +653,15 @@ help:
 	@echo "... NewtonRapshon"
 	@echo "... RegresionPolinomica"
 	@echo "... Secante"
+	@echo "... Segmentaria"
 	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"
+	@echo "... metodos_numericos/interpolacion/segmentaria.o"
+	@echo "... metodos_numericos/interpolacion/segmentaria.i"
+	@echo "... metodos_numericos/interpolacion/segmentaria.s"
 	@echo "... metodos_numericos/localizacion_raices/bisection.o"
 	@echo "... metodos_numericos/localizacion_raices/bisection.i"
 	@echo "... metodos_numericos/localizacion_raices/bisection.s"

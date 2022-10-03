@@ -7,6 +7,7 @@
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Jacobi.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/GaussSeidel.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Lagrange.dir
+/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Segmentaria.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/RegresionPolinomica.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Jacobiguia4.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/gaussSeidelRelajacion.dir

@@ -27,7 +27,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					]
 				}
 			],
@@ -54,7 +55,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					]
 				}
 			],
@@ -105,7 +107,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Jacobiguia4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Jacobiguia4-Debug-782d4a7e616567804012.json",
+					"jsonFile" : "target-Jacobiguia4-Debug-115c7710e56c0cbe08e6.json",
 					"name" : "Jacobiguia4",
 					"projectIndex" : 0
 				},
@@ -126,7 +128,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RegresionPolinomica::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RegresionPolinomica-Debug-0efd6691d68720a3ad5a.json",
+					"jsonFile" : "target-RegresionPolinomica-Debug-f1e9c6284eb60008687f.json",
 					"name" : "RegresionPolinomica",
 					"projectIndex" : 0
 				},
@@ -139,15 +141,22 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Segmentaria::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Segmentaria-Debug-e5a1f1c7912b9fba06fb.json",
+					"name" : "Segmentaria",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "WriteMatrix::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-WriteMatrix-Debug-846a852525b3796d7ff3.json",
+					"jsonFile" : "target-WriteMatrix-Debug-2e8fe196cac3f7eab57c.json",
 					"name" : "WriteMatrix",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gaussSeidelRelajacion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gaussSeidelRelajacion-Debug-ff3cef43b3cc98d14eb7.json",
+					"jsonFile" : "target-gaussSeidelRelajacion-Debug-91b8b0882203994d7ac7.json",
 					"name" : "gaussSeidelRelajacion",
 					"projectIndex" : 0
 				}
