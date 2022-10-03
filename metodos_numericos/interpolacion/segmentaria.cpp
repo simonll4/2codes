@@ -1,6 +1,8 @@
 #include <iostream>
 #include <math.h>
 
+#define ERROR pow(10, -3)
+
 using namespace std;
 
 #define MAXCOLUMNS 2
@@ -13,7 +15,7 @@ void printNodes(double [MAXROWS][MAXCOLUMNS], int);
 
 void assembleMatrix(double [MAXROWS][MAXCOLUMNS], double [MAXROWS][MAXROWS], double [MAXROWS], int);
 
-void printMatrix(double matrix[MAXROWS][MAXROWS],double [MAXROWS] , int, int);
+void printMatrix(double matrix[MAXROWS][MAXROWS], double [MAXROWS], int, int);
 
 int gaussianElimination(double [MAXROWS][MAXROWS], double [MAXROWS], double [MAXROWS], int);
 
@@ -25,12 +27,15 @@ int main() {
     double b[MAXROWS] = {0};
     double z[MAXROWS] = {0};
 
-
     readFile(nodes, &rows);
+
+    int intervalos = rows - 1;
+
     printNodes(nodes, rows);
-    assembleMatrix(nodes, matrix, b, rows);
-    printMatrix(matrix,b, 4 * rows, 4 * rows);
-    gaussianElimination(matrix,b,z,rows);
+    assembleMatrix(nodes, matrix, b, intervalos);
+    printMatrix(matrix, b, 4 * intervalos, 4 * intervalos);
+    gaussianElimination(matrix, b, z, 4 * intervalos);
+
 
     return 0;
 }
@@ -76,7 +81,7 @@ void printNodes(double matrix[MAXROWS][MAXCOLUMNS], int rows) {
     }
 }
 
-void printMatrix(double matrix[MAXROWS][MAXROWS],double b[MAXROWS], int rows, int columns) {
+void printMatrix(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int rows, int columns) {
 
     for (int indexA = 0; indexA < rows; indexA++) {
         for (int indexB = 0; indexB < columns; indexB++) {
@@ -88,10 +93,11 @@ void printMatrix(double matrix[MAXROWS][MAXROWS],double b[MAXROWS], int rows, in
 }
 
 
-void assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int rows) {
+void
+assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MAXROWS], double b[MAXROWS], int intervals) {
 
     ///construccion de las primeras 2n ecuaciones(imagen de la funcion)
-    for (int indexA = 0; indexA < rows; ++indexA) {
+    for (int indexA = 0; indexA < intervals; ++indexA) {
         for (int indexB = 0; indexB <= 3; ++indexB) {
             matrix[2 * indexA][4 * indexA + indexB] = pow(nodes[indexA][0], 3 - indexB);
             matrix[2 * indexA + 1][4 * indexA + indexB] = pow(nodes[indexA + 1][0], 3 - indexB);
@@ -101,19 +107,19 @@ void assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MA
     }
 
     ///construccion de las primeras n-1 ecuaciones(derivadas primeras)
-    for (int indexA = 2 * rows; indexA <= (3 * rows - 2); ++indexA) {
-        for (int indexB = 0; indexB <= rows - 2; ++indexB) {
-            for (int indexC = 0; indexC < 2; ++indexC) {
+    for (int indexA = 2 * intervals; indexA <= (3 * intervals - 2); ++indexA) {
+        for (int indexB = 0; indexB <= intervals - 2; ++indexB) {
+            for (int indexC = 0; indexC <= 2; ++indexC) {
                 matrix[indexA][4 * indexB + indexC] = (3 - indexC) * pow(nodes[indexB + 1][0], 2 - indexC);
-                matrix[indexA][4 * (indexB + 1) + indexC] = (3 - indexC) * pow(nodes[indexB + 1][0], 2 - indexC);
+                matrix[indexA][4 * (indexB + 1) + indexC] = -(3 - indexC) * pow(nodes[indexB + 1][0], 2 - indexC);
             }
         }
         b[indexA] = 0;
     }
 
     ///derivadas segundas
-    for (int indexA = 3 * rows - 1; indexA <= (4 * rows - 3); ++indexA) {
-        for (int indexB = 0; indexB <= rows - 2; ++indexB) {
+    for (int indexA = 3 * intervals - 1; indexA <= (4 * intervals - 3); ++indexA) {
+        for (int indexB = 0; indexB <= intervals - 2; ++indexB) {
             matrix[indexA][4 * indexB] = 6 * nodes[indexB + 1][0];
             matrix[indexA][4 * indexB + 1] = 2;
             matrix[indexA][4 * indexB + 4] = (-6 * nodes[indexB + 1][0]);
@@ -121,32 +127,35 @@ void assembleMatrix(double nodes[MAXROWS][MAXCOLUMNS], double matrix[MAXROWS][MA
         }
         b[indexA] = 0;
     }
+
+    matrix[4 * intervals - 2][0] = 6 * nodes[0][0];
+    matrix[4 * intervals - 2][1] = 2;
+    b[4 * intervals - 2] = 0;
+
+    matrix[4 * intervals - 1][4 * intervals - 4] = 6 * nodes[intervals][0];
+    matrix[4 * intervals - 1][4 * intervals - 3] = 2;
+    b[4 * intervals - 1] = 0;
+
+
 }
 
 int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], double x[MAXROWS], int rows) {
-    //eliminacion gaussiana
-
     double aux;
     double factor;
-    float e = pow(10, -3);
+    float e = ERROR;
 
     //triangulacion superior
-    for (int indexA = 0; indexA <= rows; indexA++) {
-
+    for (int indexA = 0; indexA < rows - 1; indexA++) {
         //pivoteo
         int swap = 0;
         if (fabs(matrix[indexA][indexA]) < e) {
-
-            for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
-
+            for (int indexB = indexA + 1; indexB <= rows; indexB++) {
                 if (fabs(matrix[indexB][indexA]) > fabs(matrix[indexA][indexA])) {
-
-                    for (int indexC = indexA; indexC <= rows - 1; indexC++) {
+                    for (int indexC = indexA; indexC < rows; indexC++) {
                         aux = matrix[indexA][indexC];
                         matrix[indexA][indexC] = matrix[indexB][indexC];
                         matrix[indexB][indexC] = aux;
                     }
-
                     aux = b[indexA];
                     b[indexA] = b[indexB];
                     b[indexB] = aux;
@@ -156,15 +165,15 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
             }
             if (swap == 0) {
                 cout << "Warning: sistema singular, no se puede resolver" << endl;
-                return 1;
+                return 0;
             } else
                 cout << "Pivoteo concretado " << endl;
         }
 
-        for (int indexB = indexA + 1; indexB <= rows; indexB++) {
+        for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
             factor = (-matrix[indexB][indexA]) / (matrix[indexA][indexA]);
 
-            for (int indexC = indexA; indexC <= rows; indexC++)
+            for (int indexC = indexA; indexC <= rows - 1; indexC++)
                 matrix[indexB][indexC] = matrix[indexB][indexC] + factor * matrix[indexA][indexC];
             b[indexB] = b[indexB] + factor * b[indexA];
         }
@@ -172,9 +181,9 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
 
     //imprime matrix triangular
     cout << endl << "La Matriz triangular superior quedo: " << endl;
-    for (int indexA = 0; indexA <= rows; indexA++) {
+    for (int indexA = 0; indexA < rows; indexA++) {
 
-        for (int indexB = 0; indexB <= rows; indexB++) {
+        for (int indexB = 0; indexB < rows - 1; indexB++) {
             cout << matrix[indexA][indexB] << " ";
         }
         cout << b[indexA] << endl;
@@ -182,22 +191,22 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
 
     //sustitucion regresiva
     double suma;
-    x[rows] = b[rows] / matrix[rows][rows];
+    x[rows - 1] = b[rows - 1] / matrix[rows - 1][rows - 1];
 
-    for (int indexA = rows - 1; indexA >= 0; indexA--) {
+    for (int indexA = rows - 2; indexA >= 0; indexA--) {
         suma = b[indexA];
 
-        for (int indexB = indexA + 1; indexB <= rows; indexB++) {
+        for (int indexB = indexA + 1; indexB <= rows - 1; indexB++) {
             suma -= matrix[indexA][indexB] * x[indexB];
         }
-
         x[indexA] = (suma) / matrix[indexA][indexA];
     }
 
-    cout << endl << "********Soluciones********" << endl;
-    for (int index = 0; index <= rows; index++)
-        cout << endl << "x" << index << "=" << x[index];
+    cout << endl << "----------" << endl;
+    cout << "SOLUCIONES" << endl;
+    cout << "----------";
+    for (int index = 0; index <= rows - 1; index++) {
+        cout << endl << "x" << index + 1 << "=" << x[index];
+    }
     cout << endl;
-
-    return 0;
 }
