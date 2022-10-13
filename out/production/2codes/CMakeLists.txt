@@ -12,6 +12,7 @@ add_executable(EliminacionGaussiana metodos_numericos/sistemas_ecuaciones_lineal
 add_executable(Jacobi metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp)
 add_executable(GaussSeidel metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp)
 add_executable(Lagrange metodos_numericos/interpolacion/lagrange.cpp)
+add_executable(Segmentaria metodos_numericos/interpolacion/segmentaria.cpp)
 add_executable(RegresionPolinomica metodos_numericos/regresion/polynomialRegression.cpp)
 add_executable(Jacobiguia4 metodos_numericos/modificatedCodes/jacobiGuia4.cpp)
 add_executable(gaussSeidelRelajacion metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp)

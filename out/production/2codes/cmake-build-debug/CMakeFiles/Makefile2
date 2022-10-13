@@ -72,6 +72,7 @@ all: CMakeFiles/EliminacionGaussiana.dir/all
 all: CMakeFiles/Jacobi.dir/all
 all: CMakeFiles/GaussSeidel.dir/all
 all: CMakeFiles/Lagrange.dir/all
+all: CMakeFiles/Segmentaria.dir/all
 all: CMakeFiles/RegresionPolinomica.dir/all
 all: CMakeFiles/Jacobiguia4.dir/all
 all: CMakeFiles/gaussSeidelRelajacion.dir/all
@@ -92,6 +93,7 @@ clean: CMakeFiles/EliminacionGaussiana.dir/clean
 clean: CMakeFiles/Jacobi.dir/clean
 clean: CMakeFiles/GaussSeidel.dir/clean
 clean: CMakeFiles/Lagrange.dir/clean
+clean: CMakeFiles/Segmentaria.dir/clean
 clean: CMakeFiles/RegresionPolinomica.dir/clean
 clean: CMakeFiles/Jacobiguia4.dir/clean
 clean: CMakeFiles/gaussSeidelRelajacion.dir/clean
@@ -333,6 +335,32 @@ CMakeFiles/Lagrange.dir/clean:
 .PHONY : CMakeFiles/Lagrange.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Segmentaria.dir
+
+# All Build rule for target.
+CMakeFiles/Segmentaria.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target Segmentaria"
+.PHONY : CMakeFiles/Segmentaria.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Segmentaria.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Segmentaria.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Segmentaria.dir/rule
+
+# Convenience name for target.
+Segmentaria: CMakeFiles/Segmentaria.dir/rule
+.PHONY : Segmentaria
+
+# clean rule for target.
+CMakeFiles/Segmentaria.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/clean
+.PHONY : CMakeFiles/Segmentaria.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/RegresionPolinomica.dir
 
 # All Build rule for target.
@@ -391,7 +419,7 @@ CMakeFiles/Jacobiguia4.dir/clean:
 CMakeFiles/gaussSeidelRelajacion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target gaussSeidelRelajacion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target gaussSeidelRelajacion"
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -417,7 +445,7 @@ CMakeFiles/gaussSeidelRelajacion.dir/clean:
 CMakeFiles/WriteMatrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target WriteMatrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target WriteMatrix"
 .PHONY : CMakeFiles/WriteMatrix.dir/all
 
 # Build rule for subdir invocation for target.

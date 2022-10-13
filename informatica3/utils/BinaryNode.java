@@ -2,7 +2,7 @@ package informatica3.utils;
 
 public class BinaryNode<AnyType> {
 
-    private AnyType element;
+    private Integer element;
     private BinaryNode<AnyType> left;
     private BinaryNode<AnyType> rigth;
 
@@ -12,13 +12,19 @@ public class BinaryNode<AnyType> {
         this.rigth = null;
     }
 
-    public BinaryNode(AnyType theElement, BinaryNode<AnyType> lt, BinaryNode<AnyType> rt) {
+    public BinaryNode(Integer theElement){
+        element = theElement;
+        this.left = null;
+        this.rigth = null;
+    }
+
+    public BinaryNode(Integer theElement, BinaryNode<AnyType> lt, BinaryNode<AnyType> rt) {
         element = theElement;
         rigth = rt;
         left = lt;
     }
 
-    public AnyType getElement() {
+    public Integer getElement() {
         return element;
     }
 
@@ -30,7 +36,7 @@ public class BinaryNode<AnyType> {
         return rigth;
     }
 
-    public void setElement(AnyType x) {
+    public void setElement(Integer x) {
         element = x;
     }
 
