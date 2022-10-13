@@ -633,6 +633,94 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Trapecio">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Trapecio/fast">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Simpson">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Simpson/fast">
+				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
 				<Option type="4"/>
@@ -654,6 +742,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/integracion/simpson.cpp">
+			<Option target="Simpson"/>
+		</Unit>
+		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/integracion/trapecioCompuesta.cpp">
+			<Option target="Trapecio"/>
+		</Unit>
 		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/lagrange.cpp">
 			<Option target="Lagrange"/>
 		</Unit>

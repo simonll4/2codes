@@ -17,3 +17,5 @@ add_executable(RegresionPolinomica metodos_numericos/regresion/polynomialRegress
 add_executable(Jacobiguia4 metodos_numericos/modificatedCodes/jacobiGuia4.cpp)
 add_executable(gaussSeidelRelajacion metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp)
 add_executable(WriteMatrix metodos_numericos/writeMatrix.cpp)
+add_executable(Trapecio metodos_numericos/integracion/trapecioCompuesta.cpp)
+add_executable(Simpson metodos_numericos/integracion/simpson.cpp)
