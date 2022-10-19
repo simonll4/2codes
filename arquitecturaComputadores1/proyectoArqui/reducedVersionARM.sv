@@ -128,6 +128,9 @@ module dmem(input  logic        clk, we,
             output logic [31:0] rd);
 
   logic [31:0] RAM[63:0];
+  
+  initial
+      $readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\dmemfile.dat",RAM);
 
   assign rd = RAM[a[31:2]]; // word aligned
 
@@ -141,7 +144,7 @@ module imem(input  logic [31:0] a,
   logic [31:0] RAM[63:0];
 
   initial
-      $readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\memfile.dat",RAM);
+      $readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\imemfile.dat",RAM);
 
   assign rd = RAM[a[31:2]]; // word aligned
 endmodule
