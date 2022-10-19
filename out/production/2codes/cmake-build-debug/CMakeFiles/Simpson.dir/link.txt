@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Simpson.dir/metodos_numericos/integracion/simpson.cpp.o -o Simpson 

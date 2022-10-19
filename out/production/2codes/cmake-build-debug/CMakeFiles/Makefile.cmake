@@ -60,4 +60,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Jacobiguia4.dir/DependInfo.cmake"
   "CMakeFiles/gaussSeidelRelajacion.dir/DependInfo.cmake"
   "CMakeFiles/WriteMatrix.dir/DependInfo.cmake"
+  "CMakeFiles/Trapecio.dir/DependInfo.cmake"
+  "CMakeFiles/Simpson.dir/DependInfo.cmake"
   )

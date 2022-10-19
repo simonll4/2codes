@@ -1,0 +1,41 @@
+       
+        SUB R0,R15,R15
+INICIO:
+        ADD R3,R0,#15
+        ADD R2,R0,#4
+Loop:
+        LDR R4,[R2]
+        STR R4,[R0,#0x800]
+        ADD R5,R0,#1
+DELAY:   SUBS R5,R5,#1
+        BNE DELAY
+        ADD R2,R2,#4
+        SUBS R3,R3,#20
+        BNE Loop
+        B INICIO
+//////////////////////////
+        SUB R0,R15,R15
+        ADD R3,R0,#15
+        ADD R2,R0,#4
+        LDR R4,[R2]
+        STR R4,[R0,#0x800]
+        ADD R5,R0,#1
+        SUBS R5,R5,#20
+        BNE 0x18
+        ADD R2,R2,#4
+        SUBS R3,R3,#1
+        BNE 0xc
+        B 0x4
+//////////////////////////
+0F004FE0
+0F3080E2
+042080E2
+004092E5
+004880E5
+015080E2
+145055E2
+FDFFFF1A
+042082E2
+013053E2
+F7FFFF1A
+F4FFFFEA

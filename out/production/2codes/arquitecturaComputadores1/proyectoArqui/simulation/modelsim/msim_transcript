@@ -1,0 +1,70 @@
+# Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do parcial2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui {C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:43:52 on Oct 19,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui" C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv 
+# -- Compiling module testbench
+# -- Compiling module top
+# -- Compiling module dmem
+# -- Compiling module imem
+# -- Compiling module arm
+# -- Compiling module controller
+# -- Compiling module decode
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module datapath
+# -- Compiling module regfile
+# -- Compiling module extend
+# -- Compiling module adder
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module mux2
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:43:52 on Oct 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.top
+# vsim rtl_work.top 
+# Start time: 17:43:56 on Oct 19,2022
+# Loading sv_std.std
+# Loading rtl_work.top
+# Loading rtl_work.arm
+# Loading rtl_work.controller
+# Loading rtl_work.decode
+# Loading rtl_work.condlogic
+# Loading rtl_work.flopenr
+# Loading rtl_work.condcheck
+# Loading rtl_work.datapath
+# Loading rtl_work.mux2
+# Loading rtl_work.flopr
+# Loading rtl_work.adder
+# Loading rtl_work.regfile
+# Loading rtl_work.extend
+# Loading rtl_work.alu
+# Loading rtl_work.imem
+# Loading rtl_work.dmem
+add wave -position end  sim:/top/clk
+force -freeze sim:/top/clk 1 0, 0 {50 ps} -r 100
+run
+add wave -position end  sim:/top/DataAdr
+force -freeze sim:/top/DataAdr 0 0
+force -freeze sim:/top/DataAdr 00000000000000000000000000000000 0
+run
+force -freeze sim:/top/DataAdr 1 0
+run
+# End time: 17:50:54 on Oct 19,2022, Elapsed time: 0:06:58
+# Errors: 0, Warnings: 0

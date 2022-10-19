@@ -298,6 +298,80 @@ WriteMatrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
 .PHONY : WriteMatrix/fast
 
+#=============================================================================
+# Target rules for targets named Trapecio
+
+# Build rule for target.
+Trapecio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Trapecio
+.PHONY : Trapecio
+
+# fast build rule for target.
+Trapecio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/build
+.PHONY : Trapecio/fast
+
+#=============================================================================
+# Target rules for targets named Simpson
+
+# Build rule for target.
+Simpson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Simpson
+.PHONY : Simpson
+
+# fast build rule for target.
+Simpson/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/build
+.PHONY : Simpson/fast
+
+metodos_numericos/integracion/simpson.o: metodos_numericos/integracion/simpson.cpp.o
+.PHONY : metodos_numericos/integracion/simpson.o
+
+# target to build an object file
+metodos_numericos/integracion/simpson.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/metodos_numericos/integracion/simpson.cpp.o
+.PHONY : metodos_numericos/integracion/simpson.cpp.o
+
+metodos_numericos/integracion/simpson.i: metodos_numericos/integracion/simpson.cpp.i
+.PHONY : metodos_numericos/integracion/simpson.i
+
+# target to preprocess a source file
+metodos_numericos/integracion/simpson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/metodos_numericos/integracion/simpson.cpp.i
+.PHONY : metodos_numericos/integracion/simpson.cpp.i
+
+metodos_numericos/integracion/simpson.s: metodos_numericos/integracion/simpson.cpp.s
+.PHONY : metodos_numericos/integracion/simpson.s
+
+# target to generate assembly for a file
+metodos_numericos/integracion/simpson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/metodos_numericos/integracion/simpson.cpp.s
+.PHONY : metodos_numericos/integracion/simpson.cpp.s
+
+metodos_numericos/integracion/trapecioCompuesta.o: metodos_numericos/integracion/trapecioCompuesta.cpp.o
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.o
+
+# target to build an object file
+metodos_numericos/integracion/trapecioCompuesta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/metodos_numericos/integracion/trapecioCompuesta.cpp.o
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.cpp.o
+
+metodos_numericos/integracion/trapecioCompuesta.i: metodos_numericos/integracion/trapecioCompuesta.cpp.i
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.i
+
+# target to preprocess a source file
+metodos_numericos/integracion/trapecioCompuesta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/metodos_numericos/integracion/trapecioCompuesta.cpp.i
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.cpp.i
+
+metodos_numericos/integracion/trapecioCompuesta.s: metodos_numericos/integracion/trapecioCompuesta.cpp.s
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.s
+
+# target to generate assembly for a file
+metodos_numericos/integracion/trapecioCompuesta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/metodos_numericos/integracion/trapecioCompuesta.cpp.s
+.PHONY : metodos_numericos/integracion/trapecioCompuesta.cpp.s
+
 metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
 .PHONY : metodos_numericos/interpolacion/lagrange.o
 
@@ -654,8 +728,16 @@ help:
 	@echo "... RegresionPolinomica"
 	@echo "... Secante"
 	@echo "... Segmentaria"
+	@echo "... Simpson"
+	@echo "... Trapecio"
 	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
+	@echo "... metodos_numericos/integracion/simpson.o"
+	@echo "... metodos_numericos/integracion/simpson.i"
+	@echo "... metodos_numericos/integracion/simpson.s"
+	@echo "... metodos_numericos/integracion/trapecioCompuesta.o"
+	@echo "... metodos_numericos/integracion/trapecioCompuesta.i"
+	@echo "... metodos_numericos/integracion/trapecioCompuesta.s"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"

@@ -21,61 +21,68 @@ public class BinaryTree<AnyType> {
             //Si el valor a insertar es menor al valor del nodo se insertará a la izquierda.
             //Si el valor a insertar es mayor al valor del nodo se insertará a la derecha.
             if (element < root.getElement()) {
-                if (root.getLeft() != null) add(root.getLeft(), element);
+                if (root.getLeft() != null) root.add(root.getLeft(), element);
                 else root.setLeft(new BinaryNode<>(element));
             } else {
-                if (root.getRight() != null) add(root.getRight(), element);
+                if (root.getRight() != null) root.add(root.getRight(), element);
                 else root.setRigth(new BinaryNode<>(element));
             }
         }
     }
 
-    // metodo para producir la recursividad en el add
-    void add(BinaryNode<AnyType> newRoot, Integer element) {
-        if (element < newRoot.getElement()) {
-            if (newRoot.getLeft() != null) add(newRoot.getLeft(), element);
-            else newRoot.setLeft(new BinaryNode<>(element));
+    public void addNotRep(Integer element) throws Exception {
+
+        if (element < root.getElement()) {
+            if (root.getLeft() == null) {
+                root.setLeft(new BinaryNode<>(element));
+            } else {
+                root.addNotRep(element, root.getLeft());
+            }
+        } else if (element > root.getElement()) {
+            if (root.getRight() == null) {
+                root.setRigth(new BinaryNode<>(element));
+            } else {
+                root.addNotRep(element, root.getRight());
+            }
         } else {
-            if (newRoot.getRight() != null) add(newRoot.getRight(), element);
-            else newRoot.setRigth(new BinaryNode<>(element));
-        }
-    }
-
-    public void addNotRep(Integer element) throws Exception{
-
-        if(element.equals(root.getElement())){
-            throw new Exception("ELEMENTO YA AGREGADO");
+            throw new Exception("El elemento ya esta en el arbol");
         }
 
     }
 
-    public Integer find(Integer element){
+    public void delete(Integer element) throws Exception {
+        if (element.equals(root.getElement())) {
+            if (root.getLeft() == null && root.getRight() == null) root = null;
+            else if (root.getRight() == null) root = root.getLeft();
+            else if (root.getLeft() == null) root = root.getRight();
+            else {
+                BinaryNode<AnyType> aux = root.getLeft();
+                root = root.getRight();
+                BinaryNode<AnyType> aux2 = root.getLeft();
+                if (aux2 != null) {
+                    while (aux2.getLeft() != null) {
+                        aux2 = aux2.getLeft();
+                    }
+                    aux2.setLeft(aux);
+                } else root.setLeft(aux);
+            }
 
-        if(element.equals(root.getElement())){
+        } else if (element < root.getElement() && root.getLeft() != null)
+            root.setLeft(root.delete(element, root.getLeft()));
+        else if (element > root.getElement() && root.getRight() != null)
+            root.setRigth(root.delete(element, root.getRight()));
+        else throw new Exception("El elemento no esta en el arbol");
+    }
+
+    public Integer find(Integer element) {
+
+        if (element.equals(root.getElement())) {
             return root.getElement();
-        }
-        else if(element < root.getElement()){
-            if(root.getLeft() != null) return find(root.getLeft(),element);
+        } else if (element < root.getElement()) {
+            if (root.getLeft() != null) return root.find(root.getLeft(), element);
             else return null;
-        }
-        else{
-            if(root.getRight() != null) return find(root.getRight(),element);
-            else return null;
-        }
-
-    }
-
-    Integer find(BinaryNode newRoot,Integer element){
-
-        if(element.equals(newRoot.getElement())){
-            return newRoot.getElement();
-        }
-        else if(element < newRoot.getElement()){
-            if(newRoot.getLeft() != null) return find(newRoot.getLeft(),element);
-            else return null;
-        }
-        else{
-            if(newRoot.getRight() != null) return find(newRoot.getRight(),element);
+        } else {
+            if (root.getRight() != null) return root.find(root.getRight(), element);
             else return null;
         }
 
