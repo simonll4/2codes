@@ -12,9 +12,8 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui {C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:43:52 on Oct 19,2022
+# Start time: 19:49:33 on Oct 22,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui" C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv 
-# -- Compiling module testbench
 # -- Compiling module top
 # -- Compiling module dmem
 # -- Compiling module imem
@@ -26,20 +25,22 @@
 # -- Compiling module datapath
 # -- Compiling module regfile
 # -- Compiling module extend
+# -- Compiling module alu
 # -- Compiling module adder
 # -- Compiling module flopenr
 # -- Compiling module flopr
 # -- Compiling module mux2
-# -- Compiling module alu
+# -- Compiling module cmp2
+# -- Compiling module port
 # 
 # Top level modules:
-# 	testbench
-# End time: 17:43:52 on Oct 19,2022, Elapsed time: 0:00:00
+# 	top
+# End time: 19:49:33 on Oct 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim rtl_work.top
 # vsim rtl_work.top 
-# Start time: 17:43:56 on Oct 19,2022
+# Start time: 19:49:40 on Oct 22,2022
 # Loading sv_std.std
 # Loading rtl_work.top
 # Loading rtl_work.arm
@@ -57,14 +58,207 @@ vsim rtl_work.top
 # Loading rtl_work.alu
 # Loading rtl_work.imem
 # Loading rtl_work.dmem
+# Loading rtl_work.cmp2
+# Loading rtl_work.port
 add wave -position end  sim:/top/clk
+add wave -position end  sim:/top/reset
 force -freeze sim:/top/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/top/reset 1 0
 run
-add wave -position end  sim:/top/DataAdr
-force -freeze sim:/top/DataAdr 0 0
-force -freeze sim:/top/DataAdr 00000000000000000000000000000000 0
+force -freeze sim:/top/reset St0 0
 run
-force -freeze sim:/top/DataAdr 1 0
 run
-# End time: 17:50:54 on Oct 19,2022, Elapsed time: 0:06:58
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 19:50:55 on Oct 22,2022, Elapsed time: 0:01:15
 # Errors: 0, Warnings: 0

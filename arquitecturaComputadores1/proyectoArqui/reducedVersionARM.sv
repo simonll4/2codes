@@ -1,126 +1,27 @@
-// arm_single.v
-// David_Harris@hmc.edu and Sarah_Harris@hmc.edu 25 June 2013
-// Single-cycle implementation of a subset of ARMv4
+// arm_io_port.v
+// October 2018
+// Single-cycle implementation of a subset of ARMv4 with i/O port capability
 // 
-// run 210
-// Expect simulator to print "Simulation succeeded"
-// when the value 7 is written to address 100 (0x64)
-// 16 32-bit registers
-// Data-processing instructions
-//   ADD, SUB, AND, ORR
-//   INSTR<cond><S> rd, rn, #immediate
-//   INSTR<cond><S> rd, rn, rm
-//    rd <- rn INSTR rm	      if (S) Update Status Flags
-//    rd <- rn INSTR immediate	if (S) Update Status Flags
-//   Instr[31:28] = cond
-//   Instr[27:26] = op = 00
-//   Instr[25:20] = funct
-//                  [25]:    1 for immediate, 0 for register
-//                  [24:21]: 0100 (ADD) / 0010 (SUB) /
-//                           0000 (AND) / 1100 (ORR)
-//                  [20]:    S (1 = update CPSR status Flags)
-//   Instr[19:16] = rn
-//   Instr[15:12] = rd
-//   Instr[11:8]  = 0000
-//   Instr[7:0]   = imm8      (for #immediate type) / 
-//                  {0000,rm} (for register type)
-//   
-// Load/Store instructions
-//   LDR, STR
-//   INSTR rd, [rn, #offset]
-//    LDR: rd <- Mem[rn+offset]
-//    STR: Mem[rn+offset] <- rd
-//   Instr[31:28] = cond
-//   Instr[27:26] = op = 01 
-//   Instr[25:20] = funct
-//                  [25]:    0 (A)
-//                  [24:21]: 1100 (P/U/B/W)
-//                  [20]:    L (1 for LDR, 0 for STR)
-//   Instr[19:16] = rn
-//   Instr[15:12] = rd
-//   Instr[11:0]  = imm12 (zero extended)
-//
-// Branch instruction (PC <= PC + offset, PC holds 8 bytes past Branch Instr)
-//   B
-//   B target
-//    PC <- PC + 8 + imm24 << 2
-//   Instr[31:28] = cond
-//   Instr[27:25] = op = 10
-//   Instr[25:24] = funct
-//                  [25]: 1 (Branch)
-//                  [24]: 0 (link)
-//   Instr[23:0]  = imm24 (sign extend, shift left 2)
-//   Note: no Branch delay slot on ARM
-//
-// Other:
-//   R15 reads as PC+8
-//   Conditional Encoding
-//    cond  Meaning                       Flag
-//    0000  Equal                         Z = 1
-//    0001  Not Equal                     Z = 0
-//    0010  Carry Set                     C = 1
-//    0011  Carry Clear                   C = 0
-//    0100  Minus                         N = 1
-//    0101  Plus                          N = 0
-//    0110  Overflow                      V = 1
-//    0111  No Overflow                   V = 0
-//    1000  Unsigned Higher               C = 1 & Z = 0
-//    1001  Unsigned Lower/Same           C = 0 | Z = 1
-//    1010  Signed greater/equal          N = V
-//    1011  Signed less                   N != V
-//    1100  Signed greater                N = V & Z = 0
-//    1101  Signed less/equal             N != V | Z = 1
-//    1110  Always                        any
 
-module testbench();
+module top(input  logic       clk, reset,
+           input  logic [7:0] INport,
+           output logic [7:0] OUTport);
 
-  logic        clk;
-  logic        reset;
-
-  logic [31:0] WriteData, DataAdr;
-  logic        MemWrite;
-
-  // instantiate device to be tested
-  top dut(clk, reset, WriteData, DataAdr, MemWrite);
-  
-  // initialize test
-  initial
-    begin
-      reset <= 1; # 22; reset <= 0;
-    end
-
-  // generate clock to sequence tests
-  always
-    begin
-      clk <= 1; # 5; clk <= 0; # 5;
-    end
-
-  // check results
-  always @(negedge clk)
-    begin
-      if(MemWrite) begin
-        if(DataAdr === 100 & WriteData === 7) begin
-          $display("Simulation succeeded");
-          $stop;
-        end else if (DataAdr !== 96) begin
-          $display("Simulation failed");
-          $stop;
-        end
-      end
-    end
-endmodule
-
-module top(input  logic        clk, reset, 
-           output logic [31:0] WriteData, DataAdr, 
-           output logic        MemWrite);
-
-  logic [31:0] PC, Instr, ReadData;
+  logic [31:0] WriteData, DataAdr; 
+  logic        MemWrite, MemtoReg, PortSel;
+  logic [31:0] PC, Instr, ReadData, MemData;
+  logic [7:0] INData;
   
   // instantiate processor and memories
-  arm arm(clk, reset, PC, Instr, MemWrite, DataAdr, 
+  arm arm(clk, reset, PC, Instr, MemWrite, MemtoReg, DataAdr, 
           WriteData, ReadData);
   imem imem(PC, Instr);
-  dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData);
+  dmem dmem(clk, MemWrite, DataAdr, WriteData, MemData);
+  // instantiate i/O ports at 0x800 address
+  cmp2 #(32) compare  (32'h800, DataAdr, PortSel);
+  mux2 #(32) mem_portmux (MemData, {24'b0,INData}, PortSel, ReadData);
+  port inport (clk, PortSel & MemtoReg, INport, INData);
+  port outport (clk, PortSel & MemWrite, WriteData[7:0], OUTport);
 endmodule
 
 module dmem(input  logic        clk, we,
@@ -130,9 +31,10 @@ module dmem(input  logic        clk, we,
   logic [31:0] RAM[63:0];
   
   initial
-      $readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\dmemfile.dat",RAM);
+		$readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\dmemfile.dat",RAM);
 
   assign rd = RAM[a[31:2]]; // word aligned
+  
 
   always_ff @(posedge clk)
     if (we) RAM[a[31:2]] <= wd;
@@ -152,13 +54,13 @@ endmodule
 module arm(input  logic        clk, reset,
            output logic [31:0] PC,
            input  logic [31:0] Instr,
-           output logic        MemWrite,
+           output logic        MemWrite, MemtoReg,
            output logic [31:0] ALUResult, WriteData,
            input  logic [31:0] ReadData);
 
   logic [3:0] ALUFlags;
   logic       RegWrite, 
-              ALUSrc, MemtoReg, PCSrc;
+              ALUSrc, PCSrc; // MemtoReg to output
   logic [1:0] RegSrc, ImmSrc, ALUControl;
 
   controller c(clk, reset, Instr[31:12], ALUFlags, 
@@ -174,7 +76,7 @@ module arm(input  logic        clk, reset,
 endmodule
 
 module controller(input  logic         clk, reset,
-	          input  logic [31:12] Instr,
+	              input  logic [31:12] Instr,
                   input  logic [3:0]   ALUFlags,
                   output logic [1:0]   RegSrc,
                   output logic         RegWrite,
@@ -233,7 +135,7 @@ module decode(input  logic [1:0] Op,
       case(Funct[4:1]) 
   	    4'b0100: ALUControl = 2'b00; // ADD
   	    4'b0010: ALUControl = 2'b01; // SUB
-            4'b0000: ALUControl = 2'b10; // AND
+       4'b0000: ALUControl = 2'b10; // AND
   	    4'b1100: ALUControl = 2'b11; // ORR
   	    default: ALUControl = 2'bx;  // unimplemented
       endcase
@@ -334,8 +236,8 @@ module datapath(input  logic        clk, reset,
   mux2 #(4)   ra1mux(Instr[19:16], 4'b1111, RegSrc[0], RA1);
   mux2 #(4)   ra2mux(Instr[3:0], Instr[15:12], RegSrc[1], RA2);
   regfile     rf(clk, RegWrite, RA1, RA2,
-              Instr[15:12], Result, PCPlus8, 
-              SrcA, WriteData); 
+                 Instr[15:12], Result, PCPlus8, 
+                 SrcA, WriteData); 
   mux2 #(32)  resmux(ALUResult, ReadData, MemtoReg, Result);
   extend      ext(Instr[23:0], ImmSrc, ExtImm);
 
@@ -381,6 +283,34 @@ module extend(input  logic [23:0] Instr,
     endcase             
 endmodule
 
+module alu(input logic [31:0] SrcA, SrcB,
+           input logic [1:0] ALUControl,
+           output logic [31:0] ALUResult,
+           output logic [3:0] ALUFlags);
+
+  logic neg, zero, carry, overflow, aux;
+  logic [31:0] condinvb;
+  logic [31:0] sum;
+  
+  assign condinvb = ALUControl[0] ? ~SrcB : SrcB;
+  assign {aux,sum} = SrcA + condinvb + ALUControl[0];
+  
+  always_comb
+    casex (ALUControl[1:0])
+      2'b0?: ALUResult = sum;
+      2'b10: ALUResult = SrcA & SrcB;
+      2'b11: ALUResult = SrcA | SrcB;
+    endcase
+
+  assign neg = ALUResult[31];
+  assign zero = (ALUResult == 32'b0);
+  assign carry = (ALUControl[1] == 1'b0) & aux;
+  assign overflow = (ALUControl[1] == 1'b0) &
+                    ~(SrcA[31] ^ SrcB[31] ^ ALUControl[0]) &
+                    (SrcA[31] ^ sum[31]);
+  assign ALUFlags = {neg, zero, carry, overflow};
+endmodule
+
 module adder #(parameter WIDTH=8)
               (input  logic [WIDTH-1:0] a, b,
                output logic [WIDTH-1:0] y);
@@ -416,30 +346,18 @@ module mux2 #(parameter WIDTH = 8)
   assign y = s ? d1 : d0; 
 endmodule
 
-module alu(input logic [31:0] SrcA, SrcB,
-           input logic [1:0] ALUControl,
-           output logic [31:0] ALUResult,
-           output logic [3:0] ALUFlags);
+module cmp2 #(parameter WIDTH = 8)
+             (input  logic [WIDTH-1:0] d0, d1,
+              output logic CMPresult);
+   
+   assign CMPresult = (d0==d1);
+endmodule
 
-  logic neg, zero, carry, overflow, aux;
-  logic [31:0] condinvb;
-  logic [31:0] sum;
-  
-  assign condinvb = ALUControl[0] ? ~SrcB : SrcB;
-  assign {aux,sum} = SrcA + condinvb + ALUControl[0];
-  
-  always_comb
-    casex (ALUControl[1:0])
-      2'b0?: ALUResult = sum;
-      2'b10: ALUResult = SrcA & SrcB;
-      2'b11: ALUResult = SrcA | SrcB;
-    endcase
+module port #(parameter WIDTH = 8)
+            (input  logic clk, enable,
+             input  logic [WIDTH-1:0] IN,
+             output logic [WIDTH-1:0] OUT);
 
-  assign neg = ALUResult[31];
-  assign zero = (ALUResult == 32'b0);
-  assign carry = (ALUControl[1] == 1'b0) & aux;
-  assign overflow = (ALUControl[1] == 1'b0) &
-                    ~(SrcA[31] ^ SrcB[31] ^ ALUControl[0]) &
-                    (SrcA[31] ^ sum[31]);
-  assign ALUFlags = {neg, zero, carry, overflow};
+  always_ff @(posedge clk)
+    if (enable) OUT <= IN;
 endmodule

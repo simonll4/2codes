@@ -1,0 +1,27 @@
+
+        SUB R0,R15,R15
+        ADD R1,R15,#0
+
+switch: SUBS R0,R1,#1
+        BEQ case 1
+        SUBS R0,R1,#2
+        BEQ  case 2
+        SUBS R0,R1,#3
+        BEQ case 3
+        SUBS R0,R1,#4
+        BEQ case 4
+        B default
+case 1: 
+
+        B switch
+case 2:
+
+        B switch
+case 3:
+
+        B switch
+case 4:
+
+        B switch
+default:
+        B switch
