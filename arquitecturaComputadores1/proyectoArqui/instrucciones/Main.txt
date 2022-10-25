@@ -1,27 +1,126 @@
+SUB R0,R15,R15
+ADD R2,R0,#0
+LDR R1,[R0,0x800]       
+SUBS R1,R1,#1
+BNE 0x8
+ADD R3,R0,#1 
+LDR R4,[R2]
+ADD R2,R2,#4
+STR R4,[R0, 0x800]
+ADD R5,R0,#1
+SUBS R5,R5,#1               
+BNE 0x28
+LDR R1,[R0,0x800] 
+SUBS R1,R1,#1
+BEQ 0x14
+ADD R1,R0,#0    
+SUBS R1,R3,#1   
+BEQ 0x64
+SUBS R1,R3,#2
+BEQ 0x6C
+SUBS R1,R3,#3
+BEQ 0x74
+SUBS R1,R3,#4
+BEQ 0x7C
+B 0x4
+ADD R8,R0,#0x1
+STR R8,[R0,#0x800]
+B 0x4
+ADD R9,R0,#0x2
+STR R9,[R0,#0x800]
+B 0x4
+ADD R10,R0,#0x3
+STR R10,[R0,#0x800]
+B 0x4
+ADD R11,R0,#0x4
+STR R11,[R0,#0x800]
+B 0x4
+//////////////cheto
+SUB R0,R15,R15
+ADD R2,R0,#0
+LDR R1,[R0,0x800] 
+SUBS R1,R1,#1
+BNE 0x8
+ADD R3,R0,#1 
+LDR R4,[R2]
+ADD R2,R2,#4
+STR R4,[R0, 0x800]
+ADD R5,R0,#1
+SUBS R5,R5,#1               
+BNE 0x28
+LDR R1,[R0,0x800] 
+SUBS R1,R1,#1
+BEQ 0x14
+ADD R1,R0,#0    
+SUBS R1,R3,#1   
+BEQ 0x64
+SUBS R1,R3,#2
+BEQ 0x6C
+SUBS R1,R3,#3
+BEQ 0x74
+SUBS R1,R3,#4
+BEQ 0x7C
+B 0x4
+ADD R8,R0,#0x1
+STR R8,[R0,#0x800]
+B 0x4
+ADD R9,R0,#0x2
+STR R9,[R0,#0x800]
+B 0x4
+ADD R10,R0,#0x3
+STR R10,[R0,#0x800]
+B 0x4
+ADD R11,R0,#0x4
+STR R11,[R0,#0x800]
+B 0x4
+        
 
+        
+
+        
+
+
+
+
+//////////////////////////////////
         SUB R0,R15,R15
-        ADD R1,R15,#0
+inicio  ADD R2,R0,#0
+loop1   LDR R1, [R0, 0x800]
+        SUBS R1, R1, #1
+        BNE loop1
+loop2   ADD R3, R0, #1
+        LDR R4, [R2]
+        ADD R2, R2, #4
+        STR R4, [R0, 0x800]
+        ADD R5,R0,#1            //retardo iterador
+ retardo SUBS R5,R5,#1
+        BNE retardo
+        LDR R1, [R0, 0x800] 
+        SUBS R1, R1, #1
+        BEQ loop1
 
-switch: SUBS R0,R1,#1
+        ADD R1,R0,#0
+switch: SUBS R1,R3,#1
         BEQ case 1
-        SUBS R0,R1,#2
+        SUBS R1,R3,#2
         BEQ  case 2
-        SUBS R0,R1,#3
+        SUBS R1,R3,#3
         BEQ case 3
-        SUBS R0,R1,#4
+        SUBS R1,R3,#4
         BEQ case 4
-        B default
-case 1: 
+        B inicio  // es el default
+case 1:
 
-        B switch
+        B inicio
 case 2:
 
-        B switch
+        B inicio
 case 3:
 
-        B switch
+        B inicio
 case 4:
 
-        B switch
-default:
-        B switch
+        B inicio
+
+
+/////////////////////////////////

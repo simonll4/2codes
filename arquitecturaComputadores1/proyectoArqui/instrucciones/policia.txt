@@ -1,4 +1,50 @@
 11000011    C3
-00111100    3C  //5 veces
+00111100    3C 
 11111111    FF
-00000000    0   //3 veces
+00000000    0   
+
+        SUB R0,R15,R15
+inicio: ADD R2,R0,#0    //guardo lo que leo de la tabla     
+        ADD R4,R0,#6    //iterador del loop    
+loop1:  ADD R6,R0,#0    //
+        ADD R3,R0,#0
+        LDR R2,[R3]
+        OR R6,R6,R2
+        STR R6,[R0,#0x800]
+        ADD R7,R0,#1
+retardo 1:SUBS R7,R7,#1
+        BNE retardo 1
+        ADD R6,R0,#0x11111111
+        ADD R3,R3,#4
+        LDR R2,[R3]
+        AND R6,R6,R2
+        STR R6,[R0,#0x800]
+        ADD R7,R0,#1
+retardo 2:SUBS R7,R7,#1
+        BNE retardo 2
+        SUBS R4,R4,#1
+        BNE loop 1
+
+/////////////////////////////////////////
+        SUB R0,R15,R15
+        ADD R2,R0,#0     
+        ADD R4,R0,#6       
+        ADD R6,R0,#0 
+        ADD R3,R0,#0
+        LDR R2,[R3]
+        ORR R6,R6,R2
+        STR R6,[R0,#0x800]
+        ADD R7,R0,#1
+        SUBS R7,R7,#1
+        BNE 0x26
+        ADD R6,R0,#255
+        ADD R3,R3,#4
+        LDR R2,[R3]
+        AND R6,R6,R2
+        STR R6,[R0,#0x800]
+        ADD R7,R0,#1
+        SUBS R7,R7,#1
+        BNE 0x44
+        SUBS R4,R4,#1
+        BNE 0xC
+
