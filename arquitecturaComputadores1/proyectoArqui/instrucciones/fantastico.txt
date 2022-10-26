@@ -28,19 +28,6 @@
         BNE 0xc
         B 0x4
 
-E04F000F
-E280300F
-E2802000
-E5924000
-E5804800
-E2805001
-E2555001
-1AFFFFFD
-E2822004
-E2533001
-1AFFFFF7
-EAFFFFF4
-
 ////////////////
 //////algoritmo
 ////////////////
@@ -78,6 +65,7 @@ loop 2:
         SUBS R4,R4,#1
         BNE loop 2
         B inicio
+
 
         SUB R0,R15,R15
         ADD R1,R0,#128

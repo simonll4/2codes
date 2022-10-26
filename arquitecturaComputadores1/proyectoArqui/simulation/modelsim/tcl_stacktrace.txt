@@ -1,0 +1,33 @@
+Wed Oct 26 19:08:03 ART 2022
+Trace back: 
+    while executing
+"vsim_kernel SimObjView type {SkG2uy VcG2uy TVEB72 -1 0 0 0 0}"
+    ("eval" body line 1)
+    invoked from within
+"eval vsim_kernel SimObjView $args"
+    (procedure "::SimDataset::SimObjView" body line 2)
+    invoked from within
+"SimObjView type $id"
+    (object "::AbstractDataset::simDataset0" method "::SimDataset::type" body line 6)
+    invoked from within
+"$nameSpace type $node"
+    (procedure "ObjectsTreeView::Type" line 4)
+    invoked from within
+"ObjectsTreeView::Type $id"
+    (procedure "QObjects::_getSelObjForWave" line 8)
+    invoked from within
+"QObjects::_getSelObjForWave .main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.col1"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (procedure "DND_GetData" line 4)
+    invoked from within
+"DND_GetData QObjects::_getSelObjForWave .main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.col1"
+    ("eval" body line 1)
+    invoked from within
+"eval $vsimPriv(DragDrop_GetHandler,$vsimPriv(DragDrop_fromwindow))"
+    (procedure "DND_Drag" line 17)
+    invoked from within
+"DND_Drag .main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.col1 110 19"
+  <2:D:/quartus/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {}
+  <1:eval:1: ::tk::dialog::error::bgerror {}
