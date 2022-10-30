@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -o Biseccion 
+/usr/bin/c++ -g CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o -o Biseccion 

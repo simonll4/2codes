@@ -324,6 +324,120 @@ Simpson/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/build
 .PHONY : Simpson/fast
 
+#=============================================================================
+# Target rules for targets named GaussLegendre
+
+# Build rule for target.
+GaussLegendre: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GaussLegendre
+.PHONY : GaussLegendre
+
+# fast build rule for target.
+GaussLegendre/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/build
+.PHONY : GaussLegendre/fast
+
+#=============================================================================
+# Target rules for targets named Diferenciacion
+
+# Build rule for target.
+Diferenciacion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Diferenciacion
+.PHONY : Diferenciacion
+
+# fast build rule for target.
+Diferenciacion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/build
+.PHONY : Diferenciacion/fast
+
+#=============================================================================
+# Target rules for targets named Euler
+
+# Build rule for target.
+Euler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Euler
+.PHONY : Euler
+
+# fast build rule for target.
+Euler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
+.PHONY : Euler/fast
+
+metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.o
+
+# target to build an object file
+metodos_numericos/diferenciacion/diferenciacion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/metodos_numericos/diferenciacion/diferenciacion.cpp.o
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.cpp.o
+
+metodos_numericos/diferenciacion/diferenciacion.i: metodos_numericos/diferenciacion/diferenciacion.cpp.i
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.i
+
+# target to preprocess a source file
+metodos_numericos/diferenciacion/diferenciacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/metodos_numericos/diferenciacion/diferenciacion.cpp.i
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.cpp.i
+
+metodos_numericos/diferenciacion/diferenciacion.s: metodos_numericos/diferenciacion/diferenciacion.cpp.s
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.s
+
+# target to generate assembly for a file
+metodos_numericos/diferenciacion/diferenciacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/metodos_numericos/diferenciacion/diferenciacion.cpp.s
+.PHONY : metodos_numericos/diferenciacion/diferenciacion.cpp.s
+
+metodos_numericos/ecuaciones_diferenciales/euler.o: metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.o
+
+# target to build an object file
+metodos_numericos/ecuaciones_diferenciales/euler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
+
+metodos_numericos/ecuaciones_diferenciales/euler.i: metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.i
+
+# target to preprocess a source file
+metodos_numericos/ecuaciones_diferenciales/euler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
+
+metodos_numericos/ecuaciones_diferenciales/euler.s: metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.s
+
+# target to generate assembly for a file
+metodos_numericos/ecuaciones_diferenciales/euler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+
+metodos_numericos/integracion/gaussLegendre.o: metodos_numericos/integracion/gaussLegendre.cpp.o
+.PHONY : metodos_numericos/integracion/gaussLegendre.o
+
+# target to build an object file
+metodos_numericos/integracion/gaussLegendre.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/metodos_numericos/integracion/gaussLegendre.cpp.o
+.PHONY : metodos_numericos/integracion/gaussLegendre.cpp.o
+
+metodos_numericos/integracion/gaussLegendre.i: metodos_numericos/integracion/gaussLegendre.cpp.i
+.PHONY : metodos_numericos/integracion/gaussLegendre.i
+
+# target to preprocess a source file
+metodos_numericos/integracion/gaussLegendre.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/metodos_numericos/integracion/gaussLegendre.cpp.i
+.PHONY : metodos_numericos/integracion/gaussLegendre.cpp.i
+
+metodos_numericos/integracion/gaussLegendre.s: metodos_numericos/integracion/gaussLegendre.cpp.s
+.PHONY : metodos_numericos/integracion/gaussLegendre.s
+
+# target to generate assembly for a file
+metodos_numericos/integracion/gaussLegendre.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/metodos_numericos/integracion/gaussLegendre.cpp.s
+.PHONY : metodos_numericos/integracion/gaussLegendre.cpp.s
+
 metodos_numericos/integracion/simpson.o: metodos_numericos/integracion/simpson.cpp.o
 .PHONY : metodos_numericos/integracion/simpson.o
 
@@ -717,8 +831,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Biseccion"
+	@echo "... Diferenciacion"
 	@echo "... EliminacionGaussiana"
+	@echo "... Euler"
 	@echo "... FalsaPosicion"
+	@echo "... GaussLegendre"
 	@echo "... GaussSeidel"
 	@echo "... IterativoDePuntoFijo"
 	@echo "... Jacobi"
@@ -732,6 +849,15 @@ help:
 	@echo "... Trapecio"
 	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
+	@echo "... metodos_numericos/diferenciacion/diferenciacion.o"
+	@echo "... metodos_numericos/diferenciacion/diferenciacion.i"
+	@echo "... metodos_numericos/diferenciacion/diferenciacion.s"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.o"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.i"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.s"
+	@echo "... metodos_numericos/integracion/gaussLegendre.o"
+	@echo "... metodos_numericos/integracion/gaussLegendre.i"
+	@echo "... metodos_numericos/integracion/gaussLegendre.s"
 	@echo "... metodos_numericos/integracion/simpson.o"
 	@echo "... metodos_numericos/integracion/simpson.i"
 	@echo "... metodos_numericos/integracion/simpson.s"

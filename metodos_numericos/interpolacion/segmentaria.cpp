@@ -36,7 +36,6 @@ int main() {
     printMatrix(matrix, b, 4 * intervalos, 4 * intervalos);
     gaussianElimination(matrix, b, z, 4 * intervalos);
 
-
     return 0;
 }
 

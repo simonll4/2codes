@@ -62,4 +62,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/WriteMatrix.dir/DependInfo.cmake"
   "CMakeFiles/Trapecio.dir/DependInfo.cmake"
   "CMakeFiles/Simpson.dir/DependInfo.cmake"
+  "CMakeFiles/GaussLegendre.dir/DependInfo.cmake"
+  "CMakeFiles/Diferenciacion.dir/DependInfo.cmake"
+  "CMakeFiles/Euler.dir/DependInfo.cmake"
   )

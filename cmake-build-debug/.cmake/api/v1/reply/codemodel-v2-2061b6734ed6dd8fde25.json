@@ -30,7 +30,10 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -60,7 +63,10 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -69,8 +75,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Biseccion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Biseccion-Debug-cbdbeeabb48faab6b5ec.json",
+					"jsonFile" : "target-Biseccion-Debug-9fad1dd5a1370d87dbcb.json",
 					"name" : "Biseccion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Diferenciacion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Diferenciacion-Debug-ed78615a34243f73808a.json",
+					"name" : "Diferenciacion",
 					"projectIndex" : 0
 				},
 				{
@@ -82,9 +95,23 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Euler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Euler-Debug-33b1546e03b4a3fb4adc.json",
+					"name" : "Euler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "FalsaPosicion::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-FalsaPosicion-Debug-63568bee6d02678916db.json",
 					"name" : "FalsaPosicion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GaussLegendre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GaussLegendre-Debug-67c1ed61f3f7e6c1a7aa.json",
+					"name" : "GaussLegendre",
 					"projectIndex" : 0
 				},
 				{

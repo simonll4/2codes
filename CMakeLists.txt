@@ -3,7 +3,7 @@ project(2codes)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Biseccion metodos_numericos/localizacion_raices/bisection.cpp)
+add_executable(Biseccion metodos_numericos/localizacion_raices/bisection.cpp metodos_numericos/ecuaciones_diferenciales/euler.cpp)
 add_executable(FalsaPosicion metodos_numericos/localizacion_raices/falsePosition.cpp)
 add_executable(IterativoDePuntoFijo metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp)
 add_executable(NewtonRapshon metodos_numericos/localizacion_raices/newtonRaphson.cpp)
@@ -19,3 +19,6 @@ add_executable(gaussSeidelRelajacion metodos_numericos/sistemas_ecuaciones_linea
 add_executable(WriteMatrix metodos_numericos/writeMatrix.cpp)
 add_executable(Trapecio metodos_numericos/integracion/trapecioCompuesta.cpp)
 add_executable(Simpson metodos_numericos/integracion/simpson.cpp)
+add_executable(GaussLegendre metodos_numericos/integracion/gaussLegendre.cpp)
+add_executable(Diferenciacion metodos_numericos/diferenciacion/diferenciacion.cpp)
+add_executable(Euler metodos_numericos/ecuaciones_diferenciales/euler.cpp)
