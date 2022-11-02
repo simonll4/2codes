@@ -53,7 +53,10 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -87,7 +90,10 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -103,6 +109,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "metodos_numericos/ecuaciones_diferenciales/euler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "metodos_numericos/ecuaciones_diferenciales/heun.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -8,7 +8,7 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return -2 * x * y;
+    return (2*x + 1)*sqrt(y);
 }
 
 /////////////////////
@@ -24,27 +24,28 @@ double function(double x, double y) {
 #define N 100
 
 int main() {
-
-    double x[N + 1], y[N + 1], h;
-
+    double x[N + 1], y[N + 1], k[5], h;
     x[0] = INITIALX;
     y[0] = INITIALY;
+    h = (double) (FINALX - INITIALX) / N;
 
-    h = (double)(FINALX - INITIALX) / N;
-
-    ofstream file("eulerBoard.txt");
+    ofstream file("rungeKuttaBoard.txt");
     if (!file.is_open()) {
         cout << "ERROR AL ABRIR ARCHIVO" << endl;
         return 1;
     }
 
-    for (int i = 0; i < N; ++i) {
-        y[i + 1] = y[i] + h * function(x[i], y[i]);
+    for (int i = 0; i < N; i++) {
+        k[1] = function(x[i], y[i]);
+        k[2] = function(x[i] + h, y[i] + k[1] * h / 2);
+        k[3] = function(x[i] + h / 2, y[i] + k[2] * h / 2);
+        k[4] = function(x[i] + h, y[i] + k[3] * h);
+
+        y[i + 1] = y[i] + h * (k[1] + 2 * k[2] + 2 * k[3] + k[4]) / 6;
         x[i + 1] = x[i] + h;
-        file << x[i] << "\t" << y[i] << "\t" << endl;
+
+        file << x[i + 1] << "\t" << y[i + 1] << endl;
     }
 
-    file << x[N] << "\t" << y[N] << "\t" << endl;
     file.close();
-
 }

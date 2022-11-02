@@ -3,6 +3,12 @@ file(REMOVE_RECURSE
   "Biseccion.pdb"
   "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o"
   "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o.d"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o.d"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o.d"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o"
+  "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o.d"
   "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o"
   "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o.d"
 )

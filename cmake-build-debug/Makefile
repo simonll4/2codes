@@ -363,6 +363,45 @@ Euler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
 .PHONY : Euler/fast
 
+#=============================================================================
+# Target rules for targets named Heun
+
+# Build rule for target.
+Heun: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Heun
+.PHONY : Heun
+
+# fast build rule for target.
+Heun/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/build
+.PHONY : Heun/fast
+
+#=============================================================================
+# Target rules for targets named PuntoMedio
+
+# Build rule for target.
+PuntoMedio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PuntoMedio
+.PHONY : PuntoMedio
+
+# fast build rule for target.
+PuntoMedio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/build
+.PHONY : PuntoMedio/fast
+
+#=============================================================================
+# Target rules for targets named RungeKutta
+
+# Build rule for target.
+RungeKutta: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RungeKutta
+.PHONY : RungeKutta
+
+# fast build rule for target.
+RungeKutta/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/build
+.PHONY : RungeKutta/fast
+
 metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.o
 
@@ -413,6 +452,87 @@ metodos_numericos/ecuaciones_diferenciales/euler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
 .PHONY : metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+
+metodos_numericos/ecuaciones_diferenciales/heun.o: metodos_numericos/ecuaciones_diferenciales/heun.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.o
+
+# target to build an object file
+metodos_numericos/ecuaciones_diferenciales/heun.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.cpp.o
+
+metodos_numericos/ecuaciones_diferenciales/heun.i: metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.i
+
+# target to preprocess a source file
+metodos_numericos/ecuaciones_diferenciales/heun.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
+
+metodos_numericos/ecuaciones_diferenciales/heun.s: metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.s
+
+# target to generate assembly for a file
+metodos_numericos/ecuaciones_diferenciales/heun.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
+
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.o: metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.o
+
+# target to build an object file
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o
+
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.i: metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.i
+
+# target to preprocess a source file
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
+
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.s: metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.s
+
+# target to generate assembly for a file
+metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
+
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.o: metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.o
+
+# target to build an object file
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
+
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.i: metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.i
+
+# target to preprocess a source file
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
+
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.s: metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.s
+
+# target to generate assembly for a file
+metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
 
 metodos_numericos/integracion/gaussLegendre.o: metodos_numericos/integracion/gaussLegendre.cpp.o
 .PHONY : metodos_numericos/integracion/gaussLegendre.o
@@ -837,12 +957,15 @@ help:
 	@echo "... FalsaPosicion"
 	@echo "... GaussLegendre"
 	@echo "... GaussSeidel"
+	@echo "... Heun"
 	@echo "... IterativoDePuntoFijo"
 	@echo "... Jacobi"
 	@echo "... Jacobiguia4"
 	@echo "... Lagrange"
 	@echo "... NewtonRapshon"
+	@echo "... PuntoMedio"
 	@echo "... RegresionPolinomica"
+	@echo "... RungeKutta"
 	@echo "... Secante"
 	@echo "... Segmentaria"
 	@echo "... Simpson"
@@ -855,6 +978,15 @@ help:
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.o"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.i"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.s"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/heun.o"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/heun.i"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/heun.s"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/puntoMedio.o"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/puntoMedio.i"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/puntoMedio.s"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/rungeKutta.o"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/rungeKutta.i"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/rungeKutta.s"
 	@echo "... metodos_numericos/integracion/gaussLegendre.o"
 	@echo "... metodos_numericos/integracion/gaussLegendre.i"
 	@echo "... metodos_numericos/integracion/gaussLegendre.s"

@@ -65,4 +65,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GaussLegendre.dir/DependInfo.cmake"
   "CMakeFiles/Diferenciacion.dir/DependInfo.cmake"
   "CMakeFiles/Euler.dir/DependInfo.cmake"
+  "CMakeFiles/Heun.dir/DependInfo.cmake"
+  "CMakeFiles/PuntoMedio.dir/DependInfo.cmake"
+  "CMakeFiles/RungeKutta.dir/DependInfo.cmake"
   )
