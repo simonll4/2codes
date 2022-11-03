@@ -81,7 +81,7 @@ public class eje1 {
     public static void addWorkDate(ArrayQueue<String> workDate) {
         Scanner console = new Scanner(System.in);
 
-        System.out.println("INGRESE EL NOMBRE DEL CLIENTE QUE DESEA AGREGAR A LA COLA DE ESPERA: ");
+        System.out.println("INGRESE EL NOMBRE DEL CLIENTE QUE DESEA AGREGAR a LA COLA DE ESPERA: ");
         workDate.enqueue(console.nextLine());
     }
 
@@ -101,7 +101,7 @@ public class eje1 {
                 workDate.dequeue();
                 break;
             case 2:
-                System.out.println("A QUIEN DESEA ELIMINAR DE LA COLA?");
+                System.out.println("a QUIEN DESEA ELIMINAR DE LA COLA?");
                 showWorkDate(workDate);
                 name = console1.nextLine();
                 name.toLowerCase().trim();

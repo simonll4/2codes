@@ -1,12 +1,11 @@
 #include <iostream>
 #include <math.h>
 
-#define ERROR pow(10, -3)
-
 using namespace std;
 
 #define MAXCOLUMNS 2
-#define MAXROWS 20
+#define MAXROWS 16
+#define ERROR pow(10, -3)
 
 
 void readFile(double [MAXROWS][MAXCOLUMNS], int *);
@@ -18,6 +17,9 @@ void assembleMatrix(double [MAXROWS][MAXCOLUMNS], double [MAXROWS][MAXROWS], dou
 void printMatrix(double matrix[MAXROWS][MAXROWS], double [MAXROWS], int, int);
 
 int gaussianElimination(double [MAXROWS][MAXROWS], double [MAXROWS], double [MAXROWS], int);
+
+void interpolation(double nodes[MAXROWS][MAXCOLUMNS], double z[MAXROWS], int rows);
+
 
 int main() {
 
@@ -35,6 +37,7 @@ int main() {
     assembleMatrix(nodes, matrix, b, intervalos);
     printMatrix(matrix, b, 4 * intervalos, 4 * intervalos);
     gaussianElimination(matrix, b, z, 4 * intervalos);
+    interpolation(nodes, z, rows);
 
     return 0;
 }
@@ -208,4 +211,23 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
         cout << endl << "x" << index + 1 << "=" << x[index];
     }
     cout << endl;
+}
+
+void interpolation(double nodes[MAXROWS][MAXCOLUMNS], double z[MAXROWS], int rows) {
+    double value;
+    double result = 0;
+    printf("\nIngrese el valor a interpolar\n");
+    scanf("%lf", &value);
+
+    if (value >= nodes[0][0] && value <= nodes[rows - 1][0]) {
+        for (int i = 0; i < rows; ++i) {
+            if (value <= nodes[i + 1][0]) {
+                result = z[4 * i] * pow(value, 3) + z[4 * i + 1] * pow(value, 2) + z[4 * i + 2] * value + z[4 * i + 3];
+                break;
+            }
+        }
+        printf("El valor interpolado para %lf es: %lf\n", value, result);
+    } else {
+        printf("\nEl valor a interpolar no se encuentra en el rango de datos\n");
+    }
 }

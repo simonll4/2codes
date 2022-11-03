@@ -1,22 +1,23 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 //////////////////////////////
 /// Definir cantidad de puntos
 //////////////////////////////
-#define SELECT 2
+#define SELECT 5
 
 //////////////////////////
 /// limites de integracion
 //////////////////////////
 #define A 0
-#define B 0.5
+#define B M_PI
 
 ///////////////////
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return 2 * pow(x, 3);
+    return sin(2 * x) * exp(-x);
 }
 
 using namespace std;
@@ -32,49 +33,52 @@ int main() {
                     -0.238619186, 0.238619186, 0.661209386, 0.932469514};
 
     double integral = 0;
+    double a, b;
+    a = A;
+    b = B;
 
     switch (SELECT) {
         case 1:
             break;
         case 2:
-            integral = ((B - A) / 2) *
-                       (two[0] * function(((B - A) * two[2] + B + A) / 2) +
-                        two[1] * function(((B - A) * two[3] + A + B) / 2));
-            cout << "Resultado: " << integral << endl;
+            integral = ((b - a) / 2) *
+                       (two[0] * function(((b - a) * two[2] + b + a) / 2) +
+                        two[1] * function(((b - a) * two[3] + a + b) / 2));
+            cout << "(GaussLegendre)Resultado: " << fixed << setprecision(10) << integral << endl;
             break;
         case 3:
-            integral = ((A - B) / 2) *
-                       (three[0] * function(((B - A) * three[3] + B + A) / 2) +
-                        three[1] * function(((B - A) * three[4] + B + A) / 2) +
-                        three[2] * function(((B - A) * three[5] + B + A) / 2));
-            cout << "Resultado: " << integral << endl;
+            integral = ((b - a) / 2) *
+                       (three[0] * function(((b - a) * three[3] + b + a) / 2) +
+                        three[1] * function(((b - a) * three[4] + b + a) / 2) +
+                        three[2] * function(((b - a) * three[5] + b + a) / 2));
+            cout << "(GaussLegendre)Resultado: " << fixed << setprecision(10) << integral << endl;
             break;
         case 4:
-            integral = ((B - A) / 2) *
-                       (four[0] * function(((B - A) * four[4] + B + A) / 2) +
-                        four[1] * function(((B - A) * four[5] + B + A) / 2) +
-                        four[2] * function(((B - A) * four[6] + B + A) / 2) +
-                        four[3] * function(((B - A) * four[7] + B + A) / 2));
-            cout << "Resultado: " << integral << endl;
+            integral = ((b - a) / 2) *
+                       (four[0] * function(((b - a) * four[4] + b + a) / 2) +
+                        four[1] * function(((b - a) * four[5] + b + a) / 2) +
+                        four[2] * function(((b - a) * four[6] + b + a) / 2) +
+                        four[3] * function(((b - a) * four[7] + b + a) / 2));
+            cout << "(GaussLegendre)Resultado: " << fixed << setprecision(10) << integral << endl;
             break;
         case 5:
-            integral = ((B - A) / 2) *
-                       (five[0] * function(((B - A) * five[5] + B + A) / 2) +
-                        five[1] * function(((B - A) * five[6] + B + A) / 2) +
-                        five[2] * function(((B - A) * five[7] + B + A) / 2) +
-                        five[3] * function(((B - A) * five[8] + B + A) / 2) +
-                        five[4] * function(((B - A) * five[9] + B + A) / 2));
-            cout << "Resultado: " << integral << endl;
+            integral = ((b - a) / 2) *
+                       (five[0] * function(((b - a) * five[5] + b + a) / 2) +
+                        five[1] * function(((b - a) * five[6] + b + a) / 2) +
+                        five[2] * function(((b - a) * five[7] + b + a) / 2) +
+                        five[3] * function(((b - a) * five[8] + b + a) / 2) +
+                        five[4] * function(((b - a) * five[9] + b + a) / 2));
+            cout << "(GaussLegendre)Resultado: " << fixed << setprecision(10) << integral << endl;
             break;
         case 6:
-            integral = ((B - A) / 2) *
-                       (six[0] * function(((B - A) * six[6] + B + A) / 2) +
-                        six[1] * function(((B - A) * six[7] + B + A) / 2) +
-                        six[2] * function(((B - A) * six[8] + B + A) / 2) +
-                        six[3] * function(((B - A) * six[9] + B + A) / 2) +
-                        six[4] * function(((B - A) * six[10] + B + A) / 2) +
-                        six[5] * function(((B - A) * six[11] + B + A) / 2));
-            cout << "Resultado: " << integral << endl;
+            integral = ((b - a) / 2) *
+                       (six[0] * function(((b - a) * six[6] + b + a) / 2) +
+                        six[1] * function(((b - a) * six[7] + b + a) / 2) +
+                        six[2] * function(((b - a) * six[8] + b + a) / 2) +
+                        six[3] * function(((b - a) * six[9] + b + a) / 2) +
+                        six[4] * function(((b - a) * six[10] + b + a) / 2) +
+                        six[5] * function(((b - a) * six[11] + b + a) / 2));
+            cout << "(GaussLegendre)Resultado: " << fixed << setprecision(10) << integral << endl;
             break;
         default:
             cout << "ELECCION DE PUNTOS INVALIDA (entre 2 y 6 puntos, 1 para salir)" << endl;

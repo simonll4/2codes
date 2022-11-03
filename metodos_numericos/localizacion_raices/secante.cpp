@@ -4,8 +4,8 @@
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A 9
-#define B 7
+#define a 9
+#define b 7
 
 using namespace std;
 
@@ -20,8 +20,8 @@ double funcion(double x) {
 
 int main() {
     double xNuevo, eAproximado;
-    double xViejoViejo = A;
-    double xViejo = B;
+    double xViejoViejo = a;
+    double xViejo = b;
     double tolerancia = pow(10, -5);
     int iteraciones = 0;
 

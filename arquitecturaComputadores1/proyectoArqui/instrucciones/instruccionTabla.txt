@@ -12,7 +12,7 @@ DELAY:   SUBS R5,R5,#1  //delay restandole uno hasta llegar a cero (timempo dela
         ADD R2,R2,#4    // aumento R2 en una palabra(32 bites)
         SUBS R3,R3,#1  // disminuyo en uno el contador del Loop
         BNE Loop       //mientras el contador no llegue a cero se repite el Loop
-        B INICIO              
+        b INICIO
 //////////////////////////
         SUB R0,R15,R15
         ADD R3,R0,#15
@@ -25,5 +25,5 @@ DELAY:   SUBS R5,R5,#1  //delay restandole uno hasta llegar a cero (timempo dela
         ADD R2,R2,#4
         SUBS R3,R3,#1
         BNE 0xc
-        B 0x4
+        b 0x4
 //////////////////////////

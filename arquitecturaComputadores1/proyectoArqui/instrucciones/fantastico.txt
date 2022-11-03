@@ -26,7 +26,7 @@
         ADD R2,R2,#4
         SUBS R3,R3,#1
         BNE 0xc
-        B 0x4
+        b 0x4
 
 ////////////////
 //////algoritmo
@@ -64,7 +64,7 @@ loop 2:
         BNE retardo 2
         SUBS R4,R4,#1
         BNE loop 2
-        B inicio
+        b inicio
 
 
         SUB R0,R15,R15
@@ -89,5 +89,5 @@ loop 2:
         STR R1,[R0,0x800]
         SUBS R4,R4,#1
         BNE 0x48
-        B 0x4   
+        b 0x4
 

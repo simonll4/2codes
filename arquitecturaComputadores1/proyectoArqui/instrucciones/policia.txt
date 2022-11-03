@@ -43,7 +43,7 @@ retardo 4:SUBS R7,R7,#1
         BNE retardo 4
         SUBS R4,R4,#1
         BNE loop 2
-        B inicio
+        b inicio
 
 /////////////////////////////////////////
         SUB R0,R15,R15
@@ -86,4 +86,4 @@ retardo 4:SUBS R7,R7,#1
         BNE 0x90
         SUBS R4,R4,#1
         BNE 0x58
-        B 0x4
+        b 0x4

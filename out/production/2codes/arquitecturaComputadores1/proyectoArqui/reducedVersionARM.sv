@@ -33,16 +33,16 @@
 //   Instr[31:28] = cond
 //   Instr[27:26] = op = 01 
 //   Instr[25:20] = funct
-//                  [25]:    0 (A)
-//                  [24:21]: 1100 (P/U/B/W)
+//                  [25]:    0 (a)
+//                  [24:21]: 1100 (P/U/b/W)
 //                  [20]:    L (1 for LDR, 0 for STR)
 //   Instr[19:16] = rn
 //   Instr[15:12] = rd
 //   Instr[11:0]  = imm12 (zero extended)
 //
 // Branch instruction (PC <= PC + offset, PC holds 8 bytes past Branch Instr)
-//   B
-//   B target
+//   b
+//   b target
 //    PC <- PC + 8 + imm24 << 2
 //   Instr[31:28] = cond
 //   Instr[27:25] = op = 10
@@ -218,7 +218,7 @@ module decode(input  logic [1:0] Op,
   	  2'b01: if (Funct[0])  controls = 10'b0001111000; 
   	                        // STR
   	         else           controls = 10'b1001110100; 
-  	                        // B
+  	                        // b
   	  2'b10:                controls = 10'b0110100010; 
   	                        // Unimplemented
   	  default:              controls = 10'bx;          

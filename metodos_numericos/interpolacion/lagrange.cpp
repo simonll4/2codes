@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 #define MAXCOLUMNS 2
-#define MAXROWS 20
+#define MAXROWS 100
 
 /////////////////
 //DEFINIR FUNCION
 /////////////////
 double function(double x) {
-    return 1-0.01 *x  + 0.001 *pow(x,2);
+    return 0;
 }
 
 using namespace std;
@@ -64,10 +65,8 @@ int main() {
     gaussianElimination(matrix, b, x, rows);
     printPolynomial(x, rows);
 
-
     return 0;
 }
-
 
 
 void readFile(double array[MAXROWS][MAXCOLUMNS], int *rows) {
@@ -209,9 +208,9 @@ void printPolynomial(double x[MAXROWS], int rows) {
             cout << x[index];
         else {
             if (x[index] >= 0)
-                cout << " + " << x[index] << " " << "X^" << exponente << " ";
+                cout << " + " << fixed << setprecision(10) << x[index] << " " << "X^" << exponente << " ";
             else
-                cout << x[index] << " " << "X^" << exponente << " ";
+                cout << fixed << setprecision(10) << x[index] << " " << "X^" << exponente << " ";
         }
         exponente++;
     }

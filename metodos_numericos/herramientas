@@ -13,7 +13,7 @@
 
 
 ///////////////////////////////////////////////
-//calculo de norma euclidiana(para matriz A)
+//calculo de norma euclidiana(para matriz a)
 ////////////////////////////////////////////////
         double normaEuclidiana = 1;
         for (int indexA = 0; indexA < rows; ++indexA) {
@@ -39,7 +39,7 @@
 
 
 /////////////////////////////////////////
- //criterio de corte general AX - B = 0;
+ //criterio de corte general AX - b = 0;
 /////////////////////////////////////////
         criterioCorte = 0;
         for (int indexA = 0; indexA < rows; ++indexA) {

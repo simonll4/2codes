@@ -22,19 +22,19 @@ SUBS R1,R3,#3
 BEQ 0x74
 SUBS R1,R3,#4
 BEQ 0x7C
-B 0x4
+b 0x4
 ADD R8,R0,#0x1
 STR R8,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R9,R0,#0x2
 STR R9,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R10,R0,#0x3
 STR R10,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R11,R0,#0x4
 STR R11,[R0,#0x800]
-B 0x4
+b 0x4
 //////////////cheto
 SUB R0,R15,R15
 ADD R2,R0,#0
@@ -60,19 +60,19 @@ SUBS R1,R3,#3
 BEQ 0x74
 SUBS R1,R3,#4
 BEQ 0x7C
-B 0x4
+b 0x4
 ADD R8,R0,#0x1
 STR R8,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R9,R0,#0x2
 STR R9,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R10,R0,#0x3
 STR R10,[R0,#0x800]
-B 0x4
+b 0x4
 ADD R11,R0,#0x4
 STR R11,[R0,#0x800]
-B 0x4
+b 0x4
         
 
         
@@ -108,19 +108,19 @@ switch: SUBS R1,R3,#1
         BEQ case 3
         SUBS R1,R3,#4
         BEQ case 4
-        B inicio  // es el default
+        b inicio  // es el default
 case 1:
 
-        B inicio
+        b inicio
 case 2:
 
-        B inicio
+        b inicio
 case 3:
 
-        B inicio
+        b inicio
 case 4:
 
-        B inicio
+        b inicio
 
 
 /////////////////////////////////

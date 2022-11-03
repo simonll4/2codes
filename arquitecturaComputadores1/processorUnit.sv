@@ -1,7 +1,7 @@
 
 //unidad de procesamiento
 
-module processorUnit(input logic [2:0] A,B,D,H
+module processorUnit(input logic [2:0] a,b,D,H
 							input logic [3:0] F,
 							input logic [3:0] inData,
 							output logic [3:0] outData);

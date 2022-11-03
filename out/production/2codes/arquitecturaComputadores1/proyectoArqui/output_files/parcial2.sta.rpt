@@ -932,10 +932,10 @@ No synchronizer chains to report.
 +------------------+---------+-------+----------+---------+---------------------+
 ; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -1.740  ; 0.183 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -1.740  ; 0.183 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack ; -1.740  ; 0.183 ; N/a      ; N/a     ; -3.000              ;
+;  clk             ; -1.740  ; 0.183 ; N/a      ; N/a     ; -3.000              ;
 ; Design-wide TNS  ; -33.356 ; 0.0   ; 0.0      ; 0.0     ; -35.257             ;
-;  clk             ; -33.356 ; 0.000 ; N/A      ; N/A     ; -35.257             ;
+;  clk             ; -33.356 ; 0.000 ; N/a      ; N/a     ; -35.257             ;
 +------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -1418,7 +1418,7 @@ Warning (18236): Number of processors has not been specified which may cause ove
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'parcial2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'parcial2.sdc'. a Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk

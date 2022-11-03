@@ -34,7 +34,7 @@ $(VERBOSE)MAKESILENT = -s
 #Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
-# A target that is always out of date.
+# a target that is always out of date.
 cmake_force:
 .PHONY : cmake_force
 
@@ -527,6 +527,6 @@ CMakeFiles/Simpson.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -b$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

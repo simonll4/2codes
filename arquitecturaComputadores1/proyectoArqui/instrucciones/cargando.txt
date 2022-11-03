@@ -63,7 +63,7 @@ RETARDO 1:SUBS R4,R4,#1
         ADD R5,R0,#0        //vuelvo a cero el contador de iteraciones
         SUBS R8,R8,#1       //condicion para finalizar loop 2
         BNE LOOP 2
-        B INICIO
+        b INICIO
 
         SUB R0,R15,R15  
         ADD R1,R0,#1      
@@ -90,7 +90,7 @@ RETARDO 1:SUBS R4,R4,#1
         ADD R5,R0,#0 
         SUBS R8,R8,#1
         BNE 0x20
-        B 0x0
+        b 0x0
 
 
         

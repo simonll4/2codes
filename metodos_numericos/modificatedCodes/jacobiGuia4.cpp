@@ -138,7 +138,7 @@ void jacobi(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
         e = sqrt(e);
 
 
-        //criterio de corte general AX - B = 0;
+        //criterio de corte general AX - b = 0;
         criterioCorte = 0;
         for (int indexA = 0; indexA < rows; ++indexA) {
 

@@ -30,7 +30,7 @@ int main() {
     x[0] = INITIALX;
     y[0] = INITIALY;
 
-    h = (double)(FINALX - INITIALX) / N;
+    h = (double) (FINALX - INITIALX) / N;
 
     ofstream file("eulerBoard.txt");
     if (!file.is_open()) {

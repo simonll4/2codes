@@ -9,8 +9,8 @@
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A 5
-#define B 6
+#define a 5
+#define b 6
 
 using namespace std;
 
@@ -26,8 +26,8 @@ double function(double x) {
 int main() {
 
     // intervalo que abarca la raiz
-    double a = A;
-    double b = B;
+    double a = a;
+    double b = b;
 
     double cn, cv;
     double eAproximado, ePorcentual = 0;

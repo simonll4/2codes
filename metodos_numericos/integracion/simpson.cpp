@@ -1,50 +1,48 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 using namespace std;
 
 ///////////
-// funcion
+/// funcion
 ///////////
-double function(double x)
-{
-    return sin(x);
+double function(double x) {
+    return sqrt(1 + pow(cos(x),2));
 }
 
-/////////////
-// intervalos
-/////////////
+//////////////
+/// intervalos
+//////////////
 #define A 0
-#define B M_PI
+#define B M_PI/4
 
-/////////////////
-// sub intervalos
-////////////////
-#define INTERVALS 200
+//////////////////
+/// sub intervalos
+//////////////////
+#define INTERVALS 100
 
-int main()
-{
-    double integral;
+int main() {
     double sum;
-    double h;
+    double h, a, b;
     double x;
+    int n;
+    a = A;
+    b = B;
+    n = INTERVALS;
 
     cout << "***********************" << endl;
 
-    if (INTERVALS % 2 == 0)
-    {
-        sum = function(A) + function(B);
-        h = (B - A) / INTERVALS;
-        for (int index = 1; index < INTERVALS / 2; index++)
-        {
-            x = A + 2 * index * h;
+    if (n % 2 == 0) {
+        sum = function(a) + function(b);
+        h = (b - a) / n;
+        for (int index = 1; index < n / 2; index++) {
+            x = a + 2 * index * h;
             sum = sum + 2 * function(x) + 4 * function(x - h);
         }
-        sum = (h / 3) * (sum + 4 * function(B - h));
-        cout << "Resultado de la integral: " << sum << endl;
-    }
-    else
-    {
+        sum = h * (sum + 4 * function(b - h)) / 3;
+        cout << "(simpson)Resultado de la integral: " << fixed << setprecision(10) << sum << endl;
+    } else {
         cout << "INGRESAR UN NUMERO DE INTERVALOS PARES" << endl;
     }
 
