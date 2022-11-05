@@ -402,6 +402,19 @@ RungeKutta/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/build
 .PHONY : RungeKutta/fast
 
+#=============================================================================
+# Target rules for targets named Spline
+
+# Build rule for target.
+Spline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Spline
+.PHONY : Spline
+
+# fast build rule for target.
+Spline/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/build
+.PHONY : Spline/fast
+
 metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.o
 
@@ -605,6 +618,30 @@ metodos_numericos/integracion/trapecioCompuesta.s: metodos_numericos/integracion
 metodos_numericos/integracion/trapecioCompuesta.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/metodos_numericos/integracion/trapecioCompuesta.cpp.s
 .PHONY : metodos_numericos/integracion/trapecioCompuesta.cpp.s
+
+metodos_numericos/interpolacion/InterpolacionSplines.o: metodos_numericos/interpolacion/InterpolacionSplines.cpp.o
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.o
+
+# target to build an object file
+metodos_numericos/interpolacion/InterpolacionSplines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/metodos_numericos/interpolacion/InterpolacionSplines.cpp.o
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.cpp.o
+
+metodos_numericos/interpolacion/InterpolacionSplines.i: metodos_numericos/interpolacion/InterpolacionSplines.cpp.i
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.i
+
+# target to preprocess a source file
+metodos_numericos/interpolacion/InterpolacionSplines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/metodos_numericos/interpolacion/InterpolacionSplines.cpp.i
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.cpp.i
+
+metodos_numericos/interpolacion/InterpolacionSplines.s: metodos_numericos/interpolacion/InterpolacionSplines.cpp.s
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.s
+
+# target to generate assembly for a file
+metodos_numericos/interpolacion/InterpolacionSplines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/metodos_numericos/interpolacion/InterpolacionSplines.cpp.s
+.PHONY : metodos_numericos/interpolacion/InterpolacionSplines.cpp.s
 
 metodos_numericos/interpolacion/lagrange.o: metodos_numericos/interpolacion/lagrange.cpp.o
 .PHONY : metodos_numericos/interpolacion/lagrange.o
@@ -969,6 +1006,7 @@ help:
 	@echo "... Secante"
 	@echo "... Segmentaria"
 	@echo "... Simpson"
+	@echo "... Spline"
 	@echo "... Trapecio"
 	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
@@ -996,6 +1034,9 @@ help:
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.o"
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.i"
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.s"
+	@echo "... metodos_numericos/interpolacion/InterpolacionSplines.o"
+	@echo "... metodos_numericos/interpolacion/InterpolacionSplines.i"
+	@echo "... metodos_numericos/interpolacion/InterpolacionSplines.s"
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"

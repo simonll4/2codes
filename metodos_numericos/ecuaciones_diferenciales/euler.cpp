@@ -8,15 +8,15 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return -2 * x * y;
+    return exp(-2*x)-2*y;
 }
 
 /////////////////////
 /// definir intervalo
 /////////////////////
 #define INITIALX 0
-#define FINALX 1
-#define INITIALY 1
+#define FINALX 10
+#define INITIALY 0.1
 
 //////////////////////////////
 /// definir cant subIntervalos

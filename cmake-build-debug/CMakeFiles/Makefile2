@@ -85,6 +85,7 @@ all: CMakeFiles/Euler.dir/all
 all: CMakeFiles/Heun.dir/all
 all: CMakeFiles/PuntoMedio.dir/all
 all: CMakeFiles/RungeKutta.dir/all
+all: CMakeFiles/Spline.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -114,6 +115,7 @@ clean: CMakeFiles/Euler.dir/clean
 clean: CMakeFiles/Heun.dir/clean
 clean: CMakeFiles/PuntoMedio.dir/clean
 clean: CMakeFiles/RungeKutta.dir/clean
+clean: CMakeFiles/Spline.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -435,7 +437,7 @@ CMakeFiles/Jacobiguia4.dir/clean:
 CMakeFiles/gaussSeidelRelajacion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target gaussSeidelRelajacion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target gaussSeidelRelajacion"
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -461,7 +463,7 @@ CMakeFiles/gaussSeidelRelajacion.dir/clean:
 CMakeFiles/WriteMatrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target WriteMatrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target WriteMatrix"
 .PHONY : CMakeFiles/WriteMatrix.dir/all
 
 # Build rule for subdir invocation for target.
@@ -487,7 +489,7 @@ CMakeFiles/WriteMatrix.dir/clean:
 CMakeFiles/Trapecio.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target Trapecio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target Trapecio"
 .PHONY : CMakeFiles/Trapecio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -687,6 +689,32 @@ RungeKutta: CMakeFiles/RungeKutta.dir/rule
 CMakeFiles/RungeKutta.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/clean
 .PHONY : CMakeFiles/RungeKutta.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Spline.dir
+
+# All Build rule for target.
+CMakeFiles/Spline.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target Spline"
+.PHONY : CMakeFiles/Spline.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Spline.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Spline.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Spline.dir/rule
+
+# Convenience name for target.
+Spline: CMakeFiles/Spline.dir/rule
+.PHONY : Spline
+
+# clean rule for target.
+CMakeFiles/Spline.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/clean
+.PHONY : CMakeFiles/Spline.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

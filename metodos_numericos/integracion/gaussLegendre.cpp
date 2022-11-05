@@ -5,19 +5,19 @@
 //////////////////////////////
 /// Definir cantidad de puntos
 //////////////////////////////
-#define SELECT 5
+#define SELECT 2
 
 //////////////////////////
 /// limites de integracion
 //////////////////////////
 #define A 0
-#define B M_PI
+#define B 3
 
 ///////////////////
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return sin(2 * x) * exp(-x);
+    return (exp(x)*sin(x)/(1+ pow(x,2)));
 }
 
 using namespace std;

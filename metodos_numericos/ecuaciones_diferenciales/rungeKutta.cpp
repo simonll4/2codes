@@ -8,26 +8,27 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return (2*x + 1)*sqrt(y);
+    return y*pow(4 * y - x, 2) ;
 }
 
 /////////////////////
 /// definir intervalo
 /////////////////////
 #define INITIALX 0
-#define FINALX 1
+#define FINALX 3
 #define INITIALY 1
 
 //////////////////////////////
 /// definir cant subIntervalos
 //////////////////////////////
-#define N 100
+#define N 30
 
 int main() {
     double x[N + 1], y[N + 1], k[5], h;
     x[0] = INITIALX;
     y[0] = INITIALY;
     h = (double) (FINALX - INITIALX) / N;
+
 
     ofstream file("rungeKuttaBoard.txt");
     if (!file.is_open()) {

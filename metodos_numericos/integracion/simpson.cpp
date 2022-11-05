@@ -8,19 +8,19 @@ using namespace std;
 /// funcion
 ///////////
 double function(double x) {
-    return sqrt(1 + pow(cos(x),2));
+    return pow(1-x,3);;
 }
 
 //////////////
 /// intervalos
 //////////////
-#define A 0
-#define B M_PI/4
+#define A -2
+#define B -1
 
 //////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 100
+#define INTERVALS 10
 
 int main() {
     double sum;
@@ -41,7 +41,7 @@ int main() {
             sum = sum + 2 * function(x) + 4 * function(x - h);
         }
         sum = h * (sum + 4 * function(b - h)) / 3;
-        cout << "(simpson)Resultado de la integral: " << fixed << setprecision(10) << sum << endl;
+        cout << "(simpson)Resultado de la integral: " << fixed << setprecision(20) << sum << endl;
     } else {
         cout << "INGRESAR UN NUMERO DE INTERVALOS PARES" << endl;
     }

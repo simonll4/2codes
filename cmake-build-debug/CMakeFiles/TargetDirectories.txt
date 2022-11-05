@@ -20,5 +20,6 @@
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Heun.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/PuntoMedio.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/RungeKutta.dir
+/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Spline.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

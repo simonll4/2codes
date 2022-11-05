@@ -8,19 +8,19 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return log(x) + 1 / x;
+    return pow(1-x,3);
 }
 
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define INITIALX 1.5
-#define FINALX 2.5
+#define INITIALX -2
+#define FINALX 1
 
 ///////////////////////
 /// definir cant puntos
 ///////////////////////
-#define POINTS 6
+#define POINTS 2
 
 void firstOrder();
 
@@ -60,7 +60,7 @@ int main() {
 }
 
 void firstOrder() {
-    double h = (FINALX - INITIALX) / POINTS;
+    double h = (double)(FINALX - INITIALX) / POINTS;
     double derivative;
     double x;
     ofstream file("board.txt");
@@ -93,7 +93,7 @@ void firstOrder() {
 }
 
 void secondOrder() {
-    double h = (FINALX - INITIALX) / POINTS;
+    double h = (double)(FINALX - INITIALX) / POINTS;
     double derivative;
     double x;
     ofstream file("board.txt");
@@ -125,7 +125,7 @@ void secondOrder() {
 }
 
 void thirdOrder() {
-    double h = (FINALX - INITIALX) / POINTS;
+    double h = (double)(FINALX - INITIALX) / POINTS;
     double derivative;
     double x;
     ofstream file("board.txt");
@@ -161,7 +161,7 @@ void thirdOrder() {
 }
 
 void fourthOrder() {
-    double h = (FINALX - INITIALX) / POINTS;
+    double h = (double)(FINALX - INITIALX) / POINTS;
     double derivative;
     double x;
     ofstream file("board.txt");
