@@ -17,7 +17,7 @@
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return (exp(x)*sin(x)/(1+ pow(x,2)));
+    return (sin(x)* exp(x))/(1+pow(x,2));
 }
 
 using namespace std;

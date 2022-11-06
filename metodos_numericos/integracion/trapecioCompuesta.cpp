@@ -4,23 +4,23 @@
 
 using namespace std;
 
-////////////
+///////////////////////////////////
 /// funcion
-////////////
+///////////////////////////////////
 double function(double x) {
-    return sqrt(1 + pow(cos(x),2));
+    return pow(x,2)* exp(-x);
 }
 
-/////////////
-// intervalos
-/////////////
+//////////////////////////
+/// limites de integracion
+//////////////////////////
 #define A 0
-#define  B M_PI/4
+#define B 4
 
-/////////////////
-// sub intervalos
-////////////////
-#define INTERVALS 5
+///////////////////
+/// sub intervalos
+//////////////////
+#define INTERVALS 12
 
 int main() {
     double sum, h, a, b;
