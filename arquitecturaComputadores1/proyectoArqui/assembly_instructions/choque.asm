@@ -25,7 +25,7 @@ subs r6, r6, #1         ;delay
 bne DELAY1              ;branch delay
 add r7, r7, #4          ;aumento al puntero en una palabra
 subs r8,r8,#1           ;contador de iteraciones(cantidad de palabras en tabla)
-addeq r7,r0,#8          ;si r8 = 0, asigno r7 = 7 
+addeq r7,r0,#8          ;si r8 = 0, asigno r7 = 8 
 addeq r8,r8,#8          ;si r8 = 0, asigno r8 = 8
 ADD R3,R0,#0x2          ;delay para doble lectura del inport
 DL:
@@ -34,4 +34,4 @@ LDR R1,[R0,#0x800]      ;lectura inport ()
 BNE DL                  ;branch doble lectura (DL)
 ANDS R1,R1,#0x01        ;condicion para salir de la secuencia
 BEQ FIN                 ;si r1 = 0, branch inicio
-BNE INICIO                         ;si r = 0, branch secuencia
+BNE INICIO                         ;si r1 != 0, branch secuencia
