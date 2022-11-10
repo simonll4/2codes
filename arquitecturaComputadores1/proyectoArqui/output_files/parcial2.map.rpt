@@ -1,5 +1,5 @@
 Analysis & Synthesis report for parcial2
-Thu Nov 10 10:24:07 2022
+Thu Nov 10 11:13:24 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -67,13 +67,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 10 10:24:07 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 10 11:13:24 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; parcial2                                    ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5,203                                       ;
-;     Total combinational functions  ; 2,713                                       ;
+; Total logic elements               ; 5,327                                       ;
+;     Total combinational functions  ; 2,837                                       ;
 ;     Dedicated logic registers      ; 2,577                                       ;
 ; Total registers                    ; 2577                                        ;
 ; Total pins                         ; 18                                          ;
@@ -175,7 +175,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -183,21 +183,21 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; imem.dat                         ; yes             ; User Unspecified File        ; C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/imem.dat             ;         ;
-; dmem.dat                         ; yes             ; User Unspecified File        ; C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/dmem.dat             ;         ;
-; reducedVersionARM.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; reducedVersionARM.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv ;         ;
+; dmemfile.dat                     ; yes             ; Auto-Found Unspecified File  ; C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/dmemfile.dat         ;         ;
+; imemfile.dat                     ; yes             ; Auto-Found Unspecified File  ; C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/imemfile.dat         ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -205,16 +205,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5,203     ;
+; Estimated Total logic elements              ; 5,327     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2713      ;
+; Total combinational functions               ; 2837      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2397      ;
-;     -- 3 input functions                    ; 211       ;
-;     -- <=2 input functions                  ; 105       ;
+;     -- 4 input functions                    ; 2444      ;
+;     -- 3 input functions                    ; 224       ;
+;     -- <=2 input functions                  ; 169       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2623      ;
+;     -- normal mode                          ; 2747      ;
 ;     -- arithmetic mode                      ; 90        ;
 ;                                             ;           ;
 ; Total registers                             ; 2577      ;
@@ -227,8 +227,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 2577      ;
-; Total fan-out                               ; 18226     ;
-; Average fan-out                             ; 3.42      ;
+; Total fan-out                               ; 18581     ;
+; Average fan-out                             ; 3.41      ;
 +---------------------------------------------+-----------+
 
 
@@ -237,26 +237,26 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name ; Library Name ;
 +--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+-------------+--------------+
-; |top                           ; 2713 (2)            ; 2577 (0)                  ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |top                                                    ; top         ; work         ;
-;    |arm:arm|                   ; 1105 (0)            ; 513 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm                                            ; arm         ; work         ;
-;       |controller:c|           ; 18 (0)              ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c                               ; controller  ; work         ;
-;          |condlogic:cl|        ; 11 (5)              ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl                  ; condlogic   ; work         ;
-;             |condcheck:cc|     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|condcheck:cc     ; condcheck   ; work         ;
+; |top                           ; 2837 (4)            ; 2577 (0)                  ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |top                                                    ; top         ; work         ;
+;    |arm:arm|                   ; 1109 (0)            ; 513 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm                                            ; arm         ; work         ;
+;       |controller:c|           ; 14 (0)              ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c                               ; controller  ; work         ;
+;          |condlogic:cl|        ; 8 (4)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl                  ; condlogic   ; work         ;
+;             |condcheck:cc|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|condcheck:cc     ; condcheck   ; work         ;
 ;             |flopenr:flagreg1| ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ; flopenr     ; work         ;
-;          |decode:dec|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|decode:dec                    ; decode      ; work         ;
-;       |datapath:dp|            ; 1087 (0)            ; 512 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp                                ; datapath    ; work         ;
+;          |decode:dec|          ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|controller:c|decode:dec                    ; decode      ; work         ;
+;       |datapath:dp|            ; 1095 (0)            ; 512 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp                                ; datapath    ; work         ;
 ;          |adder:pcadd1|        ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd1                   ; adder       ; work         ;
 ;          |adder:pcadd2|        ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd2                   ; adder       ; work         ;
-;          |alu:alu|             ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|alu:alu                        ; alu         ; work         ;
-;          |flopr:pcreg|         ; 78 (78)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|flopr:pcreg                    ; flopr       ; work         ;
-;          |mux2:ra1mux|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra1mux                    ; mux2        ; work         ;
+;          |alu:alu|             ; 131 (131)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|alu:alu                        ; alu         ; work         ;
+;          |flopr:pcreg|         ; 82 (82)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|flopr:pcreg                    ; flopr       ; work         ;
+;          |mux2:ra1mux|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra1mux                    ; mux2        ; work         ;
 ;          |mux2:ra2mux|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra2mux                    ; mux2        ; work         ;
-;          |mux2:resmux|         ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:resmux                    ; mux2        ; work         ;
-;          |mux2:srcbmux|        ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:srcbmux                   ; mux2        ; work         ;
+;          |mux2:resmux|         ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:resmux                    ; mux2        ; work         ;
+;          |mux2:srcbmux|        ; 52 (52)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:srcbmux                   ; mux2        ; work         ;
 ;          |regfile:rf|          ; 736 (736)           ; 480 (480)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|arm:arm|datapath:dp|regfile:rf                     ; regfile     ; work         ;
-;    |cmp2:compare|              ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|cmp2:compare                                       ; cmp2        ; work         ;
-;    |dmem:dmem|                 ; 1404 (1404)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|dmem:dmem                                          ; dmem        ; work         ;
-;    |imem:imem|                 ; 188 (188)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|imem:imem                                          ; imem        ; work         ;
+;    |cmp2:compare|              ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|cmp2:compare                                       ; cmp2        ; work         ;
+;    |dmem:dmem|                 ; 1405 (1405)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|dmem:dmem                                          ; dmem        ; work         ;
+;    |imem:imem|                 ; 302 (302)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|imem:imem                                          ; imem        ; work         ;
 ;    |port:inport|               ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|port:inport                                        ; port        ; work         ;
 ;    |port:outport|              ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|port:outport                                       ; port        ; work         ;
 +--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+-------------+--------------+
@@ -527,18 +527,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR SLD           ; 30                          ;
 ;     ENA               ; 2544                        ;
 ;     ENA CLR           ; 2                           ;
-; cycloneiii_lcell_comb ; 2713                        ;
+; cycloneiii_lcell_comb ; 2837                        ;
 ;     arith             ; 90                          ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 2623                        ;
+;     normal            ; 2747                        ;
 ;         1 data inputs ; 24                          ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 179                         ;
-;         4 data inputs ; 2397                        ;
+;         2 data inputs ; 87                          ;
+;         3 data inputs ; 192                         ;
+;         4 data inputs ; 2444                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 21.90                       ;
-; Average LUT depth     ; 13.68                       ;
+; Max LUT depth         ; 22.00                       ;
+; Average LUT depth     ; 13.84                       ;
 +-----------------------+-----------------------------+
 
 
@@ -547,7 +547,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -557,80 +557,77 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Nov 10 10:23:39 2022
+    Info: Processing started: Thu Nov 10 11:12:43 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off parcial2 -c parcial2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 18 design units, including 18 entities, in source file reducedversionarm.sv
-    Info (12023): Found entity 1: top File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 6
-    Info (12023): Found entity 2: dmem File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 29
-    Info (12023): Found entity 3: imem File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 45
-    Info (12023): Found entity 4: arm File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 56
-    Info (12023): Found entity 5: controller File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 80
-    Info (12023): Found entity 6: decode File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 102
-    Info (12023): Found entity 7: condlogic File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 159
-    Info (12023): Found entity 8: condcheck File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 183
-    Info (12023): Found entity 9: datapath File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 213
-    Info (12023): Found entity 10: regfile File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 252
-    Info (12023): Found entity 11: extend File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 272
-    Info (12023): Found entity 12: alu File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 288
-    Info (12023): Found entity 13: adder File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 316
-    Info (12023): Found entity 14: flopenr File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 323
-    Info (12023): Found entity 15: flopr File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 333
-    Info (12023): Found entity 16: mux2 File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 343
-    Info (12023): Found entity 17: cmp2 File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 351
-    Info (12023): Found entity 18: port File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 358
-Info (12021): Found 2 design units, including 1 entities, in source file pruebarancia.vhd
-    Info (12022): Found design unit 1: blinking_led-behave File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/pruebarancia.vhd Line: 28
-    Info (12023): Found entity 1: blinking_led File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/pruebarancia.vhd Line: 15
+    Info (12023): Found entity 1: top File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 6
+    Info (12023): Found entity 2: dmem File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 29
+    Info (12023): Found entity 3: imem File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 45
+    Info (12023): Found entity 4: arm File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 56
+    Info (12023): Found entity 5: controller File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 80
+    Info (12023): Found entity 6: decode File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 102
+    Info (12023): Found entity 7: condlogic File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 159
+    Info (12023): Found entity 8: condcheck File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 183
+    Info (12023): Found entity 9: datapath File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 213
+    Info (12023): Found entity 10: regfile File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 252
+    Info (12023): Found entity 11: extend File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 272
+    Info (12023): Found entity 12: alu File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 288
+    Info (12023): Found entity 13: adder File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 316
+    Info (12023): Found entity 14: flopenr File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 323
+    Info (12023): Found entity 15: flopr File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 333
+    Info (12023): Found entity 16: mux2 File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 343
+    Info (12023): Found entity 17: cmp2 File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 351
+    Info (12023): Found entity 18: port File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 358
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 19
-Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 71
-Info (12128): Elaborating entity "decode" for hierarchy "arm:arm|controller:c|decode:dec" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 96
-Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 99
-Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 171
-Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 176
-Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 77
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 232
-Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 233
-Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 234
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 238
-Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 242
-Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 244
-Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 249
-Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 20
-Warning (10850): Verilog HDL warning at reducedVersionARM.sv(51): number of words (85) in memory file does not match the number of elements in the address range [0:127] File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 51
-Warning (10030): Net "RAM.data_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
-Warning (10030): Net "RAM.waddr_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
-Warning (10030): Net "RAM.we_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at reducedVersionARM.sv(42): truncated value with size 64 to match size of target (32) File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 42
-Info (12128): Elaborating entity "cmp2" for hierarchy "cmp2:compare" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 23
-Info (12128): Elaborating entity "port" for hierarchy "port:inport" File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 25
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 19
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 71
+Info (12128): Elaborating entity "decode" for hierarchy "arm:arm|controller:c|decode:dec" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 96
+Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 99
+Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 171
+Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 176
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 77
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 232
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 233
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 234
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 238
+Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 242
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 244
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 249
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 20
+Warning (10850): Verilog HDL warning at reducedVersionARM.sv(51): number of words (119) in memory file does not match the number of elements in the address range [0:127] File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 51
+Warning (10030): Net "RAM.data_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
+Warning (10030): Net "RAM.waddr_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
+Warning (10030): Net "RAM.we_a" at reducedVersionARM.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 48
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at reducedVersionARM.sv(42): truncated value with size 64 to match size of target (32) File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 42
+Info (12128): Elaborating entity "cmp2" for hierarchy "cmp2:compare" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 23
+Info (12128): Elaborating entity "port" for hierarchy "port:inport" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 25
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 258
-    Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 33
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/db/parcial2.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 258
+    Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 33
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/db/parcial2.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5285 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5409 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 5267 logic cells
+    Info (21061): Implemented 5391 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Thu Nov 10 10:24:07 2022
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Thu Nov 10 11:13:24 2022
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:01:05
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.map.smsg.
+The suppressed messages can be found in C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.map.smsg.
 
 

@@ -110,7 +110,6 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LICENSE_FILE imem.dat
 set_global_assignment -name LICENSE_FILE dmem.dat
 set_global_assignment -name SYSTEMVERILOG_FILE reducedVersionARM.sv
-set_global_assignment -name VHDL_FILE pruebarancia.vhd
 set_global_assignment -name SOURCE_FILE db/parcial2.cmp.rdb
 set_location_assignment PIN_J15 -to reset1
 set_location_assignment PIN_M1 -to INport[0]

@@ -1,5 +1,5 @@
 Assembler report for parcial2
-Thu Nov 10 10:25:35 2022
+Thu Nov 10 11:15:42 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof
+  5. Assembler Device Options: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 10 10:25:35 2022 ;
+; Assembler Status      ; Successful - Thu Nov 10 11:15:42 2022 ;
 ; Revision Name         ; parcial2                              ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                       ;
-+-------------------------------------------------------------------------------------------------+
-; File Name                                                                                       ;
-+-------------------------------------------------------------------------------------------------+
-; C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof ;
-+-------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                         ;
++---------------------------------------------------------------------------------------------------+
+; File Name                                                                                         ;
++---------------------------------------------------------------------------------------------------+
+; C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof ;
++---------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/anali/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                  ;
-+----------------+----------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00402924                                                                                               ;
-; Checksum       ; 0x00402924                                                                                               ;
-+----------------+----------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.sof ;
++----------------+------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                    ;
++----------------+------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0040C502                                                                                                 ;
+; Checksum       ; 0x0040C502                                                                                                 ;
++----------------+------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Nov 10 10:25:33 2022
+    Info: Processing started: Thu Nov 10 11:15:39 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off parcial2 -c parcial2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Thu Nov 10 10:25:35 2022
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Thu Nov 10 11:15:42 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

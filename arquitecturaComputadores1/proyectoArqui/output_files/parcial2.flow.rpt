@@ -1,5 +1,5 @@
 Flow report for parcial2
-Thu Nov 10 10:25:47 2022
+Thu Nov 10 11:15:53 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 10 10:25:47 2022       ;
+; Flow Status                        ; Successful - Thu Nov 10 11:15:53 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; parcial2                                    ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,905 / 22,320 ( 17 % )                     ;
-;     Total combinational functions  ; 2,713 / 22,320 ( 12 % )                     ;
+; Total logic elements               ; 3,968 / 22,320 ( 18 % )                     ;
+;     Total combinational functions  ; 2,837 / 22,320 ( 13 % )                     ;
 ;     Dedicated logic registers      ; 2,577 / 22,320 ( 12 % )                     ;
 ; Total registers                    ; 2577                                        ;
 ; Total pins                         ; 18 / 154 ( 12 % )                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/10/2022 10:23:40 ;
+; Start date & time ; 11/10/2022 11:12:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; parcial2            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 1095335755095.166808662001772          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 256017933623610.166808956304624        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -101,12 +101,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4797 MB             ; 00:00:39                           ;
-; Fitter               ; 00:01:23     ; 1.0                     ; 5575 MB             ; 00:01:35                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:08     ; 2.2                     ; 4873 MB             ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4657 MB             ; 00:00:02                           ;
-; Total                ; 00:02:03     ; --                      ; --                  ; 00:02:26                           ;
+; Analysis & Synthesis ; 00:00:40     ; 1.0                     ; 4788 MB             ; 00:01:05                           ;
+; Fitter               ; 00:02:12     ; 1.0                     ; 5582 MB             ; 00:02:42                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4695 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.6                     ; 4858 MB             ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4654 MB             ; 00:00:03                           ;
+; Total                ; 00:03:04     ; --                      ; --                  ; 00:04:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,11 +115,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-EJRAEA2E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LAPTOP-EJRAEA2E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LAPTOP-EJRAEA2E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LAPTOP-EJRAEA2E  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-EJRAEA2E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-89TTFMD  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-89TTFMD  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-89TTFMD  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-89TTFMD  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-89TTFMD  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

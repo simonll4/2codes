@@ -91,3 +91,38 @@ loop 2:
         BNE 0x48
         b 0x4
 
+
+
+
+
+        ///////////////modificado anda
+sub r0, pc, pc
+add r4, r0, #7
+add r8, r0, #0
+add r6, r0, #0x80
+str r6, [r0, #0x800]
+add r5, r0, #6
+add r7, r0, #1
+subs r5, r5, r8
+beq #0x30
+subs r5, r5, #1
+add r7, r7, r7
+bne #0x24
+add r8, r8, #1
+sub r6, r6, r7
+ldr sb, [r0, #4]
+subs sb, sb, #1
+bne #0x3c
+subs r4, r4, #1
+bne #0x10
+str r6, [r0, #0x800]
+add r4, r0, #7
+add r6, r6, r6
+ldr sb, [r0, #4]
+subs sb, sb, #1
+bne #0x5c
+str r6, [r0, #0x800]
+subs r4, r4, #1
+bne #0x54
+b #0
+
