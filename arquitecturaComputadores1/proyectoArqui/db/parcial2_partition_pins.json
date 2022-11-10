@@ -40,11 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset1",
+					"name" : "resetE",
 					"strict" : false
 				},
 				{
-					"name" : "INport[0]",
+					"name" : "INport[6]",
 					"strict" : false
 				},
 				{
@@ -52,7 +52,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "INport[3]",
+					"name" : "INport[4]",
 					"strict" : false
 				},
 				{
@@ -64,11 +64,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "INport[4]",
+					"name" : "INport[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INport[6]",
+					"name" : "INport[0]",
 					"strict" : false
 				},
 				{

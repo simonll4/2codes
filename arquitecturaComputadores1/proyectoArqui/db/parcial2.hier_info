@@ -1,6 +1,6 @@
-|top
+|top1
 clk => clk.IN4
-reset1 => reset.IN1
+resetE => reset.IN1
 INport[0] => INport[0].IN1
 INport[1] => INport[1].IN1
 INport[2] => INport[2].IN1
@@ -19,7 +19,7 @@ OUTport[6] <= port:outport.port3
 OUTport[7] <= port:outport.port3
 
 
-|top|arm:arm
+|top1|arm:arm
 clk => clk.IN2
 reset => reset.IN2
 PC[0] <= datapath:dp.port10
@@ -186,7 +186,7 @@ ReadData[30] => ReadData[30].IN1
 ReadData[31] => ReadData[31].IN1
 
 
-|top|arm:arm|controller:c
+|top1|arm:arm|controller:c
 clk => clk.IN1
 reset => reset.IN1
 Instr[12] => Instr[12].IN1
@@ -226,7 +226,7 @@ MemtoReg <= decode:dec.port7
 PCSrc <= condlogic:cl.port8
 
 
-|top|arm:arm|controller:c|decode:dec
+|top1|arm:arm|controller:c|decode:dec
 Op[0] => controls.OUTPUTSELECT
 Op[0] => Mux0.IN4
 Op[0] => Mux1.IN4
@@ -271,7 +271,7 @@ ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|controller:c|condlogic:cl
+|top1|arm:arm|controller:c|condlogic:cl
 clk => clk.IN2
 reset => reset.IN2
 Cond[0] => Cond[0].IN1
@@ -292,7 +292,7 @@ RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+|top1|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 reset => q[0]~reg0.ACLR
@@ -305,7 +305,7 @@ q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+|top1|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 reset => q[0]~reg0.ACLR
@@ -318,7 +318,7 @@ q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|controller:c|condlogic:cl|condcheck:cc
+|top1|arm:arm|controller:c|condlogic:cl|condcheck:cc
 Cond[0] => Mux0.IN14
 Cond[1] => Mux0.IN13
 Cond[2] => Mux0.IN12
@@ -339,7 +339,7 @@ Flags[3] => Mux0.IN4
 CondEx <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp
+|top1|arm:arm|datapath:dp
 clk => clk.IN2
 reset => reset.IN1
 RegSrc[0] => RegSrc[0].IN1
@@ -518,7 +518,7 @@ ReadData[30] => ReadData[30].IN1
 ReadData[31] => ReadData[31].IN1
 
 
-|top|arm:arm|datapath:dp|mux2:pcmux
+|top1|arm:arm|datapath:dp|mux2:pcmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -649,7 +649,7 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|flopr:pcreg
+|top1|arm:arm|datapath:dp|flopr:pcreg
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 clk => q[2]~reg0.CLK
@@ -780,7 +780,7 @@ q[30] <= q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[31] <= q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|adder:pcadd1
+|top1|arm:arm|datapath:dp|adder:pcadd1
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -879,7 +879,7 @@ y[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|adder:pcadd2
+|top1|arm:arm|datapath:dp|adder:pcadd2
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -978,7 +978,7 @@ y[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|mux2:ra1mux
+|top1|arm:arm|datapath:dp|mux2:ra1mux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -997,7 +997,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|mux2:ra2mux
+|top1|arm:arm|datapath:dp|mux2:ra2mux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1016,7 +1016,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|regfile:rf
+|top1|arm:arm|datapath:dp|regfile:rf
 clk => rf.we_a.CLK
 clk => rf.waddr_a[3].CLK
 clk => rf.waddr_a[2].CLK
@@ -1275,7 +1275,7 @@ rd2[30] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 rd2[31] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|mux2:resmux
+|top1|arm:arm|datapath:dp|mux2:resmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1406,7 +1406,7 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|extend:ext
+|top1|arm:arm|datapath:dp|extend:ext
 Instr[0] => ExtImm.DATAB
 Instr[0] => ExtImm.DATAA
 Instr[1] => ExtImm.DATAB
@@ -1519,7 +1519,7 @@ ExtImm[30] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 ExtImm[31] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|mux2:srcbmux
+|top1|arm:arm|datapath:dp|mux2:srcbmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1650,7 +1650,7 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|arm:arm|datapath:dp|alu:alu
+|top1|arm:arm|datapath:dp|alu:alu
 SrcA[0] => Add0.IN32
 SrcA[0] => ALUResult.IN0
 SrcA[0] => ALUResult.IN0
@@ -2016,7 +2016,7 @@ ALUFlags[2] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 ALUFlags[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|imem:imem
+|top1|imem:imem
 a[0] => ~NO_FANOUT~
 a[1] => ~NO_FANOUT~
 a[2] => RAM.RADDR
@@ -2026,7 +2026,7 @@ a[5] => RAM.RADDR3
 a[6] => RAM.RADDR4
 a[7] => RAM.RADDR5
 a[8] => RAM.RADDR6
-a[9] => ~NO_FANOUT~
+a[9] => RAM.RADDR7
 a[10] => ~NO_FANOUT~
 a[11] => ~NO_FANOUT~
 a[12] => ~NO_FANOUT~
@@ -2049,38 +2049,6 @@ a[28] => ~NO_FANOUT~
 a[29] => ~NO_FANOUT~
 a[30] => ~NO_FANOUT~
 a[31] => ~NO_FANOUT~
-a[32] => ~NO_FANOUT~
-a[33] => ~NO_FANOUT~
-a[34] => ~NO_FANOUT~
-a[35] => ~NO_FANOUT~
-a[36] => ~NO_FANOUT~
-a[37] => ~NO_FANOUT~
-a[38] => ~NO_FANOUT~
-a[39] => ~NO_FANOUT~
-a[40] => ~NO_FANOUT~
-a[41] => ~NO_FANOUT~
-a[42] => ~NO_FANOUT~
-a[43] => ~NO_FANOUT~
-a[44] => ~NO_FANOUT~
-a[45] => ~NO_FANOUT~
-a[46] => ~NO_FANOUT~
-a[47] => ~NO_FANOUT~
-a[48] => ~NO_FANOUT~
-a[49] => ~NO_FANOUT~
-a[50] => ~NO_FANOUT~
-a[51] => ~NO_FANOUT~
-a[52] => ~NO_FANOUT~
-a[53] => ~NO_FANOUT~
-a[54] => ~NO_FANOUT~
-a[55] => ~NO_FANOUT~
-a[56] => ~NO_FANOUT~
-a[57] => ~NO_FANOUT~
-a[58] => ~NO_FANOUT~
-a[59] => ~NO_FANOUT~
-a[60] => ~NO_FANOUT~
-a[61] => ~NO_FANOUT~
-a[62] => ~NO_FANOUT~
-a[63] => ~NO_FANOUT~
 rd[0] <= RAM.DATAOUT
 rd[1] <= RAM.DATAOUT1
 rd[2] <= RAM.DATAOUT2
@@ -2115,7 +2083,7 @@ rd[30] <= RAM.DATAOUT30
 rd[31] <= RAM.DATAOUT31
 
 
-|top|dmem:dmem
+|top1|dmem:dmem
 clk => RAM.we_a.CLK
 clk => RAM.waddr_a[5].CLK
 clk => RAM.waddr_a[4].CLK
@@ -2202,38 +2170,6 @@ a[28] => ~NO_FANOUT~
 a[29] => ~NO_FANOUT~
 a[30] => ~NO_FANOUT~
 a[31] => ~NO_FANOUT~
-a[32] => ~NO_FANOUT~
-a[33] => ~NO_FANOUT~
-a[34] => ~NO_FANOUT~
-a[35] => ~NO_FANOUT~
-a[36] => ~NO_FANOUT~
-a[37] => ~NO_FANOUT~
-a[38] => ~NO_FANOUT~
-a[39] => ~NO_FANOUT~
-a[40] => ~NO_FANOUT~
-a[41] => ~NO_FANOUT~
-a[42] => ~NO_FANOUT~
-a[43] => ~NO_FANOUT~
-a[44] => ~NO_FANOUT~
-a[45] => ~NO_FANOUT~
-a[46] => ~NO_FANOUT~
-a[47] => ~NO_FANOUT~
-a[48] => ~NO_FANOUT~
-a[49] => ~NO_FANOUT~
-a[50] => ~NO_FANOUT~
-a[51] => ~NO_FANOUT~
-a[52] => ~NO_FANOUT~
-a[53] => ~NO_FANOUT~
-a[54] => ~NO_FANOUT~
-a[55] => ~NO_FANOUT~
-a[56] => ~NO_FANOUT~
-a[57] => ~NO_FANOUT~
-a[58] => ~NO_FANOUT~
-a[59] => ~NO_FANOUT~
-a[60] => ~NO_FANOUT~
-a[61] => ~NO_FANOUT~
-a[62] => ~NO_FANOUT~
-a[63] => ~NO_FANOUT~
 wd[0] => RAM.data_a[0].DATAIN
 wd[0] => RAM.DATAIN
 wd[1] => RAM.data_a[1].DATAIN
@@ -2298,38 +2234,6 @@ wd[30] => RAM.data_a[30].DATAIN
 wd[30] => RAM.DATAIN30
 wd[31] => RAM.data_a[31].DATAIN
 wd[31] => RAM.DATAIN31
-wd[32] => ~NO_FANOUT~
-wd[33] => ~NO_FANOUT~
-wd[34] => ~NO_FANOUT~
-wd[35] => ~NO_FANOUT~
-wd[36] => ~NO_FANOUT~
-wd[37] => ~NO_FANOUT~
-wd[38] => ~NO_FANOUT~
-wd[39] => ~NO_FANOUT~
-wd[40] => ~NO_FANOUT~
-wd[41] => ~NO_FANOUT~
-wd[42] => ~NO_FANOUT~
-wd[43] => ~NO_FANOUT~
-wd[44] => ~NO_FANOUT~
-wd[45] => ~NO_FANOUT~
-wd[46] => ~NO_FANOUT~
-wd[47] => ~NO_FANOUT~
-wd[48] => ~NO_FANOUT~
-wd[49] => ~NO_FANOUT~
-wd[50] => ~NO_FANOUT~
-wd[51] => ~NO_FANOUT~
-wd[52] => ~NO_FANOUT~
-wd[53] => ~NO_FANOUT~
-wd[54] => ~NO_FANOUT~
-wd[55] => ~NO_FANOUT~
-wd[56] => ~NO_FANOUT~
-wd[57] => ~NO_FANOUT~
-wd[58] => ~NO_FANOUT~
-wd[59] => ~NO_FANOUT~
-wd[60] => ~NO_FANOUT~
-wd[61] => ~NO_FANOUT~
-wd[62] => ~NO_FANOUT~
-wd[63] => ~NO_FANOUT~
 rd[0] <= RAM.DATAOUT
 rd[1] <= RAM.DATAOUT1
 rd[2] <= RAM.DATAOUT2
@@ -2364,7 +2268,7 @@ rd[30] <= RAM.DATAOUT30
 rd[31] <= RAM.DATAOUT31
 
 
-|top|cmp2:compare
+|top1|cmp2:compare
 d0[0] => Equal0.IN31
 d0[1] => Equal0.IN30
 d0[2] => Equal0.IN29
@@ -2432,7 +2336,7 @@ d1[31] => Equal0.IN32
 CMPresult <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|mux2:mem_portmux
+|top1|mux2:mem_portmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -2563,7 +2467,7 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|port:inport
+|top1|port:inport
 clk => OUT[0]~reg0.CLK
 clk => OUT[1]~reg0.CLK
 clk => OUT[2]~reg0.CLK
@@ -2598,7 +2502,7 @@ OUT[6] <= OUT[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 OUT[7] <= OUT[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|port:outport
+|top1|port:outport
 clk => OUT[0]~reg0.CLK
 clk => OUT[1]~reg0.CLK
 clk => OUT[2]~reg0.CLK

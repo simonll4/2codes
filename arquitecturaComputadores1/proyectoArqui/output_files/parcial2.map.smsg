@@ -1,5 +1,5 @@
-Info (10281): Verilog HDL Declaration information at reducedVersionARM.sv(7): object "INport" differs only in case from object "inport" in the same scope File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 7
-Info (10281): Verilog HDL Declaration information at reducedVersionARM.sv(8): object "OUTport" differs only in case from object "outport" in the same scope File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 8
-Warning (10273): Verilog HDL warning at reducedVersionARM.sv(128): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 128
-Warning (10273): Verilog HDL warning at reducedVersionARM.sv(142): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 142
-Warning (10273): Verilog HDL warning at reducedVersionARM.sv(284): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/reducedVersionARM.sv Line: 284
+Info (10281): Verilog HDL Declaration information at arm.sv(7): object "INport" differs only in case from object "inport" in the same scope File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/arm.sv Line: 7
+Info (10281): Verilog HDL Declaration information at arm.sv(8): object "OUTport" differs only in case from object "outport" in the same scope File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/arm.sv Line: 8
+Warning (10273): Verilog HDL warning at arm.sv(127): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/arm.sv Line: 127
+Warning (10273): Verilog HDL warning at arm.sv(141): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/arm.sv Line: 141
+Warning (10273): Verilog HDL warning at arm.sv(283): extended using "x" or "z" File: C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/arm.sv Line: 283

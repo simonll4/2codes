@@ -38,7 +38,7 @@ SUBS R3, R3, #1
 LDR R1, [R0, #0x800]
 BNE #0x90
 ANDS R2, R1, #0x10
-BEQ #0x04
+BEQ #0x154
 ANDSNE R2, R1, #0x02
 BEQ #0x04
 BNE #0x8C
@@ -83,37 +83,43 @@ BNE #0x13C
 ANDS R1,R1,#0x01
 BEQ #0x4
 BNE #0x114
-add r4, r0, #7  //secuencia 2
-add r8, r0, #0
-add r6, r0, #0x80
-str r6, [r0, #0x800]
-add r5, r0, #6
-add r7, r0, #1
-subs r5, r5, r8
-beq #0x178
-subs r5, r5, #1
-add r7, r7, r7
-bne #0x174
-add r8, r8, #1
-sub r6, r6, r7
-ldr r9, [r0, #4]
-subs r9, r9, #1
-bne #0x18c
-subs r4, r4, #1
-bne #0x160
-str r6, [r0, #0x800]
-add r4, r0, #7
-add r6, r6, r6
-ldr r9, [r0, #4]
-subs r9, r9, #1
-bne #0x1ac
-str r6, [r0, #0x800]
-subs r4, r4, #1
-bne #0x1a4
+ADD R4, R0, #7  //secuencia 2
+ADD R8, R0, #0 
+ADD R6, R0, #0x80 
+STR R6, [R0, #0x800]
+ADD R5, R0, #6 
+ADD R7, R0, #1   
+SUBS R5, R5, R8  
+BEQ #0x180   
+SUBS R5, R5, #1  
+ADD R7, R7, R7   
+BNE #0x174
+ADD R8, R8, #1
+SUB R6, R6, R7   
+LDR R9, [R0, #0x4] 
+SUBS R9, R9, #1
+BNE #0x18C
+SUBS R4, R4, #1  
+BNE #0x160
+STR R6, [R0, 0x800] 
+ADD R4, R0, #7 
 ADD R3,R0,#0x2
 SUBS R3,R3,#1   
 LDR R1,[R0,#0x800]
-BNE #0x1c4
-ANDS R1,R1,#0x01
+BNE #0x1A8
+ANDS R1,R1,#0x02
+BEQ #0x4
+ADD R6, R6, R6 
+LDR R9, [R0, #0x4] 
+SUBS R9, R9, #1
+BNE #0x1C4
+STR R6, [R0, 0x800] 
+SUBS R4, R4, #1 
+BNE #0x1BC
+ADD R3,R0,#0x2
+SUBS R3,R3,#1   
+LDR R1,[R0,#0x800]
+BNE #0x1DC
+ANDS R1,R1,#0x02
 BEQ #0x4
 BNE #0x154

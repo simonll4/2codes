@@ -1,5 +1,5 @@
 Fitter report for parcial2
-Thu Nov 10 11:15:37 2022
+Thu Nov 10 16:01:10 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 10 11:15:37 2022       ;
+; Fitter Status                      ; Successful - Thu Nov 10 16:01:10 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; parcial2                                    ;
 ; Top-level Entity Name              ; top                                         ;
@@ -152,14 +152,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.4%      ;
-;     Processor 3            ;   1.4%      ;
-;     Processor 4            ;   1.3%      ;
+;     Processor 2            ;   1.7%      ;
+;     Processor 3            ;   1.6%      ;
+;     Processor 4            ;   1.5%      ;
 +----------------------------+-------------+
 
 
@@ -246,8 +246,8 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/2codes/arquitecturaCom
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 10.1% / 9.8% / 10.4%    ;
-; Peak interconnect usage (total/H/V)         ; 56.1% / 54.5% / 58.3%   ;
+; Average interconnect usage (total/H/V)      ; 10.2% / 10.0% / 10.6%   ;
+; Peak interconnect usage (total/H/V)         ; 56.0% / 54.9% / 57.5%   ;
 ; Maximum fan-out                             ; 2577                    ;
 ; Highest non-global fan-out                  ; 387                     ;
 ; Total fan-out                               ; 19718                   ;
@@ -839,7 +839,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dmem:dmem|RAM~3359                        ; LCCOMB_X32_Y16_N14 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; dmem:dmem|RAM~3361                        ; LCCOMB_X30_Y16_N28 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; dmem:dmem|RAM~3363                        ; LCCOMB_X30_Y16_N16 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; dmem:dmem|RAM~3365                        ; LCCOMB_X29_Y16_N2  ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; dmem:dmem|RAM~3365                        ; LCCOMB_X29_Y16_N26 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; dmem:dmem|RAM~3367                        ; LCCOMB_X32_Y13_N28 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; dmem:dmem|RAM~3369                        ; LCCOMB_X32_Y13_N0  ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; dmem:dmem|RAM~3371                        ; LCCOMB_X32_Y13_N24 ; 32      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
@@ -904,7 +904,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_R8   ; 2577    ; 1312                                 ; Global Clock         ; GCLK18           ; --                        ;
+; clk  ; PIN_R8   ; 2577    ; 1379                                 ; Global Clock         ; GCLK18           ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -913,14 +913,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 6,925 / 71,559 ( 10 % ) ;
-; C16 interconnects     ; 146 / 2,597 ( 6 % )     ;
-; C4 interconnects      ; 4,701 / 46,848 ( 10 % ) ;
-; Direct links          ; 469 / 71,559 ( < 1 % )  ;
+; Block interconnects   ; 6,953 / 71,559 ( 10 % ) ;
+; C16 interconnects     ; 151 / 2,597 ( 6 % )     ;
+; C4 interconnects      ; 4,759 / 46,848 ( 10 % ) ;
+; Direct links          ; 470 / 71,559 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 1,635 / 24,624 ( 7 % )  ;
-; R24 interconnects     ; 183 / 2,496 ( 7 % )     ;
-; R4 interconnects      ; 5,778 / 62,424 ( 9 % )  ;
+; Local interconnects   ; 1,636 / 24,624 ( 7 % )  ;
+; R24 interconnects     ; 190 / 2,496 ( 8 % )     ;
+; R4 interconnects      ; 5,873 / 62,424 ( 9 % )  ;
 +-----------------------+-------------------------+
 
 
@@ -1258,8 +1258,8 @@ Info (170195): Router estimated average interconnect usage is 7% of the availabl
     Info (170196): Router estimated peak interconnect usage is 42% of the available device resources in the region that extends from location X32_Y11 to location X42_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:01:42
-Info (11888): Total time spent on timing analysis during the Fitter is 7.51 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:01:28
+Info (11888): Total time spent on timing analysis during the Fitter is 8.52 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1270,9 +1270,9 @@ Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
 Info (144001): Generated suppressed messages file C:/Users/Usuario/Desktop/2codes/arquitecturaComputadores1/proyectoArqui/output_files/parcial2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 5582 megabytes
-    Info: Processing ended: Thu Nov 10 11:15:38 2022
-    Info: Elapsed time: 00:02:13
-    Info: Total CPU time (on all processors): 00:02:43
+    Info: Processing ended: Thu Nov 10 16:01:11 2022
+    Info: Elapsed time: 00:02:00
+    Info: Total CPU time (on all processors): 00:02:31
 
 
 +----------------------------+
