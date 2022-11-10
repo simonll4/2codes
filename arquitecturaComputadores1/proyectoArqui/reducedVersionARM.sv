@@ -3,14 +3,16 @@
 // Single-cycle implementation of a subset of ARMv4 with i/O port capability
 // 
 
-module top(input  logic       clk, reset,
+module top(input  logic       clk, reset1,
            input  logic [7:0] INport,
            output logic [7:0] OUTport);
 
   logic [31:0] WriteData, DataAdr; 
-  logic        MemWrite, MemtoReg, PortSel;
+  logic        MemWrite, MemtoReg, PortSel, reset;
   logic [31:0] PC, Instr, ReadData, MemData;
   logic [7:0] INData;
+  
+  assign reset=~reset1;
   
   // instantiate processor and memories
   arm arm(clk, reset, PC, Instr, MemWrite, MemtoReg, DataAdr, 
@@ -25,30 +27,30 @@ module top(input  logic       clk, reset,
 endmodule
 
 module dmem(input  logic        clk, we,
-            input  logic [31:0] a, wd,
+            input  logic [63:0] a, wd,
             output logic [31:0] rd);
 
   logic [31:0] RAM[63:0];
   
   initial
-		$readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\dmemfile.dat",RAM);
+		$readmemh("C:\\Users\\anali\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\dmem.dat",RAM);
 
-  assign rd = RAM[a[31:2]]; // word aligned
+  assign rd = RAM[a[63:2]]; // word aligned
   
 
   always_ff @(posedge clk)
     if (we) RAM[a[31:2]] <= wd;
 endmodule
 
-module imem(input  logic [31:0] a,
+module imem(input  logic [63:0] a,
             output logic [31:0] rd);
 
-  logic [31:0] RAM[63:0];
+  logic [31:0] RAM[127:0];
 
   initial
-      $readmemh("C:\\Users\\Usuario\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\imemfile.dat",RAM);
+      $readmemh("C:\\Users\\anali\\Desktop\\2codes\\arquitecturaComputadores1\\proyectoArqui\\imem.dat",RAM);
 
-  assign rd = RAM[a[31:2]]; // word aligned
+  assign rd = RAM[a[63:2]]; // word aligned
 endmodule
 
 module arm(input  logic        clk, reset,
@@ -120,7 +122,7 @@ module decode(input  logic [1:0] Op,
   	  2'b01: if (Funct[0])  controls = 10'b0001111000; 
   	                        // STR
   	         else           controls = 10'b1001110100; 
-  	                        // b
+  	                        // B
   	  2'b10:                controls = 10'b0110100010; 
   	                        // Unimplemented
   	  default:              controls = 10'bx;          
