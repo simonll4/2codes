@@ -48,7 +48,7 @@ INICIO: SUB R0,R15,R15      ;seteo cero
         ADD R8,R0,#7        ;iterador loop 2
 LOOP 2: ADD R9,R0,R6        ;se reiniciliza r1
         ADD R2,R0,R7        ;se reiniciliza r2
-        ADD R6,R1,R2        ;se busca el proximo valor de R1
+        ADD R6,R9,R2        ;se busca el proximo valor de R1
         ADD R7,R2,R2        ;proximo valor para R2
 LOOP 1: STR R9,[R0,0x800]   ;inicia suencias de luces
         ADD R9,R9,R2        

@@ -1,0 +1,8 @@
+velocidades:
+2 = choque (001f0000)
+11 = contagios (004f0000)
+28 = auto fantastico (001A0000)
+29 = cargando (008f0000)
+tablas:
+3-10 = tabla choque
+12-27 = tabla contagios 
