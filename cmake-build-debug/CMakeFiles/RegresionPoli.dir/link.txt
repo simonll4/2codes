@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/RegresionPoli.dir/metodos_numericos/regresion/regresionPolI.cpp.o -o RegresionPoli 

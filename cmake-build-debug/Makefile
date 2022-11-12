@@ -57,10 +57,10 @@ RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simonll4/CLionProjects/2codes
+CMAKE_SOURCE_DIR = /home/simonll4/Desktop/2codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simonll4/CLionProjects/2codes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/simonll4/Desktop/2codes/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles /home/simonll4/CLionProjects/2codes/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles /home/simonll4/Desktop/2codes/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -414,6 +414,32 @@ Spline: cmake_check_build_system
 Spline/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/build
 .PHONY : Spline/fast
+
+#=============================================================================
+# Target rules for targets named Ejercico2
+
+# Build rule for target.
+Ejercico2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ejercico2
+.PHONY : Ejercico2
+
+# fast build rule for target.
+Ejercico2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/build
+.PHONY : Ejercico2/fast
+
+#=============================================================================
+# Target rules for targets named Ejercico3
+
+# Build rule for target.
+Ejercico3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ejercico3
+.PHONY : Ejercico3
+
+# fast build rule for target.
+Ejercico3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/build
+.PHONY : Ejercico3/fast
 
 metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.o
@@ -835,6 +861,60 @@ metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
 .PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
 
+metodos_numericos/parcial2/ejercicio2.o: metodos_numericos/parcial2/ejercicio2.cpp.o
+.PHONY : metodos_numericos/parcial2/ejercicio2.o
+
+# target to build an object file
+metodos_numericos/parcial2/ejercicio2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/metodos_numericos/parcial2/ejercicio2.cpp.o
+.PHONY : metodos_numericos/parcial2/ejercicio2.cpp.o
+
+metodos_numericos/parcial2/ejercicio2.i: metodos_numericos/parcial2/ejercicio2.cpp.i
+.PHONY : metodos_numericos/parcial2/ejercicio2.i
+
+# target to preprocess a source file
+metodos_numericos/parcial2/ejercicio2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/metodos_numericos/parcial2/ejercicio2.cpp.i
+.PHONY : metodos_numericos/parcial2/ejercicio2.cpp.i
+
+metodos_numericos/parcial2/ejercicio2.s: metodos_numericos/parcial2/ejercicio2.cpp.s
+.PHONY : metodos_numericos/parcial2/ejercicio2.s
+
+# target to generate assembly for a file
+metodos_numericos/parcial2/ejercicio2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/metodos_numericos/parcial2/ejercicio2.cpp.s
+.PHONY : metodos_numericos/parcial2/ejercicio2.cpp.s
+
+metodos_numericos/parcial2/ejercicio3.o: metodos_numericos/parcial2/ejercicio3.cpp.o
+.PHONY : metodos_numericos/parcial2/ejercicio3.o
+
+# target to build an object file
+metodos_numericos/parcial2/ejercicio3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/metodos_numericos/parcial2/ejercicio3.cpp.o
+.PHONY : metodos_numericos/parcial2/ejercicio3.cpp.o
+
+metodos_numericos/parcial2/ejercicio3.i: metodos_numericos/parcial2/ejercicio3.cpp.i
+.PHONY : metodos_numericos/parcial2/ejercicio3.i
+
+# target to preprocess a source file
+metodos_numericos/parcial2/ejercicio3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/metodos_numericos/parcial2/ejercicio3.cpp.i
+.PHONY : metodos_numericos/parcial2/ejercicio3.cpp.i
+
+metodos_numericos/parcial2/ejercicio3.s: metodos_numericos/parcial2/ejercicio3.cpp.s
+.PHONY : metodos_numericos/parcial2/ejercicio3.s
+
+# target to generate assembly for a file
+metodos_numericos/parcial2/ejercicio3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
+.PHONY : metodos_numericos/parcial2/ejercicio3.cpp.s
+
 metodos_numericos/regresion/polynomialRegression.o: metodos_numericos/regresion/polynomialRegression.cpp.o
 .PHONY : metodos_numericos/regresion/polynomialRegression.o
 
@@ -989,6 +1069,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Biseccion"
 	@echo "... Diferenciacion"
+	@echo "... Ejercico2"
+	@echo "... Ejercico3"
 	@echo "... EliminacionGaussiana"
 	@echo "... Euler"
 	@echo "... FalsaPosicion"
@@ -1061,6 +1143,12 @@ help:
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.o"
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.i"
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.s"
+	@echo "... metodos_numericos/parcial2/ejercicio2.o"
+	@echo "... metodos_numericos/parcial2/ejercicio2.i"
+	@echo "... metodos_numericos/parcial2/ejercicio2.s"
+	@echo "... metodos_numericos/parcial2/ejercicio3.o"
+	@echo "... metodos_numericos/parcial2/ejercicio3.i"
+	@echo "... metodos_numericos/parcial2/ejercicio3.s"
 	@echo "... metodos_numericos/regresion/polynomialRegression.o"
 	@echo "... metodos_numericos/regresion/polynomialRegression.i"
 	@echo "... metodos_numericos/regresion/polynomialRegression.s"

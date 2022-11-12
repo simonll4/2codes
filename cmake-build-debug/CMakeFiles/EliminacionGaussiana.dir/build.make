@@ -53,10 +53,10 @@ RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simonll4/CLionProjects/2codes
+CMAKE_SOURCE_DIR = /home/simonll4/Desktop/2codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simonll4/CLionProjects/2codes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/simonll4/Desktop/2codes/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EliminacionGaussiana.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/EliminacionGaussiana.dir/flags.make
 CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o: CMakeFiles/EliminacionGaussiana.dir/flags.make
 CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o: ../metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp
 CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o: CMakeFiles/EliminacionGaussiana.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o -MF CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o.d -o CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o -MF CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o.d -o CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp
 
 CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp > CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp > CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.i
 
 CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp -o CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp -o CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.s
 
 # Object files for target EliminacionGaussiana
 EliminacionGaussiana_OBJECTS = \
@@ -93,7 +93,7 @@ EliminacionGaussiana_EXTERNAL_OBJECTS =
 EliminacionGaussiana: CMakeFiles/EliminacionGaussiana.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp.o
 EliminacionGaussiana: CMakeFiles/EliminacionGaussiana.dir/build.make
 EliminacionGaussiana: CMakeFiles/EliminacionGaussiana.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EliminacionGaussiana"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EliminacionGaussiana"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EliminacionGaussiana.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +105,6 @@ CMakeFiles/EliminacionGaussiana.dir/clean:
 .PHONY : CMakeFiles/EliminacionGaussiana.dir/clean
 
 CMakeFiles/EliminacionGaussiana.dir/depend:
-	cd /home/simonll4/CLionProjects/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/EliminacionGaussiana.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/simonll4/Desktop/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/EliminacionGaussiana.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EliminacionGaussiana.dir/depend
 

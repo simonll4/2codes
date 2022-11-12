@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Biseccion"
+			"path" : "Ejercico2"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -52,15 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4
+				0
 			]
 		}
 	],
-	"id" : "Biseccion::@6890427a1f51a3e7e1df",
+	"id" : "Ejercico2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Biseccion",
-	"nameOnDisk" : "Biseccion",
+	"name" : "Ejercico2",
+	"nameOnDisk" : "Ejercico2",
 	"paths" : 
 	{
 		"build" : ".",
@@ -89,11 +85,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4
+				0
 			]
 		}
 	],
@@ -102,31 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/localizacion_raices/bisection.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/ecuaciones_diferenciales/euler.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/ecuaciones_diferenciales/heun.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp",
+			"path" : "metodos_numericos/parcial2/ejercicio2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

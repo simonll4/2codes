@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/pelado.dir/metodos_numericos/interpolacion/pelado.c.o -o pelado 

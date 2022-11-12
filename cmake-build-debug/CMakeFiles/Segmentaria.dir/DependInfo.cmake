@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/segmentaria.cpp" "CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o" "gcc" "CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/segmentaria.cpp" "CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o" "gcc" "CMakeFiles/Segmentaria.dir/metodos_numericos/interpolacion/segmentaria.cpp.o.d"
   )
 
 # Targets to which this target links.

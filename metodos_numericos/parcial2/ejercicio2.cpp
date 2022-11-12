@@ -27,17 +27,24 @@ int main() {
     a = A;
     b = B;
 
-    cout << "***********************" << endl;
-
-    sum = function(a) + function(b);
+    sum = 0;
     h = (double) (b - a) / INTERVALS;
 
-    for (int index = 1; index < INTERVALS; index++) {
+    double sum1 = 0;
+    double sum2 = 0;
+    for (int i = 0; i < INTERVALS; ++i) {
+        sum1 = sum1 + h * function(a + i * h);
+        sum2 = sum2 + h * (function(a + (i + 1) * h) - function(a + i * h));
+    }
+    sum = sum1 + sum2 / 2;
+
+    //sum = function(a) + function(b);
+    /*for (int index = 1; index < INTERVALS; index++) {
         sum = sum + 2 * function(a + index * h);
     }
-    sum = sum * (h / 2);
+    sum = sum * (h / 2);*/
 
-    cout << "(trapecio)Resultado de la integral : " << fixed << setprecision(10) << sum << endl;
+    cout << "(metodo ejercicio 2)Resultado de la integral : " << fixed << setprecision(10) << sum << endl;
 
     return 0;
 }

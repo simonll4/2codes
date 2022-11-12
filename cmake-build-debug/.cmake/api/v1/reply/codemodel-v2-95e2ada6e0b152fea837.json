@@ -37,7 +37,9 @@
 						19,
 						20,
 						21,
-						22
+						22,
+						23,
+						24
 					]
 				}
 			],
@@ -74,7 +76,9 @@
 						19,
 						20,
 						21,
-						22
+						22,
+						23,
+						24
 					]
 				}
 			],
@@ -83,7 +87,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Biseccion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Biseccion-Debug-32e388d84b4125b56f14.json",
+					"jsonFile" : "target-Biseccion-Debug-579193223717a5dbf95c.json",
 					"name" : "Biseccion",
 					"projectIndex" : 0
 				},
@@ -92,6 +96,20 @@
 					"id" : "Diferenciacion::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Diferenciacion-Debug-ed78615a34243f73808a.json",
 					"name" : "Diferenciacion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ejercico2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ejercico2-Debug-96b0d8e877f82d599c1c.json",
+					"name" : "Ejercico2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ejercico3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ejercico3-Debug-72027163b4b7d49b886d.json",
+					"name" : "Ejercico3",
 					"projectIndex" : 0
 				},
 				{
@@ -247,8 +265,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/simonll4/CLionProjects/2codes/cmake-build-debug",
-		"source" : "/home/simonll4/CLionProjects/2codes"
+		"build" : "/home/simonll4/Desktop/2codes/cmake-build-debug",
+		"source" : "/home/simonll4/Desktop/2codes"
 	},
 	"version" : 
 	{

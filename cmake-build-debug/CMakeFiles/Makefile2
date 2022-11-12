@@ -54,10 +54,10 @@ RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simonll4/CLionProjects/2codes
+CMAKE_SOURCE_DIR = /home/simonll4/Desktop/2codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simonll4/CLionProjects/2codes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/simonll4/Desktop/2codes/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -86,6 +86,8 @@ all: CMakeFiles/Heun.dir/all
 all: CMakeFiles/PuntoMedio.dir/all
 all: CMakeFiles/RungeKutta.dir/all
 all: CMakeFiles/Spline.dir/all
+all: CMakeFiles/Ejercico2.dir/all
+all: CMakeFiles/Ejercico3.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -116,6 +118,8 @@ clean: CMakeFiles/Heun.dir/clean
 clean: CMakeFiles/PuntoMedio.dir/clean
 clean: CMakeFiles/RungeKutta.dir/clean
 clean: CMakeFiles/Spline.dir/clean
+clean: CMakeFiles/Ejercico2.dir/clean
+clean: CMakeFiles/Ejercico3.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -125,14 +129,14 @@ clean: CMakeFiles/Spline.dir/clean
 CMakeFiles/Biseccion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Biseccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Biseccion"
 .PHONY : CMakeFiles/Biseccion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Biseccion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Biseccion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Biseccion.dir/rule
 
 # Convenience name for target.
@@ -151,14 +155,14 @@ CMakeFiles/Biseccion.dir/clean:
 CMakeFiles/FalsaPosicion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FalsaPosicion.dir/build.make CMakeFiles/FalsaPosicion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target FalsaPosicion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target FalsaPosicion"
 .PHONY : CMakeFiles/FalsaPosicion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FalsaPosicion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FalsaPosicion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/FalsaPosicion.dir/rule
 
 # Convenience name for target.
@@ -177,14 +181,14 @@ CMakeFiles/FalsaPosicion.dir/clean:
 CMakeFiles/IterativoDePuntoFijo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IterativoDePuntoFijo.dir/build.make CMakeFiles/IterativoDePuntoFijo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IterativoDePuntoFijo.dir/build.make CMakeFiles/IterativoDePuntoFijo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target IterativoDePuntoFijo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target IterativoDePuntoFijo"
 .PHONY : CMakeFiles/IterativoDePuntoFijo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IterativoDePuntoFijo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/IterativoDePuntoFijo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/IterativoDePuntoFijo.dir/rule
 
 # Convenience name for target.
@@ -203,14 +207,14 @@ CMakeFiles/IterativoDePuntoFijo.dir/clean:
 CMakeFiles/NewtonRapshon.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewtonRapshon.dir/build.make CMakeFiles/NewtonRapshon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewtonRapshon.dir/build.make CMakeFiles/NewtonRapshon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target NewtonRapshon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target NewtonRapshon"
 .PHONY : CMakeFiles/NewtonRapshon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NewtonRapshon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NewtonRapshon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NewtonRapshon.dir/rule
 
 # Convenience name for target.
@@ -229,14 +233,14 @@ CMakeFiles/NewtonRapshon.dir/clean:
 CMakeFiles/Secante.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Secante.dir/build.make CMakeFiles/Secante.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target Secante"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target Secante"
 .PHONY : CMakeFiles/Secante.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Secante.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Secante.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Secante.dir/rule
 
 # Convenience name for target.
@@ -255,14 +259,14 @@ CMakeFiles/Secante.dir/clean:
 CMakeFiles/EliminacionGaussiana.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EliminacionGaussiana.dir/build.make CMakeFiles/EliminacionGaussiana.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target EliminacionGaussiana"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target EliminacionGaussiana"
 .PHONY : CMakeFiles/EliminacionGaussiana.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EliminacionGaussiana.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EliminacionGaussiana.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/EliminacionGaussiana.dir/rule
 
 # Convenience name for target.
@@ -281,14 +285,14 @@ CMakeFiles/EliminacionGaussiana.dir/clean:
 CMakeFiles/Jacobi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobi.dir/build.make CMakeFiles/Jacobi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobi.dir/build.make CMakeFiles/Jacobi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target Jacobi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target Jacobi"
 .PHONY : CMakeFiles/Jacobi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Jacobi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Jacobi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Jacobi.dir/rule
 
 # Convenience name for target.
@@ -307,14 +311,14 @@ CMakeFiles/Jacobi.dir/clean:
 CMakeFiles/GaussSeidel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSeidel.dir/build.make CMakeFiles/GaussSeidel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSeidel.dir/build.make CMakeFiles/GaussSeidel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target GaussSeidel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target GaussSeidel"
 .PHONY : CMakeFiles/GaussSeidel.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GaussSeidel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GaussSeidel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/GaussSeidel.dir/rule
 
 # Convenience name for target.
@@ -333,14 +337,14 @@ CMakeFiles/GaussSeidel.dir/clean:
 CMakeFiles/Lagrange.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lagrange.dir/build.make CMakeFiles/Lagrange.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target Lagrange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target Lagrange"
 .PHONY : CMakeFiles/Lagrange.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lagrange.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lagrange.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Lagrange.dir/rule
 
 # Convenience name for target.
@@ -359,14 +363,14 @@ CMakeFiles/Lagrange.dir/clean:
 CMakeFiles/Segmentaria.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Segmentaria.dir/build.make CMakeFiles/Segmentaria.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target Segmentaria"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target Segmentaria"
 .PHONY : CMakeFiles/Segmentaria.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Segmentaria.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Segmentaria.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Segmentaria.dir/rule
 
 # Convenience name for target.
@@ -385,14 +389,14 @@ CMakeFiles/Segmentaria.dir/clean:
 CMakeFiles/RegresionPolinomica.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RegresionPolinomica.dir/build.make CMakeFiles/RegresionPolinomica.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target RegresionPolinomica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target RegresionPolinomica"
 .PHONY : CMakeFiles/RegresionPolinomica.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RegresionPolinomica.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RegresionPolinomica.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/RegresionPolinomica.dir/rule
 
 # Convenience name for target.
@@ -411,14 +415,14 @@ CMakeFiles/RegresionPolinomica.dir/clean:
 CMakeFiles/Jacobiguia4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target Jacobiguia4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target Jacobiguia4"
 .PHONY : CMakeFiles/Jacobiguia4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Jacobiguia4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Jacobiguia4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Jacobiguia4.dir/rule
 
 # Convenience name for target.
@@ -437,14 +441,14 @@ CMakeFiles/Jacobiguia4.dir/clean:
 CMakeFiles/gaussSeidelRelajacion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussSeidelRelajacion.dir/build.make CMakeFiles/gaussSeidelRelajacion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target gaussSeidelRelajacion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=55,56 "Built target gaussSeidelRelajacion"
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gaussSeidelRelajacion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gaussSeidelRelajacion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/gaussSeidelRelajacion.dir/rule
 
 # Convenience name for target.
@@ -463,14 +467,14 @@ CMakeFiles/gaussSeidelRelajacion.dir/clean:
 CMakeFiles/WriteMatrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target WriteMatrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=53,54 "Built target WriteMatrix"
 .PHONY : CMakeFiles/WriteMatrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WriteMatrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WriteMatrix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/WriteMatrix.dir/rule
 
 # Convenience name for target.
@@ -489,14 +493,14 @@ CMakeFiles/WriteMatrix.dir/clean:
 CMakeFiles/Trapecio.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trapecio.dir/build.make CMakeFiles/Trapecio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target Trapecio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=51,52 "Built target Trapecio"
 .PHONY : CMakeFiles/Trapecio.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Trapecio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Trapecio.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Trapecio.dir/rule
 
 # Convenience name for target.
@@ -515,14 +519,14 @@ CMakeFiles/Trapecio.dir/clean:
 CMakeFiles/Simpson.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target Simpson"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target Simpson"
 .PHONY : CMakeFiles/Simpson.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Simpson.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Simpson.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Simpson.dir/rule
 
 # Convenience name for target.
@@ -541,14 +545,14 @@ CMakeFiles/Simpson.dir/clean:
 CMakeFiles/GaussLegendre.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussLegendre.dir/build.make CMakeFiles/GaussLegendre.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target GaussLegendre"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target GaussLegendre"
 .PHONY : CMakeFiles/GaussLegendre.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GaussLegendre.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GaussLegendre.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/GaussLegendre.dir/rule
 
 # Convenience name for target.
@@ -567,14 +571,14 @@ CMakeFiles/GaussLegendre.dir/clean:
 CMakeFiles/Diferenciacion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target Diferenciacion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target Diferenciacion"
 .PHONY : CMakeFiles/Diferenciacion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Diferenciacion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Diferenciacion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Diferenciacion.dir/rule
 
 # Convenience name for target.
@@ -593,14 +597,14 @@ CMakeFiles/Diferenciacion.dir/clean:
 CMakeFiles/Euler.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Euler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target Euler"
 .PHONY : CMakeFiles/Euler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Euler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Euler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Euler.dir/rule
 
 # Convenience name for target.
@@ -619,14 +623,14 @@ CMakeFiles/Euler.dir/clean:
 CMakeFiles/Heun.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heun.dir/build.make CMakeFiles/Heun.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target Heun"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target Heun"
 .PHONY : CMakeFiles/Heun.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Heun.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Heun.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Heun.dir/rule
 
 # Convenience name for target.
@@ -645,14 +649,14 @@ CMakeFiles/Heun.dir/clean:
 CMakeFiles/PuntoMedio.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuntoMedio.dir/build.make CMakeFiles/PuntoMedio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target PuntoMedio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target PuntoMedio"
 .PHONY : CMakeFiles/PuntoMedio.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PuntoMedio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PuntoMedio.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/PuntoMedio.dir/rule
 
 # Convenience name for target.
@@ -671,14 +675,14 @@ CMakeFiles/PuntoMedio.dir/clean:
 CMakeFiles/RungeKutta.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RungeKutta.dir/build.make CMakeFiles/RungeKutta.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target RungeKutta"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target RungeKutta"
 .PHONY : CMakeFiles/RungeKutta.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RungeKutta.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RungeKutta.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/RungeKutta.dir/rule
 
 # Convenience name for target.
@@ -697,14 +701,14 @@ CMakeFiles/RungeKutta.dir/clean:
 CMakeFiles/Spline.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target Spline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target Spline"
 .PHONY : CMakeFiles/Spline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Spline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Spline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Spline.dir/rule
 
 # Convenience name for target.
@@ -715,6 +719,58 @@ Spline: CMakeFiles/Spline.dir/rule
 CMakeFiles/Spline.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Spline.dir/build.make CMakeFiles/Spline.dir/clean
 .PHONY : CMakeFiles/Spline.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Ejercico2.dir
+
+# All Build rule for target.
+CMakeFiles/Ejercico2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Ejercico2"
+.PHONY : CMakeFiles/Ejercico2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Ejercico2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Ejercico2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Ejercico2.dir/rule
+
+# Convenience name for target.
+Ejercico2: CMakeFiles/Ejercico2.dir/rule
+.PHONY : Ejercico2
+
+# clean rule for target.
+CMakeFiles/Ejercico2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico2.dir/build.make CMakeFiles/Ejercico2.dir/clean
+.PHONY : CMakeFiles/Ejercico2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Ejercico3.dir
+
+# All Build rule for target.
+CMakeFiles/Ejercico3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Ejercico3"
+.PHONY : CMakeFiles/Ejercico3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Ejercico3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Ejercico3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Ejercico3.dir/rule
+
+# Convenience name for target.
+Ejercico3: CMakeFiles/Ejercico3.dir/rule
+.PHONY : Ejercico3
+
+# clean rule for target.
+CMakeFiles/Ejercico3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/clean
+.PHONY : CMakeFiles/Ejercico3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -53,10 +53,10 @@ RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simonll4/CLionProjects/2codes
+CMAKE_SOURCE_DIR = /home/simonll4/Desktop/2codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simonll4/CLionProjects/2codes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/simonll4/Desktop/2codes/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IterativoDePuntoFijo.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/IterativoDePuntoFijo.dir/flags.make
 CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o: CMakeFiles/IterativoDePuntoFijo.dir/flags.make
 CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o: ../metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp
 CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o: CMakeFiles/IterativoDePuntoFijo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o -MF CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o.d -o CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o -MF CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o.d -o CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp
 
 CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp > CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp > CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.i
 
 CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp -o CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp -o CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.s
 
 # Object files for target IterativoDePuntoFijo
 IterativoDePuntoFijo_OBJECTS = \
@@ -93,7 +93,7 @@ IterativoDePuntoFijo_EXTERNAL_OBJECTS =
 IterativoDePuntoFijo: CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o
 IterativoDePuntoFijo: CMakeFiles/IterativoDePuntoFijo.dir/build.make
 IterativoDePuntoFijo: CMakeFiles/IterativoDePuntoFijo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IterativoDePuntoFijo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IterativoDePuntoFijo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IterativoDePuntoFijo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +105,6 @@ CMakeFiles/IterativoDePuntoFijo.dir/clean:
 .PHONY : CMakeFiles/IterativoDePuntoFijo.dir/clean
 
 CMakeFiles/IterativoDePuntoFijo.dir/depend:
-	cd /home/simonll4/CLionProjects/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/IterativoDePuntoFijo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/simonll4/Desktop/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/IterativoDePuntoFijo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/IterativoDePuntoFijo.dir/depend
 

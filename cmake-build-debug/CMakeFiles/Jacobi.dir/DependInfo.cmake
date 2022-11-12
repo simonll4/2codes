@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp" "CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o" "gcc" "CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp" "CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o" "gcc" "CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o.d"
   )
 
 # Targets to which this target links.

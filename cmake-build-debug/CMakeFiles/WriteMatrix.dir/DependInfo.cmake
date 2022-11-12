@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/simonll4/CLionProjects/2codes/metodos_numericos/writeMatrix.cpp" "CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.o" "gcc" "CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/writeMatrix.cpp" "CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.o" "gcc" "CMakeFiles/WriteMatrix.dir/metodos_numericos/writeMatrix.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -69,4 +69,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PuntoMedio.dir/DependInfo.cmake"
   "CMakeFiles/RungeKutta.dir/DependInfo.cmake"
   "CMakeFiles/Spline.dir/DependInfo.cmake"
+  "CMakeFiles/Ejercico2.dir/DependInfo.cmake"
+  "CMakeFiles/Ejercico3.dir/DependInfo.cmake"
   )

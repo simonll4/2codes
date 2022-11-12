@@ -53,10 +53,10 @@ RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simonll4/CLionProjects/2codes
+CMAKE_SOURCE_DIR = /home/simonll4/Desktop/2codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simonll4/CLionProjects/2codes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/simonll4/Desktop/2codes/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Biseccion.dir/depend.make
@@ -72,72 +72,100 @@ include CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: ../metodos_numericos/localizacion_raices/bisection.cpp
 CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp
 
 CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.i
 
 CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.s
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o: ../metodos_numericos/ecuaciones_diferenciales/euler.cpp
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.i
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.s
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o: ../metodos_numericos/ecuaciones_diferenciales/heun.cpp
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.i
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.s
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o: ../metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.i
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.s
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o: CMakeFiles/Biseccion.dir/flags.make
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o: ../metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o -c /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.i
 
 CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.s
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o: ../metodos_numericos/parcial2/ejercicio2.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.i
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.s
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o: ../metodos_numericos/parcial2/ejercicio3.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.i
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
 
 # Object files for target Biseccion
 Biseccion_OBJECTS = \
@@ -145,7 +173,9 @@ Biseccion_OBJECTS = \
 "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/euler.cpp.o" \
 "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o" \
 "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o" \
-"CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o"
+"CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o"
 
 # External object files for target Biseccion
 Biseccion_EXTERNAL_OBJECTS =
@@ -155,9 +185,11 @@ Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/e
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/build.make
 Biseccion: CMakeFiles/Biseccion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Biseccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Biseccion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Biseccion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +201,6 @@ CMakeFiles/Biseccion.dir/clean:
 .PHONY : CMakeFiles/Biseccion.dir/clean
 
 CMakeFiles/Biseccion.dir/depend:
-	cd /home/simonll4/CLionProjects/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug /home/simonll4/CLionProjects/2codes/cmake-build-debug/CMakeFiles/Biseccion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/simonll4/Desktop/2codes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/Biseccion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Biseccion.dir/depend
 

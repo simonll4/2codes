@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Biseccion">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Biseccion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Biseccion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Biseccion"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Biseccion"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Biseccion/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Biseccion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Biseccion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,15 +55,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Biseccion/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Biseccion/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FalsaPosicion">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/FalsaPosicion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/FalsaPosicion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,15 +77,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalsaPosicion"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalsaPosicion"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FalsaPosicion/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/FalsaPosicion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/FalsaPosicion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -99,15 +99,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalsaPosicion/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalsaPosicion/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IterativoDePuntoFijo">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/IterativoDePuntoFijo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/IterativoDePuntoFijo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -121,15 +121,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 IterativoDePuntoFijo"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 IterativoDePuntoFijo"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IterativoDePuntoFijo/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/IterativoDePuntoFijo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/IterativoDePuntoFijo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -143,15 +143,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 IterativoDePuntoFijo/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 IterativoDePuntoFijo/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NewtonRapshon">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/NewtonRapshon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/NewtonRapshon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -165,15 +165,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonRapshon"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonRapshon"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NewtonRapshon/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/NewtonRapshon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/NewtonRapshon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -187,15 +187,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonRapshon/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonRapshon/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Secante">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Secante" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Secante" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -209,15 +209,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Secante"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Secante"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Secante/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Secante" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Secante" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -231,15 +231,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Secante/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Secante/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EliminacionGaussiana">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/EliminacionGaussiana" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/EliminacionGaussiana" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -253,15 +253,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 EliminacionGaussiana"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 EliminacionGaussiana"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EliminacionGaussiana/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/EliminacionGaussiana" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/EliminacionGaussiana" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -275,15 +275,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 EliminacionGaussiana/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 EliminacionGaussiana/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jacobi">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Jacobi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Jacobi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -297,15 +297,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobi"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobi"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jacobi/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Jacobi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Jacobi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -319,15 +319,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobi/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobi/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GaussSeidel">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/GaussSeidel" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/GaussSeidel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -341,15 +341,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussSeidel"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussSeidel"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GaussSeidel/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/GaussSeidel" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/GaussSeidel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -363,15 +363,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussSeidel/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussSeidel/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lagrange">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Lagrange" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Lagrange" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -385,15 +385,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lagrange"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lagrange"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lagrange/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Lagrange" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Lagrange" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -407,15 +407,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lagrange/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lagrange/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Segmentaria">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Segmentaria" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Segmentaria" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -429,15 +429,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Segmentaria"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Segmentaria"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Segmentaria/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Segmentaria" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Segmentaria" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -451,15 +451,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Segmentaria/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Segmentaria/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RegresionPolinomica">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -473,15 +473,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RegresionPolinomica/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/RegresionPolinomica" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -495,15 +495,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RegresionPolinomica/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jacobiguia4">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Jacobiguia4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Jacobiguia4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -517,15 +517,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobiguia4"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobiguia4"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jacobiguia4/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Jacobiguia4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Jacobiguia4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -539,15 +539,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobiguia4/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jacobiguia4/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gaussSeidelRelajacion">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/gaussSeidelRelajacion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/gaussSeidelRelajacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -561,15 +561,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 gaussSeidelRelajacion"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 gaussSeidelRelajacion"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gaussSeidelRelajacion/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/gaussSeidelRelajacion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/gaussSeidelRelajacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -583,15 +583,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 gaussSeidelRelajacion/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 gaussSeidelRelajacion/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="WriteMatrix">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/WriteMatrix" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/WriteMatrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -605,15 +605,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 WriteMatrix"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 WriteMatrix"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="WriteMatrix/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/WriteMatrix" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/WriteMatrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -627,15 +627,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 WriteMatrix/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 WriteMatrix/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Trapecio">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -649,15 +649,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Trapecio/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Trapecio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -671,15 +671,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Trapecio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Simpson">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -693,15 +693,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Simpson/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Simpson" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -715,15 +715,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simpson/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GaussLegendre">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/GaussLegendre" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/GaussLegendre" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -737,15 +737,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussLegendre"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussLegendre"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GaussLegendre/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/GaussLegendre" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/GaussLegendre" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -759,15 +759,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussLegendre/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 GaussLegendre/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Diferenciacion">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Diferenciacion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Diferenciacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -781,15 +781,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Diferenciacion"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Diferenciacion"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Diferenciacion/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Diferenciacion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Diferenciacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -803,15 +803,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Diferenciacion/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Diferenciacion/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Euler">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -825,15 +825,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Euler/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -847,15 +847,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Heun">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Heun" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Heun" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -869,15 +869,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heun"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heun"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Heun/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Heun" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Heun" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -891,15 +891,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heun/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heun/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PuntoMedio">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/PuntoMedio" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/PuntoMedio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -913,15 +913,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 PuntoMedio"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 PuntoMedio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PuntoMedio/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/PuntoMedio" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/PuntoMedio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -935,15 +935,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 PuntoMedio/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 PuntoMedio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RungeKutta">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RungeKutta" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/RungeKutta" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -957,15 +957,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RungeKutta"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RungeKutta"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RungeKutta/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/RungeKutta" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/RungeKutta" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -979,15 +979,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RungeKutta/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 RungeKutta/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Spline">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Spline" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Spline" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1001,15 +1001,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Spline"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Spline"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Spline/fast">
-				<Option output="/home/simonll4/CLionProjects/2codes/cmake-build-debug/Spline" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Spline" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1023,107 +1023,203 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Spline/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Spline/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ejercico2">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Ejercico2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ejercico2"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ejercico2/fast">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Ejercico2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ejercico2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ejercico3">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Ejercico3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ejercico3"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ejercico3/fast">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/Ejercico3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ejercico3/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/simonll4/CLionProjects/2codes/cmake-build-debug"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/diferenciacion/diferenciacion.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/diferenciacion/diferenciacion.cpp">
 			<Option target="Diferenciacion"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/euler.cpp">
 			<Option target="Biseccion"/>
 			<Option target="Euler"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp">
 			<Option target="Biseccion"/>
 			<Option target="Heun"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp">
 			<Option target="Biseccion"/>
 			<Option target="PuntoMedio"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp">
 			<Option target="Biseccion"/>
 			<Option target="RungeKutta"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/integracion/gaussLegendre.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/integracion/gaussLegendre.cpp">
 			<Option target="GaussLegendre"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/integracion/simpson.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/integracion/simpson.cpp">
 			<Option target="Simpson"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/integracion/trapecioCompuesta.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/integracion/trapecioCompuesta.cpp">
 			<Option target="Trapecio"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/InterpolacionSplines.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/InterpolacionSplines.cpp">
 			<Option target="Spline"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/lagrange.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/lagrange.cpp">
 			<Option target="Lagrange"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/interpolacion/segmentaria.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/segmentaria.cpp">
 			<Option target="Segmentaria"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/bisection.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp">
 			<Option target="Biseccion"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/falsePosition.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/falsePosition.cpp">
 			<Option target="FalsaPosicion"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp">
 			<Option target="IterativoDePuntoFijo"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/newtonRaphson.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/newtonRaphson.cpp">
 			<Option target="NewtonRapshon"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/localizacion_raices/secante.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/secante.cpp">
 			<Option target="Secante"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/modificatedCodes/jacobiGuia4.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/modificatedCodes/jacobiGuia4.cpp">
 			<Option target="Jacobiguia4"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/regresion/polynomialRegression.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp">
+			<Option target="Biseccion"/>
+			<Option target="Ejercico2"/>
+		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp">
+			<Option target="Biseccion"/>
+			<Option target="Ejercico3"/>
+		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/regresion/polynomialRegression.cpp">
 			<Option target="RegresionPolinomica"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp">
 			<Option target="GaussSeidel"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp">
 			<Option target="gaussSeidelRelajacion"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussianElimination.cpp">
 			<Option target="EliminacionGaussiana"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp">
 			<Option target="Jacobi"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/metodos_numericos/writeMatrix.cpp">
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/writeMatrix.cpp">
 			<Option target="WriteMatrix"/>
 		</Unit>
-		<Unit filename="/home/simonll4/CLionProjects/2codes/CMakeLists.txt">
+		<Unit filename="/home/simonll4/Desktop/2codes/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
