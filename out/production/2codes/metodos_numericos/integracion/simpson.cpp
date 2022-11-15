@@ -20,7 +20,7 @@ double function(double x)
 /////////////////
 // sub intervalos
 ////////////////
-#define POINTS 200
+#define INTERVALS 200
 
 int main()
 {
@@ -31,11 +31,11 @@ int main()
 
     cout << "***********************" << endl;
 
-    if (POINTS % 2 == 0)
+    if (INTERVALS % 2 == 0)
     {
         sum = function(A) + function(B);
-        h = (B - A) / POINTS;
-        for (int index = 1; index < POINTS / 2; index++)
+        h = (B - A) / INTERVALS;
+        for (int index = 1; index < INTERVALS / 2; index++)
         {
             x = A + 2 * index * h;
             sum = sum + 2 * function(x) + 4 * function(x - h);

@@ -17,10 +17,10 @@ double function(double x) {
 #define A -2
 #define B -1
 
-//////////////////
-/// sub intervalos
-//////////////////
-#define POINTS 100
+/////////////////////////////////
+/// sub intervalos (debe ser par)
+/////////////////////////////////
+#define INTERVALS 6
 
 int main() {
     double sum;
@@ -29,13 +29,13 @@ int main() {
     int n;
     a = A;
     b = B;
-    n = POINTS;
+    n = INTERVALS;
 
     cout << "***********************" << endl;
 
     if (n % 2 == 0) {
-        sum = function(a) + function(b);
         h = (b - a) / n;
+        sum = function(a) + function(b);
         for (int index = 1; index < n / 2; index++) {
             x = a + 2 * index * h;
             sum = sum + 2 * function(x) + 4 * function(x - h);

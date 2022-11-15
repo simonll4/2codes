@@ -18,7 +18,7 @@ double function(double x) {
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define POINTS 9
+#define INTERVALS 8
 
 /////////////////////
 /// definir intervalo
@@ -32,11 +32,11 @@ int main() {
     double a = A, b = B;
     double h;
     double num;
-    h = (b - a) / POINTS;
+    h = (b - a) / INTERVALS;
 
     num = function(a);
     cout << fixed << setprecision(10) << a << "\t\t" << num << endl;
-    for (int i = 0; i < POINTS; i++) {
+    for (int i = 0; i < INTERVALS; i++) {
         a = a + h;
         num = function(a);
         cout << fixed << setprecision(10) << a << "\t\t" << num;

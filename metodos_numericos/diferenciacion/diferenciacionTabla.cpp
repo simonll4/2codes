@@ -13,20 +13,20 @@ using namespace std;
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define POINTS 8
+#define INTERVALS 8
 
 /////////////////////
 /// definir intervalo
 /////////////////////
 #define INITIALX 0
-#define FINALX 1
+#define FINALX 2
 
 int main(int argc, char *argv[]) {
-    int n = POINTS;
+    int n = INTERVALS;
     double derivative = 0;
-    double arrayX[] = {0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1};
-    double arrayY[] = {1, 1.0058593750, 1.046875, 1.1582031250, 1.375, 1.7324218750, 2.265625, 3.0097656250, 4};
-    double h = (double) (FINALX - INITIALX) / POINTS;
+    double arrayX[] = {0,0.25,0.5,0.75,1,1.25,1.5,1.75,2};
+    double arrayY[] = {1,1.384,1.849,2.417,3.118,3.99,5.082,6.527,8.189};
+    double h = (double) (FINALX - INITIALX) / INTERVALS;
     ofstream file("board.txt");
 
     file << "DIFERENCIACION TABLA" << endl;
