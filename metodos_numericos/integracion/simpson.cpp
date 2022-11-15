@@ -20,7 +20,7 @@ double function(double x) {
 //////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 100
+#define POINTS 100
 
 int main() {
     double sum;
@@ -29,7 +29,7 @@ int main() {
     int n;
     a = A;
     b = B;
-    n = INTERVALS;
+    n = POINTS;
 
     cout << "***********************" << endl;
 

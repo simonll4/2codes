@@ -24,7 +24,7 @@ double function(double x) {
 }
 
 ///////////////
-///derivada f(x)
+///derivada function(x)
 ///////////////
 double derivada(double x) {
     return 2+ 1/x - 3 * cos(3*x);

@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Integer[] array1 = {10, 9, 14, 54, 2, 1, 3, 4};
-        Character[] array2 = {'g', 'e', 'a', 'c', 'f', 'b' };
+        Character[] array2 = {'g', 'e', 'a', 'c', 'function', 'b' };
 
         ArrayUtilSort<Integer> orderIteger = new ArrayUtilSort<>();
         ArrayUtilSort<Character> orderCharacter = new ArrayUtilSort<>();

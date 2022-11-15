@@ -20,7 +20,7 @@ double function(double x) {
 ///////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 10
+#define POINTS 1000
 
 int main() {
     double sum, h, a, b;
@@ -28,18 +28,18 @@ int main() {
     b = B;
 
     sum = 0;
-    h = (double) (b - a) / INTERVALS;
+    h = (double) (b - a) / POINTS;
 
     double sum1 = 0;
     double sum2 = 0;
-    for (int i = 0; i < INTERVALS; ++i) {
+    for (int i = 0; i < POINTS; ++i) {
         sum1 = sum1 + h * function(a + i * h);
         sum2 = sum2 + h * (function(a + (i + 1) * h) - function(a + i * h));
     }
     sum = sum1 + sum2 / 2;
 
     //sum = function(a) + function(b);
-    /*for (int index = 1; index < INTERVALS; index++) {
+    /*for (int index = 1; index < POINTS; index++) {
         sum = sum + 2 * function(a + index * h);
     }
     sum = sum * (h / 2);*/

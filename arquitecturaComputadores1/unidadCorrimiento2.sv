@@ -7,7 +7,7 @@ module shifterUnit2 (
             case(h)
                 2'b00: s = f;
                 2'b01:begin
-                            s = f << 1;
+                            s = function << 1;
                             s[0] = il;
                         end
                 2'b10:begin

@@ -167,6 +167,48 @@ CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
 
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o: ../metodos_numericos/integracion/tablas/simpsonTabla.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/simpsonTabla.cpp
+
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/simpsonTabla.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.i
+
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/simpsonTabla.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.s
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o: ../metodos_numericos/parcial2/valuarFuncion.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/valuarFuncion.cpp
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/valuarFuncion.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i
+
+CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/parcial2/valuarFuncion.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s
+
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o: CMakeFiles/Biseccion.dir/flags.make
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o: ../metodos_numericos/integracion/tablas/trapecioTabla.cpp
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o: CMakeFiles/Biseccion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o -MF CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o.d -o CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o -c /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/trapecioTabla.cpp
+
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/trapecioTabla.cpp > CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.i
+
+CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/trapecioTabla.cpp -o CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.s
+
 # Object files for target Biseccion
 Biseccion_OBJECTS = \
 "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o" \
@@ -175,7 +217,10 @@ Biseccion_OBJECTS = \
 "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o" \
 "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o" \
 "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o" \
-"CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o"
+"CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o" \
+"CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o"
 
 # External object files for target Biseccion
 Biseccion_EXTERNAL_OBJECTS =
@@ -187,9 +232,12 @@ Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/p
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o
+Biseccion: CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o
 Biseccion: CMakeFiles/Biseccion.dir/build.make
 Biseccion: CMakeFiles/Biseccion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Biseccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Biseccion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Biseccion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <math.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -31,7 +32,7 @@ int main() {
     y[0] = INITIALY;
     h = (double) (FINALX - INITIALX) / N;
 
-    ofstream file("eulerBoard.txt");
+    ofstream file("board.txt");
     if (!file.is_open()) {
         cout << "ERROR AL ABRIR ARCHIVO" << endl;
         return 1;
@@ -41,15 +42,15 @@ int main() {
         if (i == 0) {
             y[i + 1] = y[i] + h * function(x[i], y[i]);
             x[i + 1] = x[i] + h;
-            file << x[i] << "\t" << y[i] << "\t" << endl;
+            file << fixed << setprecision(10) << x[i] << "\t" << y[i] << "\t" << endl;
         } else {
             x[i + 1] = x[i] + h;
             y[i + 1] = y[i] + h * (2 * function(x[i], y[i]) - function(x[i - 1], y[i - 1]));
-            file << x[i] << "\t" << y[i] << "\t" << endl;
+            file << fixed << setprecision(10) << x[i] << "\t" << y[i] << "\t" << endl;
         }
     }
 
-    file << x[N] << "\t" << y[N] << "\t" << endl;
+    file << fixed << setprecision(10) << x[N] << "\t" << y[N] << "\t" << endl;
     file.close();
 
 }

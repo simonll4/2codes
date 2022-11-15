@@ -39,7 +39,11 @@
 						21,
 						22,
 						23,
-						24
+						24,
+						25,
+						26,
+						27,
+						28
 					]
 				}
 			],
@@ -78,7 +82,11 @@
 						21,
 						22,
 						23,
-						24
+						24,
+						25,
+						26,
+						27,
+						28
 					]
 				}
 			],
@@ -87,7 +95,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Biseccion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Biseccion-Debug-579193223717a5dbf95c.json",
+					"jsonFile" : "target-Biseccion-Debug-b930ca555cd2a0e74627.json",
 					"name" : "Biseccion",
 					"projectIndex" : 0
 				},
@@ -96,6 +104,13 @@
 					"id" : "Diferenciacion::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Diferenciacion-Debug-ed78615a34243f73808a.json",
 					"name" : "Diferenciacion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DiferenciacionTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DiferenciacionTabla-Debug-2c1ea9a53c9f8bbcdb4e.json",
+					"name" : "DiferenciacionTabla",
 					"projectIndex" : 0
 				},
 				{
@@ -233,6 +248,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "SimpsonTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimpsonTabla-Debug-e0e59543d58b04513b87.json",
+					"name" : "SimpsonTabla",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Spline::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Spline-Debug-8efcfe35523319c27827.json",
 					"name" : "Spline",
@@ -243,6 +265,20 @@
 					"id" : "Trapecio::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Trapecio-Debug-6e71ea0f3e1bd0922514.json",
 					"name" : "Trapecio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TrapecioTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TrapecioTabla-Debug-84bd526a03b02769d9e8.json",
+					"name" : "TrapecioTabla",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ValuarFuncion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ValuarFuncion-Debug-2f024dc7b37e70682f1c.json",
+					"name" : "ValuarFuncion",
 					"projectIndex" : 0
 				},
 				{

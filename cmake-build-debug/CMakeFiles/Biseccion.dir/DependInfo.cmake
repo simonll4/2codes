@@ -12,9 +12,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/heun.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/heun.cpp.o.d"
   "/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp.o.d"
   "/home/simonll4/Desktop/2codes/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/simpsonTabla.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/integracion/tablas/trapecioTabla.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o.d"
   "/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/localizacion_raices/bisection.cpp.o.d"
   "/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio2.cpp.o.d"
   "/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/ejercicio3.cpp.o.d"
+  "/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/valuarFuncion.cpp" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o" "gcc" "CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o.d"
   )
 
 # Targets to which this target links.

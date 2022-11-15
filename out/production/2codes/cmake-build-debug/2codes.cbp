@@ -80,7 +80,7 @@
 					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalsaPosicion"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -function &quot;/home/simonll4/CLionProjects/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FalsaPosicion/fast">

@@ -71,4 +71,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Spline.dir/DependInfo.cmake"
   "CMakeFiles/Ejercico2.dir/DependInfo.cmake"
   "CMakeFiles/Ejercico3.dir/DependInfo.cmake"
+  "CMakeFiles/ValuarFuncion.dir/DependInfo.cmake"
+  "CMakeFiles/DiferenciacionTabla.dir/DependInfo.cmake"
+  "CMakeFiles/SimpsonTabla.dir/DependInfo.cmake"
+  "CMakeFiles/TrapecioTabla.dir/DependInfo.cmake"
   )

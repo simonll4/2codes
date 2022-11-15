@@ -23,5 +23,9 @@
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/Spline.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/Ejercico2.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/Ejercico3.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/ValuarFuncion.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/DiferenciacionTabla.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/SimpsonTabla.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/TrapecioTabla.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

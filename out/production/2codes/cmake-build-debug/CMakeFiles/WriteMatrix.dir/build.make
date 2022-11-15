@@ -47,7 +47,7 @@ SHELL = /bin/sh
 CMAKE_COMMAND = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/cmake -E rm -function
 
 # Escaping for special characters.
 EQUALS = =

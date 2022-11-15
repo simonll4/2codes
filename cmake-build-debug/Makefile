@@ -441,6 +441,58 @@ Ejercico3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/build
 .PHONY : Ejercico3/fast
 
+#=============================================================================
+# Target rules for targets named ValuarFuncion
+
+# Build rule for target.
+ValuarFuncion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ValuarFuncion
+.PHONY : ValuarFuncion
+
+# fast build rule for target.
+ValuarFuncion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/build
+.PHONY : ValuarFuncion/fast
+
+#=============================================================================
+# Target rules for targets named DiferenciacionTabla
+
+# Build rule for target.
+DiferenciacionTabla: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DiferenciacionTabla
+.PHONY : DiferenciacionTabla
+
+# fast build rule for target.
+DiferenciacionTabla/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiferenciacionTabla.dir/build.make CMakeFiles/DiferenciacionTabla.dir/build
+.PHONY : DiferenciacionTabla/fast
+
+#=============================================================================
+# Target rules for targets named SimpsonTabla
+
+# Build rule for target.
+SimpsonTabla: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SimpsonTabla
+.PHONY : SimpsonTabla
+
+# fast build rule for target.
+SimpsonTabla/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpsonTabla.dir/build.make CMakeFiles/SimpsonTabla.dir/build
+.PHONY : SimpsonTabla/fast
+
+#=============================================================================
+# Target rules for targets named TrapecioTabla
+
+# Build rule for target.
+TrapecioTabla: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TrapecioTabla
+.PHONY : TrapecioTabla
+
+# fast build rule for target.
+TrapecioTabla/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrapecioTabla.dir/build.make CMakeFiles/TrapecioTabla.dir/build
+.PHONY : TrapecioTabla/fast
+
 metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.o
 
@@ -464,6 +516,30 @@ metodos_numericos/diferenciacion/diferenciacion.s: metodos_numericos/diferenciac
 metodos_numericos/diferenciacion/diferenciacion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Diferenciacion.dir/build.make CMakeFiles/Diferenciacion.dir/metodos_numericos/diferenciacion/diferenciacion.cpp.s
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.cpp.s
+
+metodos_numericos/diferenciacion/diferenciacionTabla.o: metodos_numericos/diferenciacion/diferenciacionTabla.cpp.o
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.o
+
+# target to build an object file
+metodos_numericos/diferenciacion/diferenciacionTabla.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiferenciacionTabla.dir/build.make CMakeFiles/DiferenciacionTabla.dir/metodos_numericos/diferenciacion/diferenciacionTabla.cpp.o
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.cpp.o
+
+metodos_numericos/diferenciacion/diferenciacionTabla.i: metodos_numericos/diferenciacion/diferenciacionTabla.cpp.i
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.i
+
+# target to preprocess a source file
+metodos_numericos/diferenciacion/diferenciacionTabla.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiferenciacionTabla.dir/build.make CMakeFiles/DiferenciacionTabla.dir/metodos_numericos/diferenciacion/diferenciacionTabla.cpp.i
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.cpp.i
+
+metodos_numericos/diferenciacion/diferenciacionTabla.s: metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.s
+
+# target to generate assembly for a file
+metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiferenciacionTabla.dir/build.make CMakeFiles/DiferenciacionTabla.dir/metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s
+.PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s
 
 metodos_numericos/ecuaciones_diferenciales/euler.o: metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
 .PHONY : metodos_numericos/ecuaciones_diferenciales/euler.o
@@ -620,6 +696,60 @@ metodos_numericos/integracion/simpson.s: metodos_numericos/integracion/simpson.c
 metodos_numericos/integracion/simpson.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simpson.dir/build.make CMakeFiles/Simpson.dir/metodos_numericos/integracion/simpson.cpp.s
 .PHONY : metodos_numericos/integracion/simpson.cpp.s
+
+metodos_numericos/integracion/tablas/simpsonTabla.o: metodos_numericos/integracion/tablas/simpsonTabla.cpp.o
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.o
+
+# target to build an object file
+metodos_numericos/integracion/tablas/simpsonTabla.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpsonTabla.dir/build.make CMakeFiles/SimpsonTabla.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.o
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.cpp.o
+
+metodos_numericos/integracion/tablas/simpsonTabla.i: metodos_numericos/integracion/tablas/simpsonTabla.cpp.i
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.i
+
+# target to preprocess a source file
+metodos_numericos/integracion/tablas/simpsonTabla.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpsonTabla.dir/build.make CMakeFiles/SimpsonTabla.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.i
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.cpp.i
+
+metodos_numericos/integracion/tablas/simpsonTabla.s: metodos_numericos/integracion/tablas/simpsonTabla.cpp.s
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.s
+
+# target to generate assembly for a file
+metodos_numericos/integracion/tablas/simpsonTabla.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpsonTabla.dir/build.make CMakeFiles/SimpsonTabla.dir/metodos_numericos/integracion/tablas/simpsonTabla.cpp.s
+.PHONY : metodos_numericos/integracion/tablas/simpsonTabla.cpp.s
+
+metodos_numericos/integracion/tablas/trapecioTabla.o: metodos_numericos/integracion/tablas/trapecioTabla.cpp.o
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.o
+
+# target to build an object file
+metodos_numericos/integracion/tablas/trapecioTabla.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrapecioTabla.dir/build.make CMakeFiles/TrapecioTabla.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.o
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.cpp.o
+
+metodos_numericos/integracion/tablas/trapecioTabla.i: metodos_numericos/integracion/tablas/trapecioTabla.cpp.i
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.i
+
+# target to preprocess a source file
+metodos_numericos/integracion/tablas/trapecioTabla.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrapecioTabla.dir/build.make CMakeFiles/TrapecioTabla.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.i
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.cpp.i
+
+metodos_numericos/integracion/tablas/trapecioTabla.s: metodos_numericos/integracion/tablas/trapecioTabla.cpp.s
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.s
+
+# target to generate assembly for a file
+metodos_numericos/integracion/tablas/trapecioTabla.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrapecioTabla.dir/build.make CMakeFiles/TrapecioTabla.dir/metodos_numericos/integracion/tablas/trapecioTabla.cpp.s
+.PHONY : metodos_numericos/integracion/tablas/trapecioTabla.cpp.s
 
 metodos_numericos/integracion/trapecioCompuesta.o: metodos_numericos/integracion/trapecioCompuesta.cpp.o
 .PHONY : metodos_numericos/integracion/trapecioCompuesta.o
@@ -915,6 +1045,33 @@ metodos_numericos/parcial2/ejercicio3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ejercico3.dir/build.make CMakeFiles/Ejercico3.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
 .PHONY : metodos_numericos/parcial2/ejercicio3.cpp.s
 
+metodos_numericos/parcial2/valuarFuncion.o: metodos_numericos/parcial2/valuarFuncion.cpp.o
+.PHONY : metodos_numericos/parcial2/valuarFuncion.o
+
+# target to build an object file
+metodos_numericos/parcial2/valuarFuncion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o
+.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.o
+
+metodos_numericos/parcial2/valuarFuncion.i: metodos_numericos/parcial2/valuarFuncion.cpp.i
+.PHONY : metodos_numericos/parcial2/valuarFuncion.i
+
+# target to preprocess a source file
+metodos_numericos/parcial2/valuarFuncion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i
+.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.i
+
+metodos_numericos/parcial2/valuarFuncion.s: metodos_numericos/parcial2/valuarFuncion.cpp.s
+.PHONY : metodos_numericos/parcial2/valuarFuncion.s
+
+# target to generate assembly for a file
+metodos_numericos/parcial2/valuarFuncion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Biseccion.dir/build.make CMakeFiles/Biseccion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s
+.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.s
+
 metodos_numericos/regresion/polynomialRegression.o: metodos_numericos/regresion/polynomialRegression.cpp.o
 .PHONY : metodos_numericos/regresion/polynomialRegression.o
 
@@ -1069,6 +1226,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Biseccion"
 	@echo "... Diferenciacion"
+	@echo "... DiferenciacionTabla"
 	@echo "... Ejercico2"
 	@echo "... Ejercico3"
 	@echo "... EliminacionGaussiana"
@@ -1088,13 +1246,19 @@ help:
 	@echo "... Secante"
 	@echo "... Segmentaria"
 	@echo "... Simpson"
+	@echo "... SimpsonTabla"
 	@echo "... Spline"
 	@echo "... Trapecio"
+	@echo "... TrapecioTabla"
+	@echo "... ValuarFuncion"
 	@echo "... WriteMatrix"
 	@echo "... gaussSeidelRelajacion"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.o"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.i"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.s"
+	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.o"
+	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.i"
+	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.s"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.o"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.i"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.s"
@@ -1113,6 +1277,12 @@ help:
 	@echo "... metodos_numericos/integracion/simpson.o"
 	@echo "... metodos_numericos/integracion/simpson.i"
 	@echo "... metodos_numericos/integracion/simpson.s"
+	@echo "... metodos_numericos/integracion/tablas/simpsonTabla.o"
+	@echo "... metodos_numericos/integracion/tablas/simpsonTabla.i"
+	@echo "... metodos_numericos/integracion/tablas/simpsonTabla.s"
+	@echo "... metodos_numericos/integracion/tablas/trapecioTabla.o"
+	@echo "... metodos_numericos/integracion/tablas/trapecioTabla.i"
+	@echo "... metodos_numericos/integracion/tablas/trapecioTabla.s"
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.o"
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.i"
 	@echo "... metodos_numericos/integracion/trapecioCompuesta.s"
@@ -1149,6 +1319,9 @@ help:
 	@echo "... metodos_numericos/parcial2/ejercicio3.o"
 	@echo "... metodos_numericos/parcial2/ejercicio3.i"
 	@echo "... metodos_numericos/parcial2/ejercicio3.s"
+	@echo "... metodos_numericos/parcial2/valuarFuncion.o"
+	@echo "... metodos_numericos/parcial2/valuarFuncion.i"
+	@echo "... metodos_numericos/parcial2/valuarFuncion.s"
 	@echo "... metodos_numericos/regresion/polynomialRegression.o"
 	@echo "... metodos_numericos/regresion/polynomialRegression.i"
 	@echo "... metodos_numericos/regresion/polynomialRegression.s"
