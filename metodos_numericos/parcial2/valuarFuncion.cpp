@@ -12,19 +12,19 @@ using namespace std;
 /// funcion a valuar
 ////////////////////
 double function(double x) {
-    return 3 * pow(x, 3) + 1;
+    return log(x)*pow(x,2)+4*x;
 }
 
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define INTERVALS 8
+#define INTERVALS 6
 
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define A 0
-#define B 1
+#define A 2
+#define B 3
 
 
 int main() {

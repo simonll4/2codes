@@ -13,14 +13,14 @@ using namespace std;
 ///////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 8
+#define INTERVALS 5
 
 int main() {
     double sum, h, a, b;
     a = A;
     b = B;
     int intervals = INTERVALS;
-    double array[] = {0,0.4135,1.02433,1.81275,3.117,4.834166667,7.6125,11.3505,14.164};
+    double array[] = {0,0.52798,1.82369,4.656,9.79198,18};
     h = (double) (b - a) / intervals;
 
     cout << "********trapecio tabla ***************" << endl;
@@ -31,7 +31,7 @@ int main() {
     }
     sum = sum * (h / 2);
 
-    cout << "(trapecio tabla)Resultado de la integral : " << fixed << setprecision(10) << sum << endl;
+    cout << "(trapecio tabla)Resultado de la integral : " << fixed << setprecision(20) << sum << endl;
 
     return 0;
 }

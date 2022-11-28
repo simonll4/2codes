@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o -o RegresionPolinomica 

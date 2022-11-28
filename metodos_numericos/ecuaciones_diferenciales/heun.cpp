@@ -36,11 +36,11 @@ int main() {
         return 1;
     }
 
+    file << x[0] << "\t" << y[0] << endl;
     for (int i = 0; i < N; i++) {
         x[i + 1] = x[i] + h;
         yt = y[i] + h * function(x[i], y[i]);
         y[i + 1] = y[i] + h * ((function(x[i], y[i]) + function(x[i + 1], yt)) / 2);
-
         file << x[i + 1] << "\t" << y[i + 1] << endl;
     }
 

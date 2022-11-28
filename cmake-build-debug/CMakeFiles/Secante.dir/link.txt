@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.o -o Secante 

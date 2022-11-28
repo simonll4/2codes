@@ -5,19 +5,19 @@
 //////////////////////////////
 /// Definir cantidad de puntos
 //////////////////////////////
-#define SELECT 4
+#define SELECT 6
 
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A 0
-#define B 1
+#define A -3
+#define B 5
 
 ///////////////////
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return 9*pow(x,2);
+    return pow(4*x-5,3);
 }
 
 using namespace std;

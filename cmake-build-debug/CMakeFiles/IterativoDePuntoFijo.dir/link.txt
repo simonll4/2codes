@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/IterativoDePuntoFijo.dir/metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp.o -o IterativoDePuntoFijo 

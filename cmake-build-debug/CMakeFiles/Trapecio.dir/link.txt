@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Trapecio.dir/metodos_numericos/integracion/trapecioCompuesta.cpp.o -o Trapecio 

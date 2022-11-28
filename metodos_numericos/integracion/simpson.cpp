@@ -8,19 +8,19 @@ using namespace std;
 /// funcion
 ///////////
 double function(double x) {
-    return pow(1-x,3);
+    return pow(4*x-5,3);
 }
 
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A -2
-#define B -1
+#define A -3
+#define B 5
 
 /////////////////////////////////
 /// sub intervalos (debe ser par)
 /////////////////////////////////
-#define INTERVALS 6
+#define INTERVALS 10
 
 int main() {
     double sum;

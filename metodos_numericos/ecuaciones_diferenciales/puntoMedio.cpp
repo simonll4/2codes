@@ -35,6 +35,7 @@ int main() {
         return 1;
     }
 
+    file << x[0] << "\t" << y[0] << endl;
     for (int i = 0; i < N; i++) {
         xm = x[i] + h / 2;
         ym = y[i] + h / 2 * function(x[i], y[i]);

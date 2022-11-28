@@ -13,19 +13,19 @@ using namespace std;
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define INTERVALS 8
+#define INTERVALS 6
 
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define INITIALX 0
-#define FINALX 2
+#define INITIALX 2
+#define FINALX 3
 
 int main(int argc, char *argv[]) {
     int n = INTERVALS;
     double derivative = 0;
-    double arrayX[] = {0,0.25,0.5,0.75,1,1.25,1.5,1.75,2};
-    double arrayY[] = {1,1.384,1.849,2.417,3.118,3.99,5.082,6.527,8.189};
+    double arrayX[] = {2,2.1666666667,2.3333333333	,2.5000000000,2.6666666667,2.8333333333,3.0000000000};
+    double arrayY[] = {10.7725887222,12.2963636420,13.9463994621,15.7268170742,17.6414524659,19.6938936063,21.8875105980};
     double h = (double) (FINALX - INITIALX) / INTERVALS;
     ofstream file("board.txt");
 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/FalsaPosicion.dir/metodos_numericos/localizacion_raices/falsePosition.cpp.o -o FalsaPosicion 

@@ -1,0 +1,339 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2codes",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "1.Biseccion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1.Biseccion-Debug-3e086e9133dff9a73ca4.json",
+					"name" : "1.Biseccion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1.FalsaPosicion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1.FalsaPosicion-Debug-0d0090ce01c723629367.json",
+					"name" : "1.FalsaPosicion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1.IterativoDePuntoFijo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1.IterativoDePuntoFijo-Debug-27c14a53b3f2af7f31d6.json",
+					"name" : "1.IterativoDePuntoFijo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1.NewtonRapshon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1.NewtonRapshon-Debug-9c7f8551f2f9cff522c1.json",
+					"name" : "1.NewtonRapshon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1.Secante::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1.Secante-Debug-47abf88c338c0ed220e4.json",
+					"name" : "1.Secante",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2.EliminacionGaussiana::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2.EliminacionGaussiana-Debug-968cdc233bba05be1132.json",
+					"name" : "2.EliminacionGaussiana",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2.GaussSeidel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2.GaussSeidel-Debug-49f300bff0ab568e5814.json",
+					"name" : "2.GaussSeidel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2.Jacobi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2.Jacobi-Debug-0d33e1024235c7ac5bb1.json",
+					"name" : "2.Jacobi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2.gaussSeidelRelajacion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2.gaussSeidelRelajacion-Debug-0f72632da38624e14154.json",
+					"name" : "2.gaussSeidelRelajacion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3.Lagrange::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3.Lagrange-Debug-43771005fbc7ac0147fa.json",
+					"name" : "3.Lagrange",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3.RegresionPolinomica::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3.RegresionPolinomica-Debug-8248ffc58c9959217439.json",
+					"name" : "3.RegresionPolinomica",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3.SplinesCubicas::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3.SplinesCubicas-Debug-37e454c7d92844e9784d.json",
+					"name" : "3.SplinesCubicas",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4.GaussLegendre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4.GaussLegendre-Debug-d1f6c4dfc97122c737af.json",
+					"name" : "4.GaussLegendre",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4.Simpson::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4.Simpson-Debug-c15ee7ed639225178df7.json",
+					"name" : "4.Simpson",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4.Trapecio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4.Trapecio-Debug-4a66a03b8f1005dc4ce9.json",
+					"name" : "4.Trapecio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "5.Diferenciacion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-5.Diferenciacion-Debug-743069cc468ea958ad1d.json",
+					"name" : "5.Diferenciacion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6.Euler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6.Euler-Debug-06510986049d26c6d340.json",
+					"name" : "6.Euler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6.Heun::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6.Heun-Debug-0e41279755899802a3a7.json",
+					"name" : "6.Heun",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6.PuntoMedio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6.PuntoMedio-Debug-d3a719f8843c8862c38c.json",
+					"name" : "6.PuntoMedio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6.RungeKutta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6.RungeKutta-Debug-0f35ceca1372e0463f13.json",
+					"name" : "6.RungeKutta",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "7.DiferenciacionTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-7.DiferenciacionTabla-Debug-ba2ee1ac0cd7b220c4f0.json",
+					"name" : "7.DiferenciacionTabla",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "7.SimpsonTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-7.SimpsonTabla-Debug-81435c25b7061cd4dc2d.json",
+					"name" : "7.SimpsonTabla",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "7.TrapecioTabla::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-7.TrapecioTabla-Debug-f19d69d355a792d55b6c.json",
+					"name" : "7.TrapecioTabla",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Eje1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eje1-Debug-0413132f7a61e3ae291c.json",
+					"name" : "Eje1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Eje3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eje3-Debug-d0f890ea603228b568be.json",
+					"name" : "Eje3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ejercico2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ejercico2-Debug-982a326a836666295d31.json",
+					"name" : "Ejercico2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ejercico3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ejercico3-Debug-5ecd250a10c98e60c6c6.json",
+					"name" : "Ejercico3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Jacobiguia4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Jacobiguia4-Debug-477fc86711820bfd44d6.json",
+					"name" : "Jacobiguia4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SistEuler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SistEuler-Debug-5a097608df88f1eaa70c.json",
+					"name" : "SistEuler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SistRk4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SistRk4-Debug-421243779dada37e8271.json",
+					"name" : "SistRk4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ValuarFuncion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ValuarFuncion-Debug-f1b6c38ca60786122fd9.json",
+					"name" : "ValuarFuncion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WriteMatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WriteMatrix-Debug-19ac3c0dd32a9b9d7dfc.json",
+					"name" : "WriteMatrix",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/simonll4/CLionProjects/2codes/cmake-build-debug",
+		"source" : "/home/simonll4/CLionProjects/2codes"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

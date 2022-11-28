@@ -11,19 +11,20 @@ using namespace std;
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A 0
-#define B 2
+#define A 2
+#define B 3
 
 /////////////////////////////////
 /// sub intervalos (debe ser par)
 /////////////////////////////////
-#define INTERVALS 8
+#define INTERVALS 6
 
 int main() {
     double sum;
     double h;
     int n = INTERVALS;
-    double array[] = {0,0.4135,1.02433,1.81275,3.117,4.834166667,7.6125,11.3505,14.164};
+    double array[] = {8.7638668179, 9.5090695446, 10.2873818569, 11.0814470330, 11.8977505605, 12.7280640885,
+                      13.5852295041};
     double a = A;
     double b = B;
 

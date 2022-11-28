@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/GaussSeidel.dir/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o -o GaussSeidel 

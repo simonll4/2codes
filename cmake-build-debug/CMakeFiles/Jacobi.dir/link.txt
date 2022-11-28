@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Jacobi.dir/metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cpp.o -o Jacobi 

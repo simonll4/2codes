@@ -8,7 +8,7 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return 1+x*sin(x*y) ;
+    return  3* sqrt(y);;
 }
 
 /////////////////////
@@ -16,7 +16,8 @@ double function(double x, double y) {
 /////////////////////
 #define INITIALX 0
 #define FINALX 1
-#define INITIALY 0
+#define INITIALY 1
+
 
 //////////////////////////////
 /// definir cant subIntervalos
@@ -36,6 +37,7 @@ int main() {
         return 1;
     }
 
+    file << x[0] << "\t" << y[0] << endl;
     for (int i = 0; i < N; i++) {
         k[1] = function(x[i], y[i]);
         k[2] = function(x[i] + h, y[i] + k[1] * h / 2);

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.o -o Lagrange 

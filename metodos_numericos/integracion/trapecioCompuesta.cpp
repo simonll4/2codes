@@ -28,10 +28,8 @@ int main() {
     b = B;
 
     cout << "***********************" << endl;
-
-    sum = function(a) + function(b);
     h = (double) (b - a) / INTERVALS;
-
+    sum = function(a) + function(b);
     for (int index = 1; index < INTERVALS; index++) {
         sum = sum + 2 * function(a + index * h);
     }
