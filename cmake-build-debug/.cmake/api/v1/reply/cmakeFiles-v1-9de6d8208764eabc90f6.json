@@ -49,6 +49,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -125,8 +140,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/simonll4/CLionProjects/2codes/cmake-build-debug",
-		"source" : "/home/simonll4/CLionProjects/2codes"
+		"build" : "/home/simonll4/Desktop/2codes/cmake-build-debug",
+		"source" : "/home/simonll4/Desktop/2codes"
 	},
 	"version" : 
 	{

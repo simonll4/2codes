@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 /////////////////////
 ///DEFINIR TOLERANCIA
@@ -9,8 +10,8 @@
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define a 5
-#define b 6
+#define A 0
+#define B -5
 
 using namespace std;
 
@@ -20,14 +21,14 @@ double function(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return -0.3 + (((log(x) - (1 - 1 / x)) / (log(x) + 3 * (1 - 1 / x) / 2)));
+    return pow(x,2)-1;
 }
 
 int main() {
 
     // intervalo que abarca la raiz
-    double a = a;
-    double b = b;
+    double a = A;
+    double b = B;
 
     double cn, cv;
     double eAproximado, ePorcentual = 0;
@@ -62,7 +63,8 @@ int main() {
             }
             iteraciones++;
         } while (eAproximado > tolerancia);
-        cout << "Raiz: " << cn << "\nError aproximado: " << eAproximado << "\nError porcentual: " << ePorcentual
+        cout << fixed << setprecision(20) << "Raiz: " << cn << "\nError aproximado: " << eAproximado
+             << "\nError porcentual: " << ePorcentual
              << "\nIteraciones: " << iteraciones << endl;
         cout << "la funcion en dicho punto es: " << (int) function(cn) << endl;
     } else {

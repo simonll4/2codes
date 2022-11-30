@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 /////////////////////
 ///DEFINIR INTERVALO
@@ -33,6 +34,6 @@ int main() {
         iteraciones++;
     } while (eAproximado > tolerancia || iteraciones > 10000);
 
-    cout << "Raiz: " << xNuevo << "\nError: " << eAproximado << "\nIteraciones: " << iteraciones << endl;
+    cout << "Raiz: "<< fixed << setprecision(20) << xNuevo << "\nError: " << eAproximado << "\nIteraciones: " << iteraciones << endl;
     return 0;
 }

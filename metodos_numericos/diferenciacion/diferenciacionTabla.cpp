@@ -4,6 +4,8 @@
 #include <math.h>
 #include <iomanip>
 
+#define MAXROWS 10000 ///cantidad de datos que lee desde el archivo
+
 using namespace std;
 
 ////////////////////////////////////////////////
@@ -13,21 +15,26 @@ using namespace std;
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define INTERVALS 6
+#define INTERVALS 8
 
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define INITIALX 2
-#define FINALX 3
+#define INITIALX 0
+#define FINALX 1
+
+void readFile(double x[MAXROWS], double y[MAXROWS]);
 
 int main(int argc, char *argv[]) {
     int n = INTERVALS;
     double derivative = 0;
-    double arrayX[] = {2,2.1666666667,2.3333333333	,2.5000000000,2.6666666667,2.8333333333,3.0000000000};
-    double arrayY[] = {10.7725887222,12.2963636420,13.9463994621,15.7268170742,17.6414524659,19.6938936063,21.8875105980};
+    double arrayX[MAXROWS] = {0};
+    double arrayY[MAXROWS] = {0};
     double h = (double) (FINALX - INITIALX) / INTERVALS;
     ofstream file("board.txt");
+
+
+    readFile(arrayX, arrayY);
 
     file << "DIFERENCIACION TABLA" << endl;
     if (!file.is_open()) {
@@ -48,6 +55,69 @@ int main(int argc, char *argv[]) {
             file << fixed << setprecision(10) << arrayX[i] << "\t" << derivative << endl;
         }
     }
+
+
+}
+
+void readFile(double x[MAXROWS], double y[MAXROWS]) {
+    FILE *fp;
+    fp = fopen("nodes.txt", "r");
+    if (fp == NULL) {
+        puts("No se puede abrir el archivo");
+    }
+
+    //contador de filas
+    int filas = 0;
+    char c;
+    int maxValues = 0;
+    int columnas;
+
+    while ((c = fgetc(fp)) != EOF) {
+        if (c == '\n') {
+            filas++;
+        }
+    }
+
+    printf("numero de filas=%i\n", filas);
+
+    //resetear el puntero
+    rewind(fp);
+
+
+    //Cargo los datos leidos en el array
+    int xi = 0;
+    int yi = 0;
+    int j = 0;
+    int i;
+    for (i = 0; i < filas; i++) {
+        j = 0;
+
+        do {
+            if (j == 0) {
+                fscanf(fp, "%lf", &(x[xi]));
+                xi++;
+                j++;
+            } else {
+                fscanf(fp, "%lf", &(y[yi]));
+                yi++;
+            }
+        } while ((c = fgetc(fp)) != '\n');
+
+    }
+
+    columnas = j;
+
+    printf("numero de columnas=%i\n\n", columnas);
+
+    //imprimo la matriz para verificar que lo leyo correctamente
+
+    printf("LOS ELEMENTOS DE LA TABLA SON:\n");
+
+    for (i = 0; i < filas; i++) {
+        printf("%lf \t %lf", x[i], y[i]);
+        printf("\n");
+    }
+
 
 }
 

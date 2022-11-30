@@ -3,7 +3,7 @@ project(2codes)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(1.Biseccion metodos_numericos/localizacion_raices/bisection.cpp metodos_numericos/ecuaciones_diferenciales/euler.cpp metodos_numericos/ecuaciones_diferenciales/heun.cpp metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp metodos_numericos/parcial2/ejercicio2.cpp metodos_numericos/parcial2/ejercicio3.cpp metodos_numericos/integracion/tablas/simpsonTabla.cpp metodos_numericos/parcial2/valuarFuncion.cpp metodos_numericos/integracion/tablas/trapecioTabla.cpp)
+add_executable(1.Biseccion metodos_numericos/localizacion_raices/bisection.cpp )
 add_executable(1.FalsaPosicion metodos_numericos/localizacion_raices/falsePosition.cpp)
 add_executable(1.IterativoDePuntoFijo metodos_numericos/localizacion_raices/iterativoDePuntoFijo.cpp)
 add_executable(1.NewtonRapshon metodos_numericos/localizacion_raices/newtonRaphson.cpp)
@@ -26,12 +26,15 @@ add_executable(6.RungeKutta metodos_numericos/ecuaciones_diferenciales/rungeKutt
 add_executable(7.DiferenciacionTabla metodos_numericos/diferenciacion/diferenciacionTabla.cpp)
 add_executable(7.SimpsonTabla metodos_numericos/integracion/tablas/simpsonTabla.cpp)
 add_executable(7.TrapecioTabla metodos_numericos/integracion/tablas/trapecioTabla.cpp)
+add_executable(8.SistEuler metodos_numericos/ecuaciones_diferenciales/sist_edo/eulerSist.cpp)
+add_executable(8.SistRk4 metodos_numericos/ecuaciones_diferenciales/sist_edo/rk4Sist.cpp)
+add_executable(9.Ejercico2 metodos_numericos/parcial2/ejercicio2.cpp)
+add_executable(9.Ejercico3 metodos_numericos/parcial2/ejercicio3.cpp)
+add_executable(9.Eje1 metodos_numericos/recuperatorio/eje1.cpp)
+add_executable(9.Eje3 metodos_numericos/recuperatorio/eje3.cpp)
+add_executable(ValuarFuncion metodos_numericos/parcial2/valuarFuncion.cpp)
 add_executable(Jacobiguia4 metodos_numericos/modificatedCodes/jacobiGuia4.cpp)
 add_executable(WriteMatrix metodos_numericos/writeMatrix.cpp)
-add_executable(Ejercico2 metodos_numericos/parcial2/ejercicio2.cpp)
-add_executable(Ejercico3 metodos_numericos/parcial2/ejercicio3.cpp)
-add_executable(ValuarFuncion metodos_numericos/parcial2/valuarFuncion.cpp)
-add_executable(Eje1 metodos_numericos/recuperatorio/eje1.cpp)
-add_executable(Eje3 metodos_numericos/recuperatorio/eje3.cpp)
-add_executable(SistEuler metodos_numericos/ecuaciones_diferenciales/sist_edo/eulerSist.cpp)
-add_executable(SistRk4 metodos_numericos/ecuaciones_diferenciales/sist_edo/rk4Sist.cpp)
+
+
+

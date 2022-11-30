@@ -1,4 +1,4 @@
-/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/ninja/linux/ninja -G Ninja -S /home/simonll4/CLionProjects/2codes -B /home/simonll4/CLionProjects/2codes/cmake-build-debug
+/home/simonll4/programs/CLion-2022.2.1/clion-2022.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/simonll4/Desktop/2codes -B /home/simonll4/Desktop/2codes/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/simonll4/CLionProjects/2codes/cmake-build-debug
+-- Build files have been written to: /home/simonll4/Desktop/2codes/cmake-build-debug

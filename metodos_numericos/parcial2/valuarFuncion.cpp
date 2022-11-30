@@ -12,7 +12,7 @@ using namespace std;
 /// funcion a valuar
 ////////////////////
 double function(double x) {
-    return log(x)*pow(x,2)+4*x;
+    return exp(sqrt(1+x))* log(1+2* pow(x,2));
 }
 
 /////////////////////
@@ -23,8 +23,8 @@ double function(double x) {
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define A 2
-#define B 3
+#define A 0
+#define B 1
 
 
 int main() {

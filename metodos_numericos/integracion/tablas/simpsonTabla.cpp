@@ -4,6 +4,8 @@
 
 using namespace std;
 
+#define MAXROWS 10000 ///cantidad de datos que lee desde el archivo
+
 //////////////////////////////////
 /// metodo de simpson con tabla
 /////////////////////////////////
@@ -11,24 +13,27 @@ using namespace std;
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A 2
-#define B 3
+#define A 0
+#define B 1
 
 /////////////////////////////////
 /// sub intervalos (debe ser par)
 /////////////////////////////////
 #define INTERVALS 6
 
+void readFile(double x[MAXROWS]);
+
 int main() {
     double sum;
     double h;
     int n = INTERVALS;
-    double array[] = {8.7638668179, 9.5090695446, 10.2873818569, 11.0814470330, 11.8977505605, 12.7280640885,
-                      13.5852295041};
+    double array[MAXROWS] = {0};
     double a = A;
     double b = B;
 
     cout << "************simpson tabla***********" << endl;
+
+    readFile(array);
 
     if (n % 2 == 0) {
         sum = array[0] + array[n];
@@ -43,4 +48,61 @@ int main() {
     }
 
     return 0;
+}
+
+void readFile(double x[MAXROWS]) {
+    FILE *fp;
+    fp = fopen("nodes.txt", "r");
+    if (fp == NULL) {
+        puts("No se puede abrir el archivo");
+    }
+
+    //contador de filas
+    int filas = 0;
+    char c;
+    int maxValues = 0;
+    int columnas;
+
+    while ((c = fgetc(fp)) != EOF) {
+        if (c == '\n') {
+            filas++;
+        }
+    }
+
+    printf("numero de filas=%i\n", filas);
+
+    //resetear el puntero
+    rewind(fp);
+
+
+    //Cargo los datos leidos en el array
+    int xi = 0;
+    int yi = 0;
+    int j = 0;
+    int i;
+    for (i = 0; i < filas; i++) {
+        j = 0;
+
+        do {
+            if (j == 0) {
+                fscanf(fp, "%lf", &(x[xi]));
+                xi++;
+                j++;
+            }
+        } while ((c = fgetc(fp)) != '\n');
+
+    }
+
+    columnas = j;
+
+    printf("numero de columnas=%i\n\n", columnas);
+
+    //imprimo la matriz para verificar que lo leyo correctamente
+
+    printf("LOS ELEMENTOS DE LA TABLA SON:\n");
+
+    for (i = 0; i < filas; i++) {
+        printf("%lf \t", x[i]);
+        printf("\n");
+    }
 }

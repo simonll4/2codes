@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 /////////////////////
 ///DEFINIR TOLERANCIA
@@ -72,7 +73,7 @@ int main() {
 
     } while (eAproximado > tolerancia && iteraciones < 10000);
 
-    cout << "Raiz: " << xNuevo << "\nError: " << eAproximado << "\nIteraciones: " << iteraciones << endl;
+    cout << "Raiz: "  << fixed << setprecision(20)<< xNuevo << "\nError: " << eAproximado << "\nIteraciones: " << iteraciones << endl;
     cout << " function(xNuevo)=" << (int) function(xNuevo) << endl;
     cout << "Error porcentual: " << ePorcentual << endl;
     return 0;

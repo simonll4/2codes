@@ -10,8 +10,8 @@
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A -0.5
-#define B 0.5
+#define A 0
+#define B -5
 
 using namespace std;
 
@@ -21,7 +21,7 @@ double function(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return pow(x,3);
+    return pow(x,2)-1;
 }
 
 int main() {
