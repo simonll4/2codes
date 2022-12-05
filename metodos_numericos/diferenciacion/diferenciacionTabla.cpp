@@ -15,7 +15,7 @@ using namespace std;
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define INTERVALS 8
+#define INTERVALS 6
 
 /////////////////////
 /// definir intervalo

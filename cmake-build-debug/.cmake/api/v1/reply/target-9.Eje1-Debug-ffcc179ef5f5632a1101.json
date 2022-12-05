@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "7.SimpsonTabla"
+			"path" : "9.Eje1"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 34,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "7.SimpsonTabla::@6890427a1f51a3e7e1df",
+	"id" : "9.Eje1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "7.SimpsonTabla",
-	"nameOnDisk" : "7.SimpsonTabla",
+	"name" : "9.Eje1",
+	"nameOnDisk" : "9.Eje1",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/integracion/tablas/simpsonTabla.cpp",
+			"path" : "metodos_numericos/recuperatorio/eje1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

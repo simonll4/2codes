@@ -18,6 +18,7 @@
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/6.Heun.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/6.PuntoMedio.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/6.RungeKutta.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/6.errorExacto.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/7.DiferenciacionTabla.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/7.SimpsonTabla.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/7.TrapecioTabla.dir

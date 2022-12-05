@@ -22,7 +22,7 @@ double derivada(double);
 ///funcion g(x)
 ///////////////
 double function(double x) {
-    return (-log10(x) + sin(3 * x)) / 2;
+    return (-sin(x)+ exp(x))/3;
 }
 
 ///////////////
@@ -44,8 +44,9 @@ int main() {
         ////////////////
         ///usando limite
         /////////////////
-        double lim = (3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
-        //double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+        //double lim =(function(xViejo+0.01)- function(xViejo - 0.01))/(2*0.01);
+        //double lim = (3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
         if (fabs(lim) < 1) {
             xNuevo = function(xViejo);
             eAproximado = fabs(xNuevo - xViejo);

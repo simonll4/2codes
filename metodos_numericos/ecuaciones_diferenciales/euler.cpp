@@ -8,7 +8,7 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return (1+x)* sqrt(y);
+    return (1+x)*sqrt(y);
 }
 
 /////////////////////

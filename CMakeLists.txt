@@ -23,6 +23,7 @@ add_executable(6.Euler metodos_numericos/ecuaciones_diferenciales/euler.cpp)
 add_executable(6.Heun metodos_numericos/ecuaciones_diferenciales/heun.cpp)
 add_executable(6.PuntoMedio metodos_numericos/ecuaciones_diferenciales/puntoMedio.cpp)
 add_executable(6.RungeKutta metodos_numericos/ecuaciones_diferenciales/rungeKutta.cpp)
+add_executable(6.errorExacto metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp)
 add_executable(7.DiferenciacionTabla metodos_numericos/diferenciacion/diferenciacionTabla.cpp)
 add_executable(7.SimpsonTabla metodos_numericos/integracion/tablas/simpsonTabla.cpp)
 add_executable(7.TrapecioTabla metodos_numericos/integracion/tablas/trapecioTabla.cpp)
@@ -35,6 +36,7 @@ add_executable(9.Eje3 metodos_numericos/recuperatorio/eje3.cpp)
 add_executable(ValuarFuncion metodos_numericos/parcial2/valuarFuncion.cpp)
 add_executable(Jacobiguia4 metodos_numericos/modificatedCodes/jacobiGuia4.cpp)
 add_executable(WriteMatrix metodos_numericos/writeMatrix.cpp)
+
 
 
 

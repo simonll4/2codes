@@ -35,7 +35,7 @@ int main() {
     }
     sum = sum * (h / 2);
 
-    cout << "(trapecio)Resultado de la integral : " << fixed << setprecision(10) << sum << endl;
+    cout << "(trapecio)Resultado de la integral : " << fixed << setprecision(20) << sum << endl;
 
     return 0;
 }

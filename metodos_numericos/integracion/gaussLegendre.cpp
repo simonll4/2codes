@@ -5,19 +5,19 @@
 //////////////////////////////
 /// Definir cantidad de puntos
 //////////////////////////////
-#define SELECT 6
+#define SELECT 4
 
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A -3
-#define B 5
+#define A 0
+#define B 1
 
 ///////////////////
 /// definir funcion
 ///////////////////
 double function(double x) {
-    return pow(4*x-5,3);
+    return (exp(sqrt(1+x)) * log(1+2 * pow(x,2)))/(2 * sqrt(1+x))+(4 * exp(sqrt(1+x)) * x)/(1+2 * pow(x,2));
 }
 
 using namespace std;

@@ -46,7 +46,8 @@
 						28,
 						29,
 						30,
-						31
+						31,
+						32
 					]
 				}
 			],
@@ -92,7 +93,8 @@
 						28,
 						29,
 						30,
-						31
+						31,
+						32
 					]
 				}
 			],
@@ -240,85 +242,92 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "6.errorExacto::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6.errorExacto-Debug-d749affde61da0f911ca.json",
+					"name" : "6.errorExacto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "7.DiferenciacionTabla::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-7.DiferenciacionTabla-Debug-ba2ee1ac0cd7b220c4f0.json",
+					"jsonFile" : "target-7.DiferenciacionTabla-Debug-9875aaf7cbcea9798007.json",
 					"name" : "7.DiferenciacionTabla",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "7.SimpsonTabla::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-7.SimpsonTabla-Debug-81435c25b7061cd4dc2d.json",
+					"jsonFile" : "target-7.SimpsonTabla-Debug-80f11d9377b31f86b869.json",
 					"name" : "7.SimpsonTabla",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "7.TrapecioTabla::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-7.TrapecioTabla-Debug-f19d69d355a792d55b6c.json",
+					"jsonFile" : "target-7.TrapecioTabla-Debug-355b7135a0ec722e6eb6.json",
 					"name" : "7.TrapecioTabla",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "8.SistEuler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-8.SistEuler-Debug-a1251f29d98ff502c590.json",
+					"jsonFile" : "target-8.SistEuler-Debug-ee61998ea4f0d18e0f9c.json",
 					"name" : "8.SistEuler",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "8.SistRk4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-8.SistRk4-Debug-ca6259f9efe1af5a2373.json",
+					"jsonFile" : "target-8.SistRk4-Debug-e71ae46342dcc1efbd80.json",
 					"name" : "8.SistRk4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "9.Eje1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-9.Eje1-Debug-3d11d26ba4e0a07f5225.json",
+					"jsonFile" : "target-9.Eje1-Debug-ffcc179ef5f5632a1101.json",
 					"name" : "9.Eje1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "9.Eje3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-9.Eje3-Debug-f7d588dec0f90b00ca0a.json",
+					"jsonFile" : "target-9.Eje3-Debug-9ce091187c2badcf37dc.json",
 					"name" : "9.Eje3",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "9.Ejercico2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-9.Ejercico2-Debug-76c67ac9b6d95772235f.json",
+					"jsonFile" : "target-9.Ejercico2-Debug-9eea65a673123091b667.json",
 					"name" : "9.Ejercico2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "9.Ejercico3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-9.Ejercico3-Debug-48695c5015ec8d4e02e0.json",
+					"jsonFile" : "target-9.Ejercico3-Debug-fc4940eb0ad6ac9a3d8e.json",
 					"name" : "9.Ejercico3",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Jacobiguia4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Jacobiguia4-Debug-7100417425cf2961b066.json",
+					"jsonFile" : "target-Jacobiguia4-Debug-5857963771a7232115cc.json",
 					"name" : "Jacobiguia4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ValuarFuncion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ValuarFuncion-Debug-d09621302742d86fe566.json",
+					"jsonFile" : "target-ValuarFuncion-Debug-3cee62216ce1b11c7665.json",
 					"name" : "ValuarFuncion",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "WriteMatrix::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-WriteMatrix-Debug-6fc19f3acc12e00c0650.json",
+					"jsonFile" : "target-WriteMatrix-Debug-e4f10d1504c0e159669f.json",
 					"name" : "WriteMatrix",
 					"projectIndex" : 0
 				}

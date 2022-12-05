@@ -5,7 +5,7 @@
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -6)
+#define ERROR pow(10, -8)
 //////////////////////////////////
 ///VALOR INICIAL(por defecto UNO)
 /////////////////////////////////
@@ -21,14 +21,14 @@ double derivada(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return (2 * x )+ log10(x) - sin(3 * x);
+    return 3*x+ sin(x)- exp(x);
 }
 
 ///////////////
 ///derivada function(x)
 ///////////////
 double derivada(double x) {
-    return 2+ 1/x - 3 * cos(3*x);
+    return 0;
 }
 
 int main() {
@@ -42,8 +42,9 @@ int main() {
         ////////////////
         ///usando limite
         /////////////////
-        double lim =(3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
-        //double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+        //double lim =(function(xViejo+0.01)- function(xViejo - 0.01))/(2*0.01);
+        //double lim =(3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
+        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
          if (fabs(lim) < 0.000001) {
              cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
              return 0;

@@ -4,7 +4,7 @@
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -10)
+#define ERROR pow(10, -8)
 
 #define MAXCOLUMS 10
 #define MAXROWS 10

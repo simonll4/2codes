@@ -7,7 +7,7 @@
 #define MAXROWS 100
 
 /////////////////
-//DEFINIR FUNCION
+///DEFINIR FUNCION
 /////////////////
 double function(double x) {
     return 0;

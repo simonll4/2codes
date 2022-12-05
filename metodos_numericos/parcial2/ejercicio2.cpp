@@ -20,7 +20,7 @@ double function(double x) {
 ///////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 1000
+#define INTERVALS 10
 
 int main() {
     double sum, h, a, b;

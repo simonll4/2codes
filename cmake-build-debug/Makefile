@@ -377,6 +377,19 @@ depend:
 .PHONY : 6.RungeKutta/fast
 
 #=============================================================================
+# Target rules for targets named 6.errorExacto
+
+# Build rule for target.
+6.errorExacto: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 6.errorExacto
+.PHONY : 6.errorExacto
+
+# fast build rule for target.
+6.errorExacto/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.errorExacto.dir/build.make CMakeFiles/6.errorExacto.dir/build
+.PHONY : 6.errorExacto/fast
+
+#=============================================================================
 # Target rules for targets named 7.DiferenciacionTabla
 
 # Build rule for target.
@@ -579,6 +592,30 @@ metodos_numericos/diferenciacion/diferenciacionTabla.s: metodos_numericos/difere
 metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/7.DiferenciacionTabla.dir/build.make CMakeFiles/7.DiferenciacionTabla.dir/metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s
 .PHONY : metodos_numericos/diferenciacion/diferenciacionTabla.cpp.s
+
+metodos_numericos/ecuaciones_diferenciales/errorExacto.o: metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.o
+
+# target to build an object file
+metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.errorExacto.dir/build.make CMakeFiles/6.errorExacto.dir/metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.o
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.o
+
+metodos_numericos/ecuaciones_diferenciales/errorExacto.i: metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.i
+
+# target to preprocess a source file
+metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.errorExacto.dir/build.make CMakeFiles/6.errorExacto.dir/metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.i
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.i
+
+metodos_numericos/ecuaciones_diferenciales/errorExacto.s: metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.s
+
+# target to generate assembly for a file
+metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.errorExacto.dir/build.make CMakeFiles/6.errorExacto.dir/metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.s
+.PHONY : metodos_numericos/ecuaciones_diferenciales/errorExacto.cpp.s
 
 metodos_numericos/ecuaciones_diferenciales/euler.o: metodos_numericos/ecuaciones_diferenciales/euler.cpp.o
 .PHONY : metodos_numericos/ecuaciones_diferenciales/euler.o
@@ -1328,6 +1365,7 @@ help:
 	@echo "... 6.Heun"
 	@echo "... 6.PuntoMedio"
 	@echo "... 6.RungeKutta"
+	@echo "... 6.errorExacto"
 	@echo "... 7.DiferenciacionTabla"
 	@echo "... 7.SimpsonTabla"
 	@echo "... 7.TrapecioTabla"
@@ -1346,6 +1384,9 @@ help:
 	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.o"
 	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.i"
 	@echo "... metodos_numericos/diferenciacion/diferenciacionTabla.s"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/errorExacto.o"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/errorExacto.i"
+	@echo "... metodos_numericos/ecuaciones_diferenciales/errorExacto.s"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.o"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.i"
 	@echo "... metodos_numericos/ecuaciones_diferenciales/euler.s"

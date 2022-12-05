@@ -5,13 +5,13 @@
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -10)
+#define ERROR pow(10, -8)
 
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A 0
-#define B -5
+#define A 0.6
+#define B   1.3
 
 using namespace std;
 
@@ -21,7 +21,7 @@ double function(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return pow(x,2)-1;
+    return -0.952854-0.206982 * x  + 2.12295 * pow(x,2);;
 }
 
 int main() {
