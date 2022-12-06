@@ -2,6 +2,8 @@
 #include <math.h>
 #include <iomanip>
 
+using namespace std;
+
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
@@ -12,8 +14,6 @@
 /////////////////////
 #define A 0.6
 #define B   1.3
-
-using namespace std;
 
 double function(double);
 

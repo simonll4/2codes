@@ -28,8 +28,10 @@
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/9.Ejercico3.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/9.Eje1.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/9.Eje3.dir
-/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/ValuarFuncion.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/ValuarFuncionIntervalo.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/Jacobiguia4.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/WriteMatrix.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/cuadraturaGaussGuia.dir
+/home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/valuarFuncion.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/simonll4/Desktop/2codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -6,8 +6,8 @@
 /////////////////////
 #define ERROR pow(10, -8)
 
-#define MAXCOLUMS 10
-#define MAXROWS 10
+#define MAXCOLUMS 100
+#define MAXROWS 100
 #define MAXITERATIONS pow(10,5)
 
 using namespace std;
@@ -163,10 +163,10 @@ void gaussSeidel(double matrix[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows,
             oldX[index] = newX[index];
         }
 
-    } while (tolerance < e && iterations < pow(10, MAXITERATIONS));
+    } while (tolerance < e && iterations <  MAXITERATIONS);
 
 
-    if (iterations == pow(10, MAXITERATIONS))
+    if (iterations ==  MAXITERATIONS)
         cout << "Numero de iteraciones maximas alcanzadas" << endl;
 
     cout << "Conjunto solucion:" << endl;

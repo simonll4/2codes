@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ValuarFuncion"
+			"path" : "cuadraturaGaussGuia"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 36,
+				"line" : 39,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "ValuarFuncion::@6890427a1f51a3e7e1df",
+	"id" : "cuadraturaGaussGuia::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ValuarFuncion",
-	"nameOnDisk" : "ValuarFuncion",
+	"name" : "cuadraturaGaussGuia",
+	"nameOnDisk" : "cuadraturaGaussGuia",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "metodos_numericos/parcial2/valuarFuncion.cpp",
+			"path" : "metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

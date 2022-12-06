@@ -15,13 +15,13 @@ using namespace std;
 /////////////////////
 ///cantidad de puntos
 /////////////////////
-#define INTERVALS 6
+#define INTERVALS 10
 
 /////////////////////
 /// definir intervalo
 /////////////////////
-#define INITIALX 0
-#define FINALX 1
+#define INITIALX 1
+#define FINALX 2
 
 void readFile(double x[MAXROWS], double y[MAXROWS]);
 

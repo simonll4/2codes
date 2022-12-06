@@ -3,8 +3,8 @@
 #include <math.h>
 
 #define MAXCOLUMNS 2
-#define MAXCOLUMNS2 10
-#define MAXROWS 10
+#define MAXCOLUMNS2 100
+#define MAXROWS 100
 
 using namespace std;
 

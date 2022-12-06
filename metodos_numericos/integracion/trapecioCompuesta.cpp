@@ -26,9 +26,10 @@ int main() {
     double sum, h, a, b;
     a = A;
     b = B;
-
-    cout << "***********************" << endl;
     h = (double) (b - a) / INTERVALS;
+
+    cout << "********METODO DE INTEGRACION TRAPECIO********" << endl;
+
     sum = function(a) + function(b);
     for (int index = 1; index < INTERVALS; index++) {
         sum = sum + 2 * function(a + index * h);

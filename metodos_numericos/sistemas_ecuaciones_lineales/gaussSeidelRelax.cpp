@@ -139,11 +139,11 @@ void gaussSeidel(double m[MAXROWS][MAXCOLUMS], double b[MAXROWS], int rows, int 
 
         error = sqrt(error);
 
-        if (iterations == 9999) {
+        if (iterations == MAXITERATIONS) {
             printf("Numero maximo de iteraciones alcanzado\n");
         }
 
-    } while (error > tolerance && iterations < 10000);
+    } while (error > tolerance && iterations < MAXITERATIONS);
 
     printf("Conjunto solucion: \n");
     for (int i = 0; i < rows; ++i) {

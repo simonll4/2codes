@@ -13,7 +13,7 @@ add_executable(2.Jacobi metodos_numericos/sistemas_ecuaciones_lineales/jacobi.cp
 add_executable(2.GaussSeidel metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp)
 add_executable(2.gaussSeidelRelajacion metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidelRelax.cpp)
 add_executable(3.Lagrange metodos_numericos/interpolacion/lagrange.cpp)
-add_executable(3.RegresionPolinomica metodos_numericos/regresion/polynomialRegression.cpp)
+add_executable(3.RegresionPolinomica metodos_numericos/interpolacion/polynomialRegression.cpp)
 add_executable(3.SplinesCubicas metodos_numericos/interpolacion/InterpolacionSplines.cpp)
 add_executable(4.Simpson metodos_numericos/integracion/simpson.cpp)
 add_executable(4.GaussLegendre metodos_numericos/integracion/gaussLegendre.cpp)
@@ -33,9 +33,11 @@ add_executable(9.Ejercico2 metodos_numericos/parcial2/ejercicio2.cpp)
 add_executable(9.Ejercico3 metodos_numericos/parcial2/ejercicio3.cpp)
 add_executable(9.Eje1 metodos_numericos/recuperatorio/eje1.cpp)
 add_executable(9.Eje3 metodos_numericos/recuperatorio/eje3.cpp)
-add_executable(ValuarFuncion metodos_numericos/parcial2/valuarFuncion.cpp)
+add_executable(ValuarFuncionIntervalo metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp)
 add_executable(Jacobiguia4 metodos_numericos/modificatedCodes/jacobiGuia4.cpp)
 add_executable(WriteMatrix metodos_numericos/writeMatrix.cpp)
+add_executable(cuadraturaGaussGuia metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp)
+add_executable(valuarFuncion metodos_numericos/modificatedCodes/valuarFuncion.cpp)
 
 
 

@@ -507,17 +507,17 @@ depend:
 .PHONY : 9.Eje3/fast
 
 #=============================================================================
-# Target rules for targets named ValuarFuncion
+# Target rules for targets named ValuarFuncionIntervalo
 
 # Build rule for target.
-ValuarFuncion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ValuarFuncion
-.PHONY : ValuarFuncion
+ValuarFuncionIntervalo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ValuarFuncionIntervalo
+.PHONY : ValuarFuncionIntervalo
 
 # fast build rule for target.
-ValuarFuncion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/build
-.PHONY : ValuarFuncion/fast
+ValuarFuncionIntervalo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncionIntervalo.dir/build.make CMakeFiles/ValuarFuncionIntervalo.dir/build
+.PHONY : ValuarFuncionIntervalo/fast
 
 #=============================================================================
 # Target rules for targets named Jacobiguia4
@@ -544,6 +544,32 @@ WriteMatrix: cmake_check_build_system
 WriteMatrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WriteMatrix.dir/build.make CMakeFiles/WriteMatrix.dir/build
 .PHONY : WriteMatrix/fast
+
+#=============================================================================
+# Target rules for targets named cuadraturaGaussGuia
+
+# Build rule for target.
+cuadraturaGaussGuia: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuadraturaGaussGuia
+.PHONY : cuadraturaGaussGuia
+
+# fast build rule for target.
+cuadraturaGaussGuia/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuadraturaGaussGuia.dir/build.make CMakeFiles/cuadraturaGaussGuia.dir/build
+.PHONY : cuadraturaGaussGuia/fast
+
+#=============================================================================
+# Target rules for targets named valuarFuncion
+
+# Build rule for target.
+valuarFuncion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 valuarFuncion
+.PHONY : valuarFuncion
+
+# fast build rule for target.
+valuarFuncion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valuarFuncion.dir/build.make CMakeFiles/valuarFuncion.dir/build
+.PHONY : valuarFuncion/fast
 
 metodos_numericos/diferenciacion/diferenciacion.o: metodos_numericos/diferenciacion/diferenciacion.cpp.o
 .PHONY : metodos_numericos/diferenciacion/diferenciacion.o
@@ -929,6 +955,30 @@ metodos_numericos/interpolacion/lagrange.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.Lagrange.dir/build.make CMakeFiles/3.Lagrange.dir/metodos_numericos/interpolacion/lagrange.cpp.s
 .PHONY : metodos_numericos/interpolacion/lagrange.cpp.s
 
+metodos_numericos/interpolacion/polynomialRegression.o: metodos_numericos/interpolacion/polynomialRegression.cpp.o
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.o
+
+# target to build an object file
+metodos_numericos/interpolacion/polynomialRegression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/interpolacion/polynomialRegression.cpp.o
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.cpp.o
+
+metodos_numericos/interpolacion/polynomialRegression.i: metodos_numericos/interpolacion/polynomialRegression.cpp.i
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.i
+
+# target to preprocess a source file
+metodos_numericos/interpolacion/polynomialRegression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/interpolacion/polynomialRegression.cpp.i
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.cpp.i
+
+metodos_numericos/interpolacion/polynomialRegression.s: metodos_numericos/interpolacion/polynomialRegression.cpp.s
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.s
+
+# target to generate assembly for a file
+metodos_numericos/interpolacion/polynomialRegression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/interpolacion/polynomialRegression.cpp.s
+.PHONY : metodos_numericos/interpolacion/polynomialRegression.cpp.s
+
 metodos_numericos/localizacion_raices/bisection.o: metodos_numericos/localizacion_raices/bisection.cpp.o
 .PHONY : metodos_numericos/localizacion_raices/bisection.o
 
@@ -1049,6 +1099,30 @@ metodos_numericos/localizacion_raices/secante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.Secante.dir/build.make CMakeFiles/1.Secante.dir/metodos_numericos/localizacion_raices/secante.cpp.s
 .PHONY : metodos_numericos/localizacion_raices/secante.cpp.s
 
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.o: metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.o
+
+# target to build an object file
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuadraturaGaussGuia.dir/build.make CMakeFiles/cuadraturaGaussGuia.dir/metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.o
+
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.i: metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.i
+
+# target to preprocess a source file
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuadraturaGaussGuia.dir/build.make CMakeFiles/cuadraturaGaussGuia.dir/metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.i
+
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.s: metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.s
+
+# target to generate assembly for a file
+metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuadraturaGaussGuia.dir/build.make CMakeFiles/cuadraturaGaussGuia.dir/metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp.s
+
 metodos_numericos/modificatedCodes/jacobiGuia4.o: metodos_numericos/modificatedCodes/jacobiGuia4.cpp.o
 .PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.o
 
@@ -1072,6 +1146,54 @@ metodos_numericos/modificatedCodes/jacobiGuia4.s: metodos_numericos/modificatedC
 metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jacobiguia4.dir/build.make CMakeFiles/Jacobiguia4.dir/metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
 .PHONY : metodos_numericos/modificatedCodes/jacobiGuia4.cpp.s
+
+metodos_numericos/modificatedCodes/valuarFuncion.o: metodos_numericos/modificatedCodes/valuarFuncion.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.o
+
+# target to build an object file
+metodos_numericos/modificatedCodes/valuarFuncion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valuarFuncion.dir/build.make CMakeFiles/valuarFuncion.dir/metodos_numericos/modificatedCodes/valuarFuncion.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.cpp.o
+
+metodos_numericos/modificatedCodes/valuarFuncion.i: metodos_numericos/modificatedCodes/valuarFuncion.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.i
+
+# target to preprocess a source file
+metodos_numericos/modificatedCodes/valuarFuncion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valuarFuncion.dir/build.make CMakeFiles/valuarFuncion.dir/metodos_numericos/modificatedCodes/valuarFuncion.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.cpp.i
+
+metodos_numericos/modificatedCodes/valuarFuncion.s: metodos_numericos/modificatedCodes/valuarFuncion.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.s
+
+# target to generate assembly for a file
+metodos_numericos/modificatedCodes/valuarFuncion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valuarFuncion.dir/build.make CMakeFiles/valuarFuncion.dir/metodos_numericos/modificatedCodes/valuarFuncion.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncion.cpp.s
+
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.o: metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.o
+
+# target to build an object file
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncionIntervalo.dir/build.make CMakeFiles/ValuarFuncionIntervalo.dir/metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.o
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.o
+
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.i: metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.i
+
+# target to preprocess a source file
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncionIntervalo.dir/build.make CMakeFiles/ValuarFuncionIntervalo.dir/metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.i
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.i
+
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.s: metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.s
+
+# target to generate assembly for a file
+metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncionIntervalo.dir/build.make CMakeFiles/ValuarFuncionIntervalo.dir/metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.s
+.PHONY : metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp.s
 
 metodos_numericos/parcial2/ejercicio2.o: metodos_numericos/parcial2/ejercicio2.cpp.o
 .PHONY : metodos_numericos/parcial2/ejercicio2.o
@@ -1121,30 +1243,6 @@ metodos_numericos/parcial2/ejercicio3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/9.Ejercico3.dir/build.make CMakeFiles/9.Ejercico3.dir/metodos_numericos/parcial2/ejercicio3.cpp.s
 .PHONY : metodos_numericos/parcial2/ejercicio3.cpp.s
 
-metodos_numericos/parcial2/valuarFuncion.o: metodos_numericos/parcial2/valuarFuncion.cpp.o
-.PHONY : metodos_numericos/parcial2/valuarFuncion.o
-
-# target to build an object file
-metodos_numericos/parcial2/valuarFuncion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.o
-.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.o
-
-metodos_numericos/parcial2/valuarFuncion.i: metodos_numericos/parcial2/valuarFuncion.cpp.i
-.PHONY : metodos_numericos/parcial2/valuarFuncion.i
-
-# target to preprocess a source file
-metodos_numericos/parcial2/valuarFuncion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.i
-.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.i
-
-metodos_numericos/parcial2/valuarFuncion.s: metodos_numericos/parcial2/valuarFuncion.cpp.s
-.PHONY : metodos_numericos/parcial2/valuarFuncion.s
-
-# target to generate assembly for a file
-metodos_numericos/parcial2/valuarFuncion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ValuarFuncion.dir/build.make CMakeFiles/ValuarFuncion.dir/metodos_numericos/parcial2/valuarFuncion.cpp.s
-.PHONY : metodos_numericos/parcial2/valuarFuncion.cpp.s
-
 metodos_numericos/recuperatorio/eje1.o: metodos_numericos/recuperatorio/eje1.cpp.o
 .PHONY : metodos_numericos/recuperatorio/eje1.o
 
@@ -1192,30 +1290,6 @@ metodos_numericos/recuperatorio/eje3.s: metodos_numericos/recuperatorio/eje3.cpp
 metodos_numericos/recuperatorio/eje3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/9.Eje3.dir/build.make CMakeFiles/9.Eje3.dir/metodos_numericos/recuperatorio/eje3.cpp.s
 .PHONY : metodos_numericos/recuperatorio/eje3.cpp.s
-
-metodos_numericos/regresion/polynomialRegression.o: metodos_numericos/regresion/polynomialRegression.cpp.o
-.PHONY : metodos_numericos/regresion/polynomialRegression.o
-
-# target to build an object file
-metodos_numericos/regresion/polynomialRegression.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.o
-.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.o
-
-metodos_numericos/regresion/polynomialRegression.i: metodos_numericos/regresion/polynomialRegression.cpp.i
-.PHONY : metodos_numericos/regresion/polynomialRegression.i
-
-# target to preprocess a source file
-metodos_numericos/regresion/polynomialRegression.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.i
-.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.i
-
-metodos_numericos/regresion/polynomialRegression.s: metodos_numericos/regresion/polynomialRegression.cpp.s
-.PHONY : metodos_numericos/regresion/polynomialRegression.s
-
-# target to generate assembly for a file
-metodos_numericos/regresion/polynomialRegression.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.RegresionPolinomica.dir/build.make CMakeFiles/3.RegresionPolinomica.dir/metodos_numericos/regresion/polynomialRegression.cpp.s
-.PHONY : metodos_numericos/regresion/polynomialRegression.cpp.s
 
 metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o: metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp.o
 .PHONY : metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o
@@ -1376,8 +1450,10 @@ help:
 	@echo "... 9.Ejercico2"
 	@echo "... 9.Ejercico3"
 	@echo "... Jacobiguia4"
-	@echo "... ValuarFuncion"
+	@echo "... ValuarFuncionIntervalo"
 	@echo "... WriteMatrix"
+	@echo "... cuadraturaGaussGuia"
+	@echo "... valuarFuncion"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.o"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.i"
 	@echo "... metodos_numericos/diferenciacion/diferenciacion.s"
@@ -1426,6 +1502,9 @@ help:
 	@echo "... metodos_numericos/interpolacion/lagrange.o"
 	@echo "... metodos_numericos/interpolacion/lagrange.i"
 	@echo "... metodos_numericos/interpolacion/lagrange.s"
+	@echo "... metodos_numericos/interpolacion/polynomialRegression.o"
+	@echo "... metodos_numericos/interpolacion/polynomialRegression.i"
+	@echo "... metodos_numericos/interpolacion/polynomialRegression.s"
 	@echo "... metodos_numericos/localizacion_raices/bisection.o"
 	@echo "... metodos_numericos/localizacion_raices/bisection.i"
 	@echo "... metodos_numericos/localizacion_raices/bisection.s"
@@ -1441,27 +1520,30 @@ help:
 	@echo "... metodos_numericos/localizacion_raices/secante.o"
 	@echo "... metodos_numericos/localizacion_raices/secante.i"
 	@echo "... metodos_numericos/localizacion_raices/secante.s"
+	@echo "... metodos_numericos/modificatedCodes/cuadraturaGaussGuia.o"
+	@echo "... metodos_numericos/modificatedCodes/cuadraturaGaussGuia.i"
+	@echo "... metodos_numericos/modificatedCodes/cuadraturaGaussGuia.s"
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.o"
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.i"
 	@echo "... metodos_numericos/modificatedCodes/jacobiGuia4.s"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncion.o"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncion.i"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncion.s"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncionIntervalos.o"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncionIntervalos.i"
+	@echo "... metodos_numericos/modificatedCodes/valuarFuncionIntervalos.s"
 	@echo "... metodos_numericos/parcial2/ejercicio2.o"
 	@echo "... metodos_numericos/parcial2/ejercicio2.i"
 	@echo "... metodos_numericos/parcial2/ejercicio2.s"
 	@echo "... metodos_numericos/parcial2/ejercicio3.o"
 	@echo "... metodos_numericos/parcial2/ejercicio3.i"
 	@echo "... metodos_numericos/parcial2/ejercicio3.s"
-	@echo "... metodos_numericos/parcial2/valuarFuncion.o"
-	@echo "... metodos_numericos/parcial2/valuarFuncion.i"
-	@echo "... metodos_numericos/parcial2/valuarFuncion.s"
 	@echo "... metodos_numericos/recuperatorio/eje1.o"
 	@echo "... metodos_numericos/recuperatorio/eje1.i"
 	@echo "... metodos_numericos/recuperatorio/eje1.s"
 	@echo "... metodos_numericos/recuperatorio/eje3.o"
 	@echo "... metodos_numericos/recuperatorio/eje3.i"
 	@echo "... metodos_numericos/recuperatorio/eje3.s"
-	@echo "... metodos_numericos/regresion/polynomialRegression.o"
-	@echo "... metodos_numericos/regresion/polynomialRegression.i"
-	@echo "... metodos_numericos/regresion/polynomialRegression.s"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.o"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.i"
 	@echo "... metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.s"

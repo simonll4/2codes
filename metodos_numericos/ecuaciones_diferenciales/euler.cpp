@@ -8,20 +8,20 @@ using namespace std;
 /// definir funcion
 ///////////////////
 double function(double x, double y) {
-    return (1+x)*sqrt(y);
+    return (4*y-pow(x,2))*y;
 }
 
 /////////////////////
 /// definir intervalo
 /////////////////////
 #define INITIALX 0
-#define FINALX 1
+#define FINALX 3
 #define INITIALY 1
 
 //////////////////////////////
 /// definir cant subIntervalos
 //////////////////////////////
-#define N 100
+#define N 30
 
 int main() {
 

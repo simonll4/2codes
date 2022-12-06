@@ -2,18 +2,18 @@
 #include <math.h>
 #include <iomanip>
 
+using namespace std;
+
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
-#define ERROR pow(10, -2)
+#define ERROR pow(10, -8)
 
 /////////////////////
 ///DEFINIR INTERVALO
 /////////////////////
-#define A 3
-#define B 4
-
-using namespace std;
+#define A 0.5
+#define B 1.5
 
 double function(double);
 
@@ -21,7 +21,7 @@ double function(double);
 ///DEFINIR FUNCION
 //////////////////
 double function(double x) {
-    return -3 + 4.2333333333 *pow(x,1)-1.3500000000*pow(x,2)   + 0.1166666667 *pow(x,3);
+    return -15.3315 + 58.6035793651 *x -74.2201984127*pow(x,2)  + 30.9503968254*pow(x,3) ;
 }
 
 int main() {

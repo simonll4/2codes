@@ -1337,8 +1337,8 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ValuarFuncion">
-				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/ValuarFuncion" prefix_auto="0" extension_auto="0"/>
+			<Target title="ValuarFuncionIntervalo">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/ValuarFuncionIntervalo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1353,14 +1353,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 ValuarFuncion"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 ValuarFuncionIntervalo"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ValuarFuncion/fast">
-				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/ValuarFuncion" prefix_auto="0" extension_auto="0"/>
+			<Target title="ValuarFuncionIntervalo/fast">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/ValuarFuncionIntervalo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1375,7 +1375,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 ValuarFuncion/fast"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 ValuarFuncionIntervalo/fast"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1469,6 +1469,94 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cuadraturaGaussGuia">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/cuadraturaGaussGuia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuadraturaGaussGuia"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuadraturaGaussGuia/fast">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/cuadraturaGaussGuia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuadraturaGaussGuia/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="valuarFuncion">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/valuarFuncion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 valuarFuncion"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="valuarFuncion/fast">
+				<Option output="/home/simonll4/Desktop/2codes/cmake-build-debug/valuarFuncion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 valuarFuncion/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/simonll4/Desktop/2codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/simonll4/Desktop/2codes/cmake-build-debug"/>
 				<Option type="4"/>
@@ -1538,6 +1626,9 @@
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/lagrange.cpp">
 			<Option target="3.Lagrange"/>
 		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/interpolacion/polynomialRegression.cpp">
+			<Option target="3.RegresionPolinomica"/>
+		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/bisection.cpp">
 			<Option target="1.Biseccion"/>
 		</Unit>
@@ -1553,8 +1644,17 @@
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/localizacion_raices/secante.cpp">
 			<Option target="1.Secante"/>
 		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/modificatedCodes/cuadraturaGaussGuia.cpp">
+			<Option target="cuadraturaGaussGuia"/>
+		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/modificatedCodes/jacobiGuia4.cpp">
 			<Option target="Jacobiguia4"/>
+		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/modificatedCodes/valuarFuncion.cpp">
+			<Option target="valuarFuncion"/>
+		</Unit>
+		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/modificatedCodes/valuarFuncionIntervalos.cpp">
+			<Option target="ValuarFuncionIntervalo"/>
 		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio2.cpp">
 			<Option target="9.Ejercico2"/>
@@ -1562,17 +1662,11 @@
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/ejercicio3.cpp">
 			<Option target="9.Ejercico3"/>
 		</Unit>
-		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/parcial2/valuarFuncion.cpp">
-			<Option target="ValuarFuncion"/>
-		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/recuperatorio/eje1.cpp">
 			<Option target="9.Eje1"/>
 		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/recuperatorio/eje3.cpp">
 			<Option target="9.Eje3"/>
-		</Unit>
-		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/regresion/polynomialRegression.cpp">
-			<Option target="3.RegresionPolinomica"/>
 		</Unit>
 		<Unit filename="/home/simonll4/Desktop/2codes/metodos_numericos/sistemas_ecuaciones_lineales/gaussSeidel.cpp">
 			<Option target="2.GaussSeidel"/>

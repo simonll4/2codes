@@ -6,11 +6,11 @@
 #define MAXCOLUMNS 2
 #define MAXROWS 100
 
-/////////////////
-///DEFINIR FUNCION
-/////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///DEFINIR FUNCION (solo sirve para interpolar un valor, sin la funcion puede encontrar el polinomio interpolador e interpolar pero sin saber el error)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 double function(double x) {
-    return 0;
+    return 0 ;
 }
 
 using namespace std;
@@ -172,7 +172,7 @@ int gaussianElimination(double matrix[MAXROWS][MAXROWS], double b[MAXROWS], doub
     cout << endl << "La Matriz triangular superior quedo: " << endl;
     for (int indexA = 0; indexA < rows; indexA++) {
 
-        for (int indexB = 0; indexB < rows - 1; indexB++) {
+        for (int indexB = 0; indexB < rows ; indexB++) {
             cout << matrix[indexA][indexB] << " ";
         }
         cout << b[indexA] << endl;

@@ -2,31 +2,32 @@
 #include <math.h>
 #include <iomanip>
 
+using namespace std;
+
 /////////////////////
 ///DEFINIR TOLERANCIA
 /////////////////////
 #define ERROR pow(10, -8)
+
 //////////////////////////////////
 ///VALOR INICIAL(por defecto UNO)
 /////////////////////////////////
 #define INICIAL 0.5
 
-using namespace std;
-
 double function(double);
 
 double derivada(double);
 
-///////////////////
+///////////////////////////////
 ///DEFINIR FUNCION
-//////////////////
+///////////////////////////////
 double function(double x) {
     return 3*x+ sin(x)- exp(x);
 }
 
-///////////////
+////////////////////////////
 ///derivada function(x)
-///////////////
+////////////////////////////
 double derivada(double x) {
     return 0;
 }
@@ -42,9 +43,10 @@ int main() {
         ////////////////
         ///usando limite
         /////////////////
+        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
         //double lim =(function(xViejo+0.01)- function(xViejo - 0.01))/(2*0.01);
         //double lim =(3 * function(xViejo) - 4 * function(xViejo - 0.01) + function(xViejo - (2 * 0.01))) / (2 * 0.01);
-        double lim = (function(xViejo + (0.01)) - function(xViejo)) / (0.01); //limite original
+        ///si la derivada de la funcion es muy ceracana a cero no se puede usar el meotodo, ya que nos quedaria una division por cero
          if (fabs(lim) < 0.000001) {
              cout << "Warning: la derivada de la funcion es demasiano cercana a cero, probar con otro metodo" << endl;
              return 0;

@@ -4,18 +4,20 @@
 
 using namespace std;
 
+/////////////////////////////////////////////////////////////////////////////
+///en el archivo solo poner puntos a integrar, la imagen(valor de la funcion)
+/////////////////////////////////////////////////////////////////////////////
 #define MAXROWS 10000 ///cantidad de datos que lee desde el archivo
-
 //////////////////////////
 /// limites de integracion
 //////////////////////////
-#define A 0
-#define B 1
+#define A 1
+#define B 2
 
 ///////////////////
 /// sub intervalos
 //////////////////
-#define INTERVALS 6
+#define INTERVALS 10
 
 void readFile(double x[MAXROWS]);
 

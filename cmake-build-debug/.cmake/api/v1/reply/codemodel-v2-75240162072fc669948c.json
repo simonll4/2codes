@@ -47,7 +47,9 @@
 						29,
 						30,
 						31,
-						32
+						32,
+						33,
+						34
 					]
 				}
 			],
@@ -94,7 +96,9 @@
 						29,
 						30,
 						31,
-						32
+						32,
+						33,
+						34
 					]
 				}
 			],
@@ -173,7 +177,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "3.RegresionPolinomica::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-3.RegresionPolinomica-Debug-8248ffc58c9959217439.json",
+					"jsonFile" : "target-3.RegresionPolinomica-Debug-aecef047b719624ba6f2.json",
 					"name" : "3.RegresionPolinomica",
 					"projectIndex" : 0
 				},
@@ -319,9 +323,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "ValuarFuncion::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ValuarFuncion-Debug-3cee62216ce1b11c7665.json",
-					"name" : "ValuarFuncion",
+					"id" : "ValuarFuncionIntervalo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ValuarFuncionIntervalo-Debug-669d9edbc32d72494d69.json",
+					"name" : "ValuarFuncionIntervalo",
 					"projectIndex" : 0
 				},
 				{
@@ -329,6 +333,20 @@
 					"id" : "WriteMatrix::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-WriteMatrix-Debug-e4f10d1504c0e159669f.json",
 					"name" : "WriteMatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuadraturaGaussGuia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuadraturaGaussGuia-Debug-5a29ec77f957f0d27c24.json",
+					"name" : "cuadraturaGaussGuia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "valuarFuncion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-valuarFuncion-Debug-431310102fc75f506e08.json",
+					"name" : "valuarFuncion",
 					"projectIndex" : 0
 				}
 			]
